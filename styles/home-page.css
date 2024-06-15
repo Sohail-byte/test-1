@@ -1,0 +1,48 @@
+.home-page{
+    height: 100vh;
+    position: absolute;
+    border: 1px solid red;
+    width: 100%;
+}
+.container{
+    width: 90%;
+    border: 1px solid red;
+    height: 83%;
+    margin: auto;
+}
+.side-line{
+    border: 1px solid red;
+    width: 8.3%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.line-1{
+    height: 50%;
+    width: 4%;
+    margin-top: 10%;
+    background: linear-gradient(transparent, #7C72FF 30%);
+
+}
+.middle-icon{
+    margin: 20px;
+    
+    
+}
+.octicon{
+    box-shadow: #313bf2;
+    width: 100%;
+}
+.octicon:hover{
+    transform: scale(110%);
+    
+}
+
+.line-2{
+    height: 40%;
+    width: 4%;
+    background: linear-gradient(#7C72FF, #2DA44E 80%, #3FB950);
+    
+
+}
