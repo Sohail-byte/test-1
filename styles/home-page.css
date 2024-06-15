@@ -1,3 +1,4 @@
+
 .home-page{
     height: 100vh;
     position: absolute;
@@ -7,8 +8,9 @@
 .container{
     width: 90%;
     border: 1px solid red;
-    height: 83%;
+    height: 80%;
     margin: auto;
+    display: flex;
 }
 .side-line{
     border: 1px solid red;
@@ -44,5 +46,57 @@
     width: 4%;
     background: linear-gradient(#7C72FF, #2DA44E 80%, #3FB950);
     
+
+}
+
+
+
+
+
+
+
+.about-container{
+    border: 1px solid blue;
+    width: 100%;
+    padding-left: 20px;
+    padding-top: 40px;
+    font-family: "Mona Sans", "Mona Sans Header Fallback", -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    
+}
+.about__1{
+    font-size: 3rem;
+    color: aliceblue;
+    
+}
+.about__heading{
+    
+    font-size: 5rem;
+    color: aliceblue;
+    position: relative;
+    top: -60px;
+    
+}
+
+.about__desc{
+    font-weight: 400;
+    position: relative;
+    top: -120px;
+    color: rgb(164, 164, 164);
+}
+
+.about__btn{
+    font-weight: 600;
+    font-style: normal;
+          border-radius: 8px;
+          border: 1px solid transparent;
+          padding: 0.6em 1.2em;
+          font-size: 1em;
+          
+          background-color: #1a1a1a;
+          cursor: pointer;
+          transition: border-color 0.25s;
+          color: aliceblue;
+          position: relative;
+          top: -100px;
 
 }

@@ -3,6 +3,7 @@
     right: 0;
     top: 100px;
     margin-right: 20px;
+    z-index: 1000;
 }
 
 .img-1{
