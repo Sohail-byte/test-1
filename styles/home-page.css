@@ -2,18 +2,18 @@
 .home-page{
     height: 100vh;
     position: absolute;
-    border: 1px solid red;
+    /* border: 1px solid red; */
     width: 100%;
 }
 .container{
     width: 90%;
-    border: 1px solid red;
+    /* border: 1px solid red; */
     height: 80%;
     margin: auto;
     display: flex;
 }
 .side-line{
-    border: 1px solid red;
+    /* border: 1px solid red; */
     width: 8.3%;
     height: 100%;
     display: flex;
@@ -56,7 +56,7 @@
 
 
 .about-container{
-    border: 1px solid blue;
+    /* border: 1px solid blue; */
     width: 100%;
     padding-left: 20px;
     padding-top: 40px;
@@ -93,10 +93,82 @@
           font-size: 1em;
           
           background-color: #1a1a1a;
+          border-color: #7C72FF;
           cursor: pointer;
           transition: border-color 0.25s;
           color: aliceblue;
           position: relative;
           top: -100px;
 
+}
+
+
+@media (max-width: 1440px) {
+    .about__1{
+        font-size: 2.75rem;
+    }
+    .about__heading{
+        font-size: 4.5rem;
+        top: -60px;
+    }
+    .about__btn{
+        top: -110px;
+        padding: 0.6em 1.2em;
+          font-size: .9rem;
+    }
+}
+@media (max-width: 1020px) {
+    .about__1{
+        font-size: 2.4rem;
+    }
+    .about__heading{
+        font-size: 4rem;
+        top: -40px;
+    }
+    .about__desc{
+        font-size: 1rem;
+        top: -80px;
+    }
+    .about__btn{
+        top: -75px;
+        padding: 0.6em 1.2em;
+          font-size: .8rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .about__1{
+        font-size: 2.2rem;
+    }
+    .about__heading{
+        font-size: 3.5rem;
+        top: -40px;
+    }
+    .about__desc{
+        font-size: 1rem;
+        top: -80px;
+    }
+    .about__btn{
+        top: -75px;
+        padding: 0.6em 1.2em;
+          font-size: .8rem;
+    }
+}
+@media (max-width: 425px) {
+    .about__1{
+        font-size: 2rem;
+    }
+    .about__heading{
+        font-size: 3rem;
+        top: -40px;
+    }
+    .about__desc{
+        font-size: 1rem;
+        top: -70px;
+    }
+    .about__btn{
+        top: -65px;
+        padding: 0.6em 1.2em;
+          font-size: .65rem;
+    }
 }
