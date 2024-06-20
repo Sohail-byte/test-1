@@ -1,0 +1,34 @@
+.projects{
+    height: 100vh;
+    width: 100%;
+    border: 1px solid saddlebrown;
+    color: aliceblue;
+    
+}
+.container-1{
+    border: 1px solid red;
+    width: 90%;
+    margin: auto;
+    height: 80vh;
+    margin-top: 10vh;
+}
+.line-3{
+    height: 40%;
+    width: 4%;
+    margin-top: 10%;
+    background: linear-gradient(#3FB950, #2DA44E 40%, #7C72FF);
+
+}
+.projects-heading{
+    font-family: "Mona Sans", "Mona Sans Header Fallback", -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    text-align: center;
+    font-size: 3rem;
+
+}
+.projects-slider{
+    width: 80%;
+    border: 1px solid blue;
+    height: 45vh;
+    margin: auto;
+    margin-top: 10vh;
+}

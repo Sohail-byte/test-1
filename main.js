@@ -2,6 +2,7 @@ import './styles/style.css'
 import './styles/background.css'
 import './styles/nav-bar.css'
 import './styles/home-page.css'
+import './styles/projects.css'
 
 
 const navBtn = document.querySelector('.menu')
