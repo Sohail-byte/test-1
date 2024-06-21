@@ -1,3 +1,6 @@
+
+
+import './router.js'
 import './styles/style.css'
 import './styles/background.css'
 import './styles/nav-bar.css'
