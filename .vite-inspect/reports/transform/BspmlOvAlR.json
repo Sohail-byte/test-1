@@ -1,0 +1,105 @@
+{
+  "resolvedId": "C:/Users/XFXRe/Desktop/Portfolio/node_modules/fs-extra/lib/fs/index.js",
+  "transforms": [
+    {
+      "name": "vite:load-fallback",
+      "result": "'use strict'\n// This is adapted from https://github.com/normalize/mz\n// Copyright (c) 2014-2016 Jonathan Ong me@jongleberry.com and Contributors\nconst u = require('universalify').fromCallback\nconst fs = require('graceful-fs')\n\nconst api = [\n  'access',\n  'appendFile',\n  'chmod',\n  'chown',\n  'close',\n  'copyFile',\n  'fchmod',\n  'fchown',\n  'fdatasync',\n  'fstat',\n  'fsync',\n  'ftruncate',\n  'futimes',\n  'lchmod',\n  'lchown',\n  'link',\n  'lstat',\n  'mkdir',\n  'mkdtemp',\n  'open',\n  'opendir',\n  'readdir',\n  'readFile',\n  'readlink',\n  'realpath',\n  'rename',\n  'rm',\n  'rmdir',\n  'stat',\n  'symlink',\n  'truncate',\n  'unlink',\n  'utimes',\n  'writeFile'\n].filter(key => {\n  // Some commands are not available on some systems. Ex:\n  // fs.cp was added in Node.js v16.7.0\n  // fs.lchown is not available on at least some Linux\n  return typeof fs[key] === 'function'\n})\n\n// Export cloned fs:\nObject.assign(exports, fs)\n\n// Universalify async methods:\napi.forEach(method => {\n  exports[method] = u(fs[method])\n})\n\n// We differ from mz/fs in that we still ship the old, broken, fs.exists()\n// since we are a drop-in replacement for the native module\nexports.exists = function (filename, callback) {\n  if (typeof callback === 'function') {\n    return fs.exists(filename, callback)\n  }\n  return new Promise(resolve => {\n    return fs.exists(filename, resolve)\n  })\n}\n\n// fs.read(), fs.write(), fs.readv(), & fs.writev() need special treatment due to multiple callback args\n\nexports.read = function (fd, buffer, offset, length, position, callback) {\n  if (typeof callback === 'function') {\n    return fs.read(fd, buffer, offset, length, position, callback)\n  }\n  return new Promise((resolve, reject) => {\n    fs.read(fd, buffer, offset, length, position, (err, bytesRead, buffer) => {\n      if (err) return reject(err)\n      resolve({ bytesRead, buffer })\n    })\n  })\n}\n\n// Function signature can be\n// fs.write(fd, buffer[, offset[, length[, position]]], callback)\n// OR\n// fs.write(fd, string[, position[, encoding]], callback)\n// We need to handle both cases, so we use ...args\nexports.write = function (fd, buffer, ...args) {\n  if (typeof args[args.length - 1] === 'function') {\n    return fs.write(fd, buffer, ...args)\n  }\n\n  return new Promise((resolve, reject) => {\n    fs.write(fd, buffer, ...args, (err, bytesWritten, buffer) => {\n      if (err) return reject(err)\n      resolve({ bytesWritten, buffer })\n    })\n  })\n}\n\n// Function signature is\n// s.readv(fd, buffers[, position], callback)\n// We need to handle the optional arg, so we use ...args\nexports.readv = function (fd, buffers, ...args) {\n  if (typeof args[args.length - 1] === 'function') {\n    return fs.readv(fd, buffers, ...args)\n  }\n\n  return new Promise((resolve, reject) => {\n    fs.readv(fd, buffers, ...args, (err, bytesRead, buffers) => {\n      if (err) return reject(err)\n      resolve({ bytesRead, buffers })\n    })\n  })\n}\n\n// Function signature is\n// s.writev(fd, buffers[, position], callback)\n// We need to handle the optional arg, so we use ...args\nexports.writev = function (fd, buffers, ...args) {\n  if (typeof args[args.length - 1] === 'function') {\n    return fs.writev(fd, buffers, ...args)\n  }\n\n  return new Promise((resolve, reject) => {\n    fs.writev(fd, buffers, ...args, (err, bytesWritten, buffers) => {\n      if (err) return reject(err)\n      resolve({ bytesWritten, buffers })\n    })\n  })\n}\n\n// fs.realpath.native sometimes not available if fs is monkey-patched\nif (typeof fs.realpath.native === 'function') {\n  exports.realpath.native = u(fs.realpath.native)\n} else {\n  process.emitWarning(\n    'fs.realpath.native is not a function. Is fs being monkey-patched?',\n    'Warning', 'fs-extra-WARN0003'\n  )\n}\n",
+      "start": 1718972211520,
+      "end": 1718972211556,
+      "sourcemaps": null
+    },
+    {
+      "name": "vite:css",
+      "start": 1718972211556,
+      "end": 1718972211556,
+      "order": "normal"
+    },
+    {
+      "name": "vite:esbuild",
+      "start": 1718972211556,
+      "end": 1718972211556,
+      "order": "normal"
+    },
+    {
+      "name": "vite:json",
+      "start": 1718972211556,
+      "end": 1718972211556,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker",
+      "start": 1718972211556,
+      "end": 1718972211556,
+      "order": "normal"
+    },
+    {
+      "name": "vite:define",
+      "start": 1718972211556,
+      "end": 1718972211556,
+      "order": "normal"
+    },
+    {
+      "name": "vite:css-post",
+      "start": 1718972211556,
+      "end": 1718972211556,
+      "order": "normal"
+    },
+    {
+      "name": "vite:build-html",
+      "start": 1718972211556,
+      "end": 1718972211556,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker-import-meta-url",
+      "start": 1718972211556,
+      "end": 1718972211556,
+      "order": "normal"
+    },
+    {
+      "name": "vite:asset-import-meta-url",
+      "start": 1718972211556,
+      "end": 1718972211556,
+      "order": "normal"
+    },
+    {
+      "name": "commonjs",
+      "result": "import * as commonjsHelpers from \"\u0000commonjsHelpers.js\";\nimport { __exports as fs_1 } from \"\\u0000C:/Users/XFXRe/Desktop/Portfolio/node_modules/fs-extra/lib/fs/index.js?commonjs-exports\";\nimport require$$0 from \"\\u0000C:/Users/XFXRe/Desktop/Portfolio/node_modules/universalify/index.js?commonjs-proxy\";\nimport require$$1 from \"\\u0000C:/Users/XFXRe/Desktop/Portfolio/node_modules/graceful-fs/graceful-fs.js?commonjs-proxy\";\n\n(function (exports) {\n\t'use strict'\n\t// This is adapted from https://github.com/normalize/mz\n\t// Copyright (c) 2014-2016 Jonathan Ong me@jongleberry.com and Contributors\n\tconst u = require$$0.fromCallback\n\tconst fs = require$$1\n\n\tconst api = [\n\t  'access',\n\t  'appendFile',\n\t  'chmod',\n\t  'chown',\n\t  'close',\n\t  'copyFile',\n\t  'fchmod',\n\t  'fchown',\n\t  'fdatasync',\n\t  'fstat',\n\t  'fsync',\n\t  'ftruncate',\n\t  'futimes',\n\t  'lchmod',\n\t  'lchown',\n\t  'link',\n\t  'lstat',\n\t  'mkdir',\n\t  'mkdtemp',\n\t  'open',\n\t  'opendir',\n\t  'readdir',\n\t  'readFile',\n\t  'readlink',\n\t  'realpath',\n\t  'rename',\n\t  'rm',\n\t  'rmdir',\n\t  'stat',\n\t  'symlink',\n\t  'truncate',\n\t  'unlink',\n\t  'utimes',\n\t  'writeFile'\n\t].filter(key => {\n\t  // Some commands are not available on some systems. Ex:\n\t  // fs.cp was added in Node.js v16.7.0\n\t  // fs.lchown is not available on at least some Linux\n\t  return typeof fs[key] === 'function'\n\t})\n\n\t// Export cloned fs:\n\tObject.assign(exports, fs)\n\n\t// Universalify async methods:\n\tapi.forEach(method => {\n\t  exports[method] = u(fs[method])\n\t})\n\n\t// We differ from mz/fs in that we still ship the old, broken, fs.exists()\n\t// since we are a drop-in replacement for the native module\n\texports.exists = function (filename, callback) {\n\t  if (typeof callback === 'function') {\n\t    return fs.exists(filename, callback)\n\t  }\n\t  return new Promise(resolve => {\n\t    return fs.exists(filename, resolve)\n\t  })\n\t}\n\n\t// fs.read(), fs.write(), fs.readv(), & fs.writev() need special treatment due to multiple callback args\n\n\texports.read = function (fd, buffer, offset, length, position, callback) {\n\t  if (typeof callback === 'function') {\n\t    return fs.read(fd, buffer, offset, length, position, callback)\n\t  }\n\t  return new Promise((resolve, reject) => {\n\t    fs.read(fd, buffer, offset, length, position, (err, bytesRead, buffer) => {\n\t      if (err) return reject(err)\n\t      resolve({ bytesRead, buffer })\n\t    })\n\t  })\n\t}\n\n\t// Function signature can be\n\t// fs.write(fd, buffer[, offset[, length[, position]]], callback)\n\t// OR\n\t// fs.write(fd, string[, position[, encoding]], callback)\n\t// We need to handle both cases, so we use ...args\n\texports.write = function (fd, buffer, ...args) {\n\t  if (typeof args[args.length - 1] === 'function') {\n\t    return fs.write(fd, buffer, ...args)\n\t  }\n\n\t  return new Promise((resolve, reject) => {\n\t    fs.write(fd, buffer, ...args, (err, bytesWritten, buffer) => {\n\t      if (err) return reject(err)\n\t      resolve({ bytesWritten, buffer })\n\t    })\n\t  })\n\t}\n\n\t// Function signature is\n\t// s.readv(fd, buffers[, position], callback)\n\t// We need to handle the optional arg, so we use ...args\n\texports.readv = function (fd, buffers, ...args) {\n\t  if (typeof args[args.length - 1] === 'function') {\n\t    return fs.readv(fd, buffers, ...args)\n\t  }\n\n\t  return new Promise((resolve, reject) => {\n\t    fs.readv(fd, buffers, ...args, (err, bytesRead, buffers) => {\n\t      if (err) return reject(err)\n\t      resolve({ bytesRead, buffers })\n\t    })\n\t  })\n\t}\n\n\t// Function signature is\n\t// s.writev(fd, buffers[, position], callback)\n\t// We need to handle the optional arg, so we use ...args\n\texports.writev = function (fd, buffers, ...args) {\n\t  if (typeof args[args.length - 1] === 'function') {\n\t    return fs.writev(fd, buffers, ...args)\n\t  }\n\n\t  return new Promise((resolve, reject) => {\n\t    fs.writev(fd, buffers, ...args, (err, bytesWritten, buffers) => {\n\t      if (err) return reject(err)\n\t      resolve({ bytesWritten, buffers })\n\t    })\n\t  })\n\t}\n\n\t// fs.realpath.native sometimes not available if fs is monkey-patched\n\tif (typeof fs.realpath.native === 'function') {\n\t  exports.realpath.native = u(fs.realpath.native)\n\t} else {\n\t  process.emitWarning(\n\t    'fs.realpath.native is not a function. Is fs being monkey-patched?',\n\t    'Warning', 'fs-extra-WARN0003'\n\t  )\n\t} \n} (fs_1));\n\nexport default /*@__PURE__*/commonjsHelpers.getDefaultExportFromCjs(fs_1);\nexport { fs_1 as __moduleExports };",
+      "start": 1718972211556,
+      "end": 1718972211789,
+      "order": "normal",
+      "sourcemaps": {
+        "version": 3,
+        "sources": [
+          ""
+        ],
+        "names": [],
+        "mappings": "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"
+      }
+    },
+    {
+      "name": "vite:dynamic-import-vars",
+      "start": 1718972211789,
+      "end": 1718972211789,
+      "order": "normal"
+    },
+    {
+      "name": "vite:import-glob",
+      "start": 1718972211789,
+      "end": 1718972211789,
+      "order": "normal"
+    },
+    {
+      "name": "vite:build-import-analysis",
+      "start": 1718972211789,
+      "end": 1718972211789,
+      "order": "normal"
+    },
+    {
+      "name": "vite:reporter",
+      "start": 1718972211789,
+      "end": 1718972211789,
+      "order": "normal"
+    }
+  ]
+}

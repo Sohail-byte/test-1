@@ -1,0 +1,105 @@
+{
+  "resolvedId": "C:/Users/XFXRe/Desktop/Portfolio/node_modules/universalify/index.js",
+  "transforms": [
+    {
+      "name": "vite:load-fallback",
+      "result": "'use strict'\n\nexports.fromCallback = function (fn) {\n  return Object.defineProperty(function (...args) {\n    if (typeof args[args.length - 1] === 'function') fn.apply(this, args)\n    else {\n      return new Promise((resolve, reject) => {\n        args.push((err, res) => (err != null) ? reject(err) : resolve(res))\n        fn.apply(this, args)\n      })\n    }\n  }, 'name', { value: fn.name })\n}\n\nexports.fromPromise = function (fn) {\n  return Object.defineProperty(function (...args) {\n    const cb = args[args.length - 1]\n    if (typeof cb !== 'function') return fn.apply(this, args)\n    else {\n      args.pop()\n      fn.apply(this, args).then(r => cb(null, r), cb)\n    }\n  }, 'name', { value: fn.name })\n}\n",
+      "start": 1718972211559,
+      "end": 1718972211611,
+      "sourcemaps": null
+    },
+    {
+      "name": "vite:css",
+      "start": 1718972211611,
+      "end": 1718972211611,
+      "order": "normal"
+    },
+    {
+      "name": "vite:esbuild",
+      "start": 1718972211611,
+      "end": 1718972211611,
+      "order": "normal"
+    },
+    {
+      "name": "vite:json",
+      "start": 1718972211611,
+      "end": 1718972211611,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker",
+      "start": 1718972211611,
+      "end": 1718972211611,
+      "order": "normal"
+    },
+    {
+      "name": "vite:define",
+      "start": 1718972211611,
+      "end": 1718972211612,
+      "order": "normal"
+    },
+    {
+      "name": "vite:css-post",
+      "start": 1718972211612,
+      "end": 1718972211612,
+      "order": "normal"
+    },
+    {
+      "name": "vite:build-html",
+      "start": 1718972211612,
+      "end": 1718972211612,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker-import-meta-url",
+      "start": 1718972211612,
+      "end": 1718972211612,
+      "order": "normal"
+    },
+    {
+      "name": "vite:asset-import-meta-url",
+      "start": 1718972211612,
+      "end": 1718972211612,
+      "order": "normal"
+    },
+    {
+      "name": "commonjs",
+      "result": "import * as commonjsHelpers from \"\u0000commonjsHelpers.js\";\nimport { __exports as universalify } from \"\\u0000C:/Users/XFXRe/Desktop/Portfolio/node_modules/universalify/index.js?commonjs-exports\";\n\n'use strict'\n\nvar fromCallback = universalify.fromCallback = function (fn) {\n  return Object.defineProperty(function (...args) {\n    if (typeof args[args.length - 1] === 'function') fn.apply(this, args)\n    else {\n      return new Promise((resolve, reject) => {\n        args.push((err, res) => (err != null) ? reject(err) : resolve(res))\n        fn.apply(this, args)\n      })\n    }\n  }, 'name', { value: fn.name })\n}\n\nvar fromPromise = universalify.fromPromise = function (fn) {\n  return Object.defineProperty(function (...args) {\n    const cb = args[args.length - 1]\n    if (typeof cb !== 'function') return fn.apply(this, args)\n    else {\n      args.pop()\n      fn.apply(this, args).then(r => cb(null, r), cb)\n    }\n  }, 'name', { value: fn.name })\n}\n\nexport { universalify as __moduleExports, fromCallback, fromPromise, universalify as default };",
+      "start": 1718972211612,
+      "end": 1718972211613,
+      "order": "normal",
+      "sourcemaps": {
+        "version": 3,
+        "sources": [
+          ""
+        ],
+        "names": [],
+        "mappings": ";;;AAAA,YAAY;AACZ;AACA,4CAAoB,GAAG,UAAU,EAAE,EAAE;AACrC,EAAE,OAAO,MAAM,CAAC,cAAc,CAAC,UAAU,GAAG,IAAI,EAAE;AAClD,IAAI,IAAI,OAAO,IAAI,CAAC,IAAI,CAAC,MAAM,GAAG,CAAC,CAAC,KAAK,UAAU,EAAE,EAAE,CAAC,KAAK,CAAC,IAAI,EAAE,IAAI,CAAC;AACzE,SAAS;AACT,MAAM,OAAO,IAAI,OAAO,CAAC,CAAC,OAAO,EAAE,MAAM,KAAK;AAC9C,QAAQ,IAAI,CAAC,IAAI,CAAC,CAAC,GAAG,EAAE,GAAG,KAAK,CAAC,GAAG,IAAI,IAAI,IAAI,MAAM,CAAC,GAAG,CAAC,GAAG,OAAO,CAAC,GAAG,CAAC,CAAC;AAC3E,QAAQ,EAAE,CAAC,KAAK,CAAC,IAAI,EAAE,IAAI,CAAC;AAC5B,OAAO,CAAC;AACR,KAAK;AACL,GAAG,EAAE,MAAM,EAAE,EAAE,KAAK,EAAE,EAAE,CAAC,IAAI,EAAE,CAAC;AAChC,CAAC;AACD;AACA,0CAAmB,GAAG,UAAU,EAAE,EAAE;AACpC,EAAE,OAAO,MAAM,CAAC,cAAc,CAAC,UAAU,GAAG,IAAI,EAAE;AAClD,IAAI,MAAM,EAAE,GAAG,IAAI,CAAC,IAAI,CAAC,MAAM,GAAG,CAAC,CAAC;AACpC,IAAI,IAAI,OAAO,EAAE,KAAK,UAAU,EAAE,OAAO,EAAE,CAAC,KAAK,CAAC,IAAI,EAAE,IAAI,CAAC;AAC7D,SAAS;AACT,MAAM,IAAI,CAAC,GAAG,EAAE;AAChB,MAAM,EAAE,CAAC,KAAK,CAAC,IAAI,EAAE,IAAI,CAAC,CAAC,IAAI,CAAC,CAAC,IAAI,EAAE,CAAC,IAAI,EAAE,CAAC,CAAC,EAAE,EAAE,CAAC;AACrD,KAAK;AACL,GAAG,EAAE,MAAM,EAAE,EAAE,KAAK,EAAE,EAAE,CAAC,IAAI,EAAE,CAAC;AAChC"
+      }
+    },
+    {
+      "name": "vite:dynamic-import-vars",
+      "start": 1718972211613,
+      "end": 1718972211613,
+      "order": "normal"
+    },
+    {
+      "name": "vite:import-glob",
+      "start": 1718972211613,
+      "end": 1718972211613,
+      "order": "normal"
+    },
+    {
+      "name": "vite:build-import-analysis",
+      "start": 1718972211613,
+      "end": 1718972211613,
+      "order": "normal"
+    },
+    {
+      "name": "vite:reporter",
+      "start": 1718972211613,
+      "end": 1718972211613,
+      "order": "normal"
+    }
+  ]
+}

@@ -1,0 +1,105 @@
+{
+  "resolvedId": "C:/Users/XFXRe/Desktop/Portfolio/node_modules/graceful-fs/clone.js",
+  "transforms": [
+    {
+      "name": "vite:load-fallback",
+      "result": "'use strict'\n\nmodule.exports = clone\n\nvar getPrototypeOf = Object.getPrototypeOf || function (obj) {\n  return obj.__proto__\n}\n\nfunction clone (obj) {\n  if (obj === null || typeof obj !== 'object')\n    return obj\n\n  if (obj instanceof Object)\n    var copy = { __proto__: getPrototypeOf(obj) }\n  else\n    var copy = Object.create(null)\n\n  Object.getOwnPropertyNames(obj).forEach(function (key) {\n    Object.defineProperty(copy, key, Object.getOwnPropertyDescriptor(obj, key))\n  })\n\n  return copy\n}\n",
+      "start": 1718972211664,
+      "end": 1718972211712,
+      "sourcemaps": null
+    },
+    {
+      "name": "vite:css",
+      "start": 1718972211712,
+      "end": 1718972211712,
+      "order": "normal"
+    },
+    {
+      "name": "vite:esbuild",
+      "start": 1718972211712,
+      "end": 1718972211712,
+      "order": "normal"
+    },
+    {
+      "name": "vite:json",
+      "start": 1718972211712,
+      "end": 1718972211712,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker",
+      "start": 1718972211712,
+      "end": 1718972211712,
+      "order": "normal"
+    },
+    {
+      "name": "vite:define",
+      "start": 1718972211712,
+      "end": 1718972211712,
+      "order": "normal"
+    },
+    {
+      "name": "vite:css-post",
+      "start": 1718972211712,
+      "end": 1718972211712,
+      "order": "normal"
+    },
+    {
+      "name": "vite:build-html",
+      "start": 1718972211712,
+      "end": 1718972211712,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker-import-meta-url",
+      "start": 1718972211712,
+      "end": 1718972211712,
+      "order": "normal"
+    },
+    {
+      "name": "vite:asset-import-meta-url",
+      "start": 1718972211712,
+      "end": 1718972211712,
+      "order": "normal"
+    },
+    {
+      "name": "commonjs",
+      "result": "import * as commonjsHelpers from \"\u0000commonjsHelpers.js\";\n\n'use strict'\n\nvar clone_1 = clone\n\nvar getPrototypeOf = Object.getPrototypeOf || function (obj) {\n  return obj.__proto__\n}\n\nfunction clone (obj) {\n  if (obj === null || typeof obj !== 'object')\n    return obj\n\n  if (obj instanceof Object)\n    var copy = { __proto__: getPrototypeOf(obj) }\n  else\n    var copy = Object.create(null)\n\n  Object.getOwnPropertyNames(obj).forEach(function (key) {\n    Object.defineProperty(copy, key, Object.getOwnPropertyDescriptor(obj, key))\n  })\n\n  return copy\n}\n\nexport default /*@__PURE__*/commonjsHelpers.getDefaultExportFromCjs(clone_1);\nexport { clone_1 as __moduleExports };",
+      "start": 1718972211712,
+      "end": 1718972211713,
+      "order": "normal",
+      "sourcemaps": {
+        "version": 3,
+        "sources": [
+          ""
+        ],
+        "names": [],
+        "mappings": ";;AAAA,YAAY;AACZ;IACA,OAAc,GAAG,KAAK;AACtB;AACA,IAAI,cAAc,GAAG,MAAM,CAAC,cAAc,IAAI,UAAU,GAAG,EAAE;AAC7D,EAAE,OAAO,GAAG,CAAC,SAAS;AACtB,CAAC;AACD;AACA,SAAS,KAAK,EAAE,GAAG,EAAE;AACrB,EAAE,IAAI,GAAG,KAAK,IAAI,IAAI,OAAO,GAAG,KAAK,QAAQ;AAC7C,IAAI,OAAO,GAAG;AACd;AACA,EAAE,IAAI,GAAG,YAAY,MAAM;AAC3B,IAAI,IAAI,IAAI,GAAG,EAAE,SAAS,EAAE,cAAc,CAAC,GAAG,CAAC,EAAE;AACjD;AACA,IAAI,IAAI,IAAI,GAAG,MAAM,CAAC,MAAM,CAAC,IAAI,CAAC;AAClC;AACA,EAAE,MAAM,CAAC,mBAAmB,CAAC,GAAG,CAAC,CAAC,OAAO,CAAC,UAAU,GAAG,EAAE;AACzD,IAAI,MAAM,CAAC,cAAc,CAAC,IAAI,EAAE,GAAG,EAAE,MAAM,CAAC,wBAAwB,CAAC,GAAG,EAAE,GAAG,CAAC,CAAC;AAC/E,GAAG,CAAC;AACJ;AACA,EAAE,OAAO,IAAI;AACb"
+      }
+    },
+    {
+      "name": "vite:dynamic-import-vars",
+      "start": 1718972211713,
+      "end": 1718972211713,
+      "order": "normal"
+    },
+    {
+      "name": "vite:import-glob",
+      "start": 1718972211713,
+      "end": 1718972211713,
+      "order": "normal"
+    },
+    {
+      "name": "vite:build-import-analysis",
+      "start": 1718972211713,
+      "end": 1718972211713,
+      "order": "normal"
+    },
+    {
+      "name": "vite:reporter",
+      "start": 1718972211713,
+      "end": 1718972211713,
+      "order": "normal"
+    }
+  ]
+}

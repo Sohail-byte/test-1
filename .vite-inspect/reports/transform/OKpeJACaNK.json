@@ -1,0 +1,105 @@
+{
+  "resolvedId": "C:/Users/XFXRe/Desktop/Portfolio/node_modules/fs-extra/lib/ensure/index.js",
+  "transforms": [
+    {
+      "name": "vite:load-fallback",
+      "result": "'use strict'\n\nconst { createFile, createFileSync } = require('./file')\nconst { createLink, createLinkSync } = require('./link')\nconst { createSymlink, createSymlinkSync } = require('./symlink')\n\nmodule.exports = {\n  // file\n  createFile,\n  createFileSync,\n  ensureFile: createFile,\n  ensureFileSync: createFileSync,\n  // link\n  createLink,\n  createLinkSync,\n  ensureLink: createLink,\n  ensureLinkSync: createLinkSync,\n  // symlink\n  createSymlink,\n  createSymlinkSync,\n  ensureSymlink: createSymlink,\n  ensureSymlinkSync: createSymlinkSync\n}\n",
+      "start": 1718972211521,
+      "end": 1718972211562,
+      "sourcemaps": null
+    },
+    {
+      "name": "vite:css",
+      "start": 1718972211562,
+      "end": 1718972211562,
+      "order": "normal"
+    },
+    {
+      "name": "vite:esbuild",
+      "start": 1718972211562,
+      "end": 1718972211562,
+      "order": "normal"
+    },
+    {
+      "name": "vite:json",
+      "start": 1718972211562,
+      "end": 1718972211562,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker",
+      "start": 1718972211562,
+      "end": 1718972211562,
+      "order": "normal"
+    },
+    {
+      "name": "vite:define",
+      "start": 1718972211562,
+      "end": 1718972211562,
+      "order": "normal"
+    },
+    {
+      "name": "vite:css-post",
+      "start": 1718972211562,
+      "end": 1718972211562,
+      "order": "normal"
+    },
+    {
+      "name": "vite:build-html",
+      "start": 1718972211562,
+      "end": 1718972211562,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker-import-meta-url",
+      "start": 1718972211562,
+      "end": 1718972211562,
+      "order": "normal"
+    },
+    {
+      "name": "vite:asset-import-meta-url",
+      "start": 1718972211562,
+      "end": 1718972211562,
+      "order": "normal"
+    },
+    {
+      "name": "commonjs",
+      "result": "import * as commonjsHelpers from \"\u0000commonjsHelpers.js\";\nimport require$$0 from \"\\u0000C:/Users/XFXRe/Desktop/Portfolio/node_modules/fs-extra/lib/ensure/file.js?commonjs-proxy\";\nimport require$$1 from \"\\u0000C:/Users/XFXRe/Desktop/Portfolio/node_modules/fs-extra/lib/ensure/link.js?commonjs-proxy\";\nimport require$$2 from \"\\u0000C:/Users/XFXRe/Desktop/Portfolio/node_modules/fs-extra/lib/ensure/symlink.js?commonjs-proxy\";\n\n'use strict'\n\nconst { createFile, createFileSync } = require$$0\nconst { createLink, createLinkSync } = require$$1\nconst { createSymlink, createSymlinkSync } = require$$2\n\nvar ensure = {\n  // file\n  createFile,\n  createFileSync,\n  ensureFile: createFile,\n  ensureFileSync: createFileSync,\n  // link\n  createLink,\n  createLinkSync,\n  ensureLink: createLink,\n  ensureLinkSync: createLinkSync,\n  // symlink\n  createSymlink,\n  createSymlinkSync,\n  ensureSymlink: createSymlink,\n  ensureSymlinkSync: createSymlinkSync\n}\n\nexport default /*@__PURE__*/commonjsHelpers.getDefaultExportFromCjs(ensure);\nexport { ensure as __moduleExports };",
+      "start": 1718972211562,
+      "end": 1718972211827,
+      "order": "normal",
+      "sourcemaps": {
+        "version": 3,
+        "sources": [
+          ""
+        ],
+        "names": [],
+        "mappings": ";;;;;AAAA,YAAY;AACZ;AACA,MAAM,EAAE,UAAU,EAAE,cAAc,EAAE,GAAG,UAAiB;AACxD,MAAM,EAAE,UAAU,EAAE,cAAc,EAAE,GAAG,UAAiB;AACxD,MAAM,EAAE,aAAa,EAAE,iBAAiB,EAAE,GAAG,UAAoB;AACjE;IACA,MAAc,GAAG;AACjB;AACA,EAAE,UAAU;AACZ,EAAE,cAAc;AAChB,EAAE,UAAU,EAAE,UAAU;AACxB,EAAE,cAAc,EAAE,cAAc;AAChC;AACA,EAAE,UAAU;AACZ,EAAE,cAAc;AAChB,EAAE,UAAU,EAAE,UAAU;AACxB,EAAE,cAAc,EAAE,cAAc;AAChC;AACA,EAAE,aAAa;AACf,EAAE,iBAAiB;AACnB,EAAE,aAAa,EAAE,aAAa;AAC9B,EAAE,iBAAiB,EAAE,iBAAiB;AACtC"
+      }
+    },
+    {
+      "name": "vite:dynamic-import-vars",
+      "start": 1718972211827,
+      "end": 1718972211827,
+      "order": "normal"
+    },
+    {
+      "name": "vite:import-glob",
+      "start": 1718972211827,
+      "end": 1718972211827,
+      "order": "normal"
+    },
+    {
+      "name": "vite:build-import-analysis",
+      "start": 1718972211827,
+      "end": 1718972211827,
+      "order": "normal"
+    },
+    {
+      "name": "vite:reporter",
+      "start": 1718972211827,
+      "end": 1718972211827,
+      "order": "normal"
+    }
+  ]
+}

@@ -1,0 +1,98 @@
+{
+  "resolvedId": "C:/Users/XFXRe/Desktop/Portfolio/node_modules/is-wsl/index.js",
+  "transforms": [
+    {
+      "name": "vite:load-fallback",
+      "result": "import process from 'node:process';\nimport os from 'node:os';\nimport fs from 'node:fs';\nimport isInsideContainer from 'is-inside-container';\n\nconst isWsl = () => {\n\tif (process.platform !== 'linux') {\n\t\treturn false;\n\t}\n\n\tif (os.release().toLowerCase().includes('microsoft')) {\n\t\tif (isInsideContainer()) {\n\t\t\treturn false;\n\t\t}\n\n\t\treturn true;\n\t}\n\n\ttry {\n\t\treturn fs.readFileSync('/proc/version', 'utf8').toLowerCase().includes('microsoft')\n\t\t\t? !isInsideContainer() : false;\n\t} catch {\n\t\treturn false;\n\t}\n};\n\nexport default process.env.__IS_WSL_TEST__ ? isWsl : isWsl();\n",
+      "start": 1718972211593,
+      "end": 1718972211664,
+      "sourcemaps": null
+    },
+    {
+      "name": "vite:css",
+      "start": 1718972211664,
+      "end": 1718972211664,
+      "order": "normal"
+    },
+    {
+      "name": "vite:esbuild",
+      "start": 1718972211664,
+      "end": 1718972211664,
+      "order": "normal"
+    },
+    {
+      "name": "vite:json",
+      "start": 1718972211664,
+      "end": 1718972211664,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker",
+      "start": 1718972211664,
+      "end": 1718972211664,
+      "order": "normal"
+    },
+    {
+      "name": "vite:define",
+      "result": "import process from \"node:process\";\nimport os from \"node:os\";\nimport fs from \"node:fs\";\nimport isInsideContainer from \"is-inside-container\";\nconst isWsl = () => {\n  if (process.platform !== \"linux\") {\n    return false;\n  }\n  if (os.release().toLowerCase().includes(\"microsoft\")) {\n    if (isInsideContainer()) {\n      return false;\n    }\n    return true;\n  }\n  try {\n    return fs.readFileSync(\"/proc/version\", \"utf8\").toLowerCase().includes(\"microsoft\") ? !isInsideContainer() : false;\n  } catch {\n    return false;\n  }\n};\nexport default process.env.__IS_WSL_TEST__ ? isWsl : isWsl();\n",
+      "start": 1718972211664,
+      "end": 1718972211682,
+      "order": "normal",
+      "sourcemaps": null
+    },
+    {
+      "name": "vite:css-post",
+      "start": 1718972211682,
+      "end": 1718972211682,
+      "order": "normal"
+    },
+    {
+      "name": "vite:build-html",
+      "start": 1718972211682,
+      "end": 1718972211682,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker-import-meta-url",
+      "start": 1718972211682,
+      "end": 1718972211682,
+      "order": "normal"
+    },
+    {
+      "name": "vite:asset-import-meta-url",
+      "start": 1718972211682,
+      "end": 1718972211682,
+      "order": "normal"
+    },
+    {
+      "name": "commonjs",
+      "start": 1718972211682,
+      "end": 1718972211682,
+      "order": "normal"
+    },
+    {
+      "name": "vite:dynamic-import-vars",
+      "start": 1718972211682,
+      "end": 1718972211682,
+      "order": "normal"
+    },
+    {
+      "name": "vite:import-glob",
+      "start": 1718972211682,
+      "end": 1718972211682,
+      "order": "normal"
+    },
+    {
+      "name": "vite:build-import-analysis",
+      "start": 1718972211682,
+      "end": 1718972211682,
+      "order": "normal"
+    },
+    {
+      "name": "vite:reporter",
+      "start": 1718972211682,
+      "end": 1718972211682,
+      "order": "normal"
+    }
+  ]
+}

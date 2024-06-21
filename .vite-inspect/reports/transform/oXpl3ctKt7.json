@@ -1,0 +1,96 @@
+{
+  "resolvedId": "C:/Users/XFXRe/Desktop/Portfolio/node_modules/sirv/build.mjs",
+  "transforms": [
+    {
+      "name": "vite:load-fallback",
+      "result": "import * as fs from 'fs';\nimport { join, normalize, resolve } from 'path';\nimport { totalist } from 'totalist/sync';\nimport { parse } from '@polka/url';\nimport { lookup } from 'mrmime';\n\nconst noop = () => {};\n\nfunction isMatch(uri, arr) {\n\tfor (let i=0; i < arr.length; i++) {\n\t\tif (arr[i].test(uri)) return true;\n\t}\n}\n\nfunction toAssume(uri, extns) {\n\tlet i=0, x, len=uri.length - 1;\n\tif (uri.charCodeAt(len) === 47) {\n\t\turi = uri.substring(0, len);\n\t}\n\n\tlet arr=[], tmp=`${uri}/index`;\n\tfor (; i < extns.length; i++) {\n\t\tx = extns[i] ? `.${extns[i]}` : '';\n\t\tif (uri) arr.push(uri + x);\n\t\tarr.push(tmp + x);\n\t}\n\n\treturn arr;\n}\n\nfunction viaCache(cache, uri, extns) {\n\tlet i=0, data, arr=toAssume(uri, extns);\n\tfor (; i < arr.length; i++) {\n\t\tif (data = cache[arr[i]]) return data;\n\t}\n}\n\nfunction viaLocal(dir, isEtag, uri, extns) {\n\tlet i=0, arr=toAssume(uri, extns);\n\tlet abs, stats, name, headers;\n\tfor (; i < arr.length; i++) {\n\t\tabs = normalize(join(dir, name=arr[i]));\n\t\tif (abs.startsWith(dir) && fs.existsSync(abs)) {\n\t\t\tstats = fs.statSync(abs);\n\t\t\tif (stats.isDirectory()) continue;\n\t\t\theaders = toHeaders(name, stats, isEtag);\n\t\t\theaders['Cache-Control'] = isEtag ? 'no-cache' : 'no-store';\n\t\t\treturn { abs, stats, headers };\n\t\t}\n\t}\n}\n\nfunction is404(req, res) {\n\treturn (res.statusCode=404,res.end());\n}\n\nfunction send(req, res, file, stats, headers) {\n\tlet code=200, tmp, opts={};\n\theaders = { ...headers };\n\n\tfor (let key in headers) {\n\t\ttmp = res.getHeader(key);\n\t\tif (tmp) headers[key] = tmp;\n\t}\n\n\tif (tmp = res.getHeader('content-type')) {\n\t\theaders['Content-Type'] = tmp;\n\t}\n\n\tif (req.headers.range) {\n\t\tcode = 206;\n\t\tlet [x, y] = req.headers.range.replace('bytes=', '').split('-');\n\t\tlet end = opts.end = parseInt(y, 10) || stats.size - 1;\n\t\tlet start = opts.start = parseInt(x, 10) || 0;\n\n\t\tif (end >= stats.size) {\n\t\t\tend = stats.size - 1;\n\t\t}\n\n\t\tif (start >= stats.size) {\n\t\t\tres.setHeader('Content-Range', `bytes */${stats.size}`);\n\t\t\tres.statusCode = 416;\n\t\t\treturn res.end();\n\t\t}\n\n\t\theaders['Content-Range'] = `bytes ${start}-${end}/${stats.size}`;\n\t\theaders['Content-Length'] = (end - start + 1);\n\t\theaders['Accept-Ranges'] = 'bytes';\n\t}\n\n\tres.writeHead(code, headers);\n\tfs.createReadStream(file, opts).pipe(res);\n}\n\nconst ENCODING = {\n\t'.br': 'br',\n\t'.gz': 'gzip',\n};\n\nfunction toHeaders(name, stats, isEtag) {\n\tlet enc = ENCODING[name.slice(-3)];\n\n\tlet ctype = lookup(name.slice(0, enc && -3)) || '';\n\tif (ctype === 'text/html') ctype += ';charset=utf-8';\n\n\tlet headers = {\n\t\t'Content-Length': stats.size,\n\t\t'Content-Type': ctype,\n\t\t'Last-Modified': stats.mtime.toUTCString(),\n\t};\n\n\tif (enc) headers['Content-Encoding'] = enc;\n\tif (isEtag) headers['ETag'] = `W/\"${stats.size}-${stats.mtime.getTime()}\"`;\n\n\treturn headers;\n}\n\nexport default function (dir, opts={}) {\n\tdir = resolve(dir || '.');\n\n\tlet isNotFound = opts.onNoMatch || is404;\n\tlet setHeaders = opts.setHeaders || noop;\n\n\tlet extensions = opts.extensions || ['html', 'htm'];\n\tlet gzips = opts.gzip && extensions.map(x => `${x}.gz`).concat('gz');\n\tlet brots = opts.brotli && extensions.map(x => `${x}.br`).concat('br');\n\n\tconst FILES = {};\n\n\tlet fallback = '/';\n\tlet isEtag = !!opts.etag;\n\tlet isSPA = !!opts.single;\n\tif (typeof opts.single === 'string') {\n\t\tlet idx = opts.single.lastIndexOf('.');\n\t\tfallback += !!~idx ? opts.single.substring(0, idx) : opts.single;\n\t}\n\n\tlet ignores = [];\n\tif (opts.ignores !== false) {\n\t\tignores.push(/[/]([A-Za-z\\s\\d~$._-]+\\.\\w+){1,}$/); // any extn\n\t\tif (opts.dotfiles) ignores.push(/\\/\\.\\w/);\n\t\telse ignores.push(/\\/\\.well-known/);\n\t\t[].concat(opts.ignores || []).forEach(x => {\n\t\t\tignores.push(new RegExp(x, 'i'));\n\t\t});\n\t}\n\n\tlet cc = opts.maxAge != null && `public,max-age=${opts.maxAge}`;\n\tif (cc && opts.immutable) cc += ',immutable';\n\telse if (cc && opts.maxAge === 0) cc += ',must-revalidate';\n\n\tif (!opts.dev) {\n\t\ttotalist(dir, (name, abs, stats) => {\n\t\t\tif (/\\.well-known[\\\\+\\/]/.test(name)) {} // keep\n\t\t\telse if (!opts.dotfiles && /(^\\.|[\\\\+|\\/+]\\.)/.test(name)) return;\n\n\t\t\tlet headers = toHeaders(name, stats, isEtag);\n\t\t\tif (cc) headers['Cache-Control'] = cc;\n\n\t\t\tFILES['/' + name.normalize().replace(/\\\\+/g, '/')] = { abs, stats, headers };\n\t\t});\n\t}\n\n\tlet lookup = opts.dev ? viaLocal.bind(0, dir, isEtag) : viaCache.bind(0, FILES);\n\n\treturn function (req, res, next) {\n\t\tlet extns = [''];\n\t\tlet pathname = parse(req).pathname;\n\t\tlet val = req.headers['accept-encoding'] || '';\n\t\tif (gzips && val.includes('gzip')) extns.unshift(...gzips);\n\t\tif (brots && /(br|brotli)/i.test(val)) extns.unshift(...brots);\n\t\textns.push(...extensions); // [...br, ...gz, orig, ...exts]\n\n\t\tif (pathname.indexOf('%') !== -1) {\n\t\t\ttry { pathname = decodeURI(pathname) }\n\t\t\tcatch (err) { /* malform uri */ }\n\t\t}\n\n\t\tlet data = lookup(pathname, extns) || isSPA && !isMatch(pathname, ignores) && lookup(fallback, extns);\n\t\tif (!data) return next ? next() : isNotFound(req, res);\n\n\t\tif (isEtag && req.headers['if-none-match'] === data.headers['ETag']) {\n\t\t\tres.writeHead(304);\n\t\t\treturn res.end();\n\t\t}\n\n\t\tif (gzips || brots) {\n\t\t\tres.setHeader('Vary', 'Accept-Encoding');\n\t\t}\n\n\t\tsetHeaders(res, pathname, data.stats);\n\t\tsend(req, res, data.abs, data.stats, data.headers);\n\t};\n}\n",
+      "start": 1718972211467,
+      "end": 1718972211527,
+      "sourcemaps": null
+    },
+    {
+      "name": "vite:css",
+      "start": 1718972211527,
+      "end": 1718972211527,
+      "order": "normal"
+    },
+    {
+      "name": "vite:esbuild",
+      "start": 1718972211527,
+      "end": 1718972211527,
+      "order": "normal"
+    },
+    {
+      "name": "vite:json",
+      "start": 1718972211527,
+      "end": 1718972211527,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker",
+      "start": 1718972211527,
+      "end": 1718972211527,
+      "order": "normal"
+    },
+    {
+      "name": "vite:define",
+      "start": 1718972211527,
+      "end": 1718972211527,
+      "order": "normal"
+    },
+    {
+      "name": "vite:css-post",
+      "start": 1718972211527,
+      "end": 1718972211527,
+      "order": "normal"
+    },
+    {
+      "name": "vite:build-html",
+      "start": 1718972211527,
+      "end": 1718972211527,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker-import-meta-url",
+      "start": 1718972211527,
+      "end": 1718972211527,
+      "order": "normal"
+    },
+    {
+      "name": "vite:asset-import-meta-url",
+      "start": 1718972211527,
+      "end": 1718972211527,
+      "order": "normal"
+    },
+    {
+      "name": "commonjs",
+      "start": 1718972211527,
+      "end": 1718972211527,
+      "order": "normal"
+    },
+    {
+      "name": "vite:dynamic-import-vars",
+      "start": 1718972211527,
+      "end": 1718972211527,
+      "order": "normal"
+    },
+    {
+      "name": "vite:import-glob",
+      "start": 1718972211527,
+      "end": 1718972211527,
+      "order": "normal"
+    },
+    {
+      "name": "vite:build-import-analysis",
+      "start": 1718972211527,
+      "end": 1718972211527,
+      "order": "normal"
+    },
+    {
+      "name": "vite:reporter",
+      "start": 1718972211527,
+      "end": 1718972211527,
+      "order": "normal"
+    }
+  ]
+}

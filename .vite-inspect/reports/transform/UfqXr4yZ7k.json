@@ -1,0 +1,105 @@
+{
+  "resolvedId": "C:/Users/XFXRe/Desktop/Portfolio/node_modules/fs-extra/lib/json/output-json.js",
+  "transforms": [
+    {
+      "name": "vite:load-fallback",
+      "result": "'use strict'\n\nconst { stringify } = require('jsonfile/utils')\nconst { outputFile } = require('../output-file')\n\nasync function outputJson (file, data, options = {}) {\n  const str = stringify(data, options)\n\n  await outputFile(file, str, options)\n}\n\nmodule.exports = outputJson\n",
+      "start": 1718972211580,
+      "end": 1718972211654,
+      "sourcemaps": null
+    },
+    {
+      "name": "vite:css",
+      "start": 1718972211654,
+      "end": 1718972211654,
+      "order": "normal"
+    },
+    {
+      "name": "vite:esbuild",
+      "start": 1718972211654,
+      "end": 1718972211654,
+      "order": "normal"
+    },
+    {
+      "name": "vite:json",
+      "start": 1718972211654,
+      "end": 1718972211654,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker",
+      "start": 1718972211654,
+      "end": 1718972211654,
+      "order": "normal"
+    },
+    {
+      "name": "vite:define",
+      "start": 1718972211654,
+      "end": 1718972211654,
+      "order": "normal"
+    },
+    {
+      "name": "vite:css-post",
+      "start": 1718972211654,
+      "end": 1718972211654,
+      "order": "normal"
+    },
+    {
+      "name": "vite:build-html",
+      "start": 1718972211654,
+      "end": 1718972211654,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker-import-meta-url",
+      "start": 1718972211654,
+      "end": 1718972211654,
+      "order": "normal"
+    },
+    {
+      "name": "vite:asset-import-meta-url",
+      "start": 1718972211654,
+      "end": 1718972211654,
+      "order": "normal"
+    },
+    {
+      "name": "commonjs",
+      "result": "import * as commonjsHelpers from \"\u0000commonjsHelpers.js\";\nimport require$$0 from \"\\u0000C:/Users/XFXRe/Desktop/Portfolio/node_modules/jsonfile/utils.js?commonjs-proxy\";\nimport require$$1 from \"\\u0000C:/Users/XFXRe/Desktop/Portfolio/node_modules/fs-extra/lib/output-file/index.js?commonjs-proxy\";\n\n'use strict'\n\nconst { stringify } = require$$0\nconst { outputFile } = require$$1\n\nasync function outputJson (file, data, options = {}) {\n  const str = stringify(data, options)\n\n  await outputFile(file, str, options)\n}\n\nvar outputJson_1 = outputJson\n\nexport default /*@__PURE__*/commonjsHelpers.getDefaultExportFromCjs(outputJson_1);\nexport { outputJson_1 as __moduleExports };",
+      "start": 1718972211654,
+      "end": 1718972211825,
+      "order": "normal",
+      "sourcemaps": {
+        "version": 3,
+        "sources": [
+          ""
+        ],
+        "names": [],
+        "mappings": ";;;;AAAA,YAAY;AACZ;AACA,MAAM,EAAE,SAAS,EAAE,GAAG,UAAyB;AAC/C,MAAM,EAAE,UAAU,EAAE,GAAG,UAAyB;AAChD;AACA,eAAe,UAAU,EAAE,IAAI,EAAE,IAAI,EAAE,OAAO,GAAG,EAAE,EAAE;AACrD,EAAE,MAAM,GAAG,GAAG,SAAS,CAAC,IAAI,EAAE,OAAO,CAAC;AACtC;AACA,EAAE,MAAM,UAAU,CAAC,IAAI,EAAE,GAAG,EAAE,OAAO,CAAC;AACtC,CAAC;AACD;IACA,YAAc,GAAG"
+      }
+    },
+    {
+      "name": "vite:dynamic-import-vars",
+      "start": 1718972211825,
+      "end": 1718972211825,
+      "order": "normal"
+    },
+    {
+      "name": "vite:import-glob",
+      "start": 1718972211825,
+      "end": 1718972211825,
+      "order": "normal"
+    },
+    {
+      "name": "vite:build-import-analysis",
+      "start": 1718972211825,
+      "end": 1718972211825,
+      "order": "normal"
+    },
+    {
+      "name": "vite:reporter",
+      "start": 1718972211825,
+      "end": 1718972211825,
+      "order": "normal"
+    }
+  ]
+}

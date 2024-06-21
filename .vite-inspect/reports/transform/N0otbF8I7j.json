@@ -1,0 +1,96 @@
+{
+  "resolvedId": "C:/Users/XFXRe/Desktop/Portfolio/node_modules/default-browser/index.js",
+  "transforms": [
+    {
+      "name": "vite:load-fallback",
+      "result": "import {promisify} from 'node:util';\nimport process from 'node:process';\nimport {execFile} from 'node:child_process';\nimport defaultBrowserId from 'default-browser-id';\nimport bundleName from 'bundle-name';\nimport windows from './windows.js';\n\nconst execFileAsync = promisify(execFile);\n\n// Inlined: https://github.com/sindresorhus/titleize/blob/main/index.js\nconst titleize = string => string.toLowerCase().replaceAll(/(?:^|\\s|-)\\S/g, x => x.toUpperCase());\n\nexport default async function defaultBrowser() {\n\tif (process.platform === 'darwin') {\n\t\tconst id = await defaultBrowserId();\n\t\tconst name = await bundleName(id);\n\t\treturn {name, id};\n\t}\n\n\tif (process.platform === 'linux') {\n\t\tconst {stdout} = await execFileAsync('xdg-mime', ['query', 'default', 'x-scheme-handler/http']);\n\t\tconst id = stdout.trim();\n\t\tconst name = titleize(id.replace(/.desktop$/, '').replace('-', ' '));\n\t\treturn {name, id};\n\t}\n\n\tif (process.platform === 'win32') {\n\t\treturn windows();\n\t}\n\n\tthrow new Error('Only macOS, Linux, and Windows are supported');\n}\n",
+      "start": 1718972211595,
+      "end": 1718972211666,
+      "sourcemaps": null
+    },
+    {
+      "name": "vite:css",
+      "start": 1718972211666,
+      "end": 1718972211666,
+      "order": "normal"
+    },
+    {
+      "name": "vite:esbuild",
+      "start": 1718972211666,
+      "end": 1718972211666,
+      "order": "normal"
+    },
+    {
+      "name": "vite:json",
+      "start": 1718972211666,
+      "end": 1718972211666,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker",
+      "start": 1718972211666,
+      "end": 1718972211666,
+      "order": "normal"
+    },
+    {
+      "name": "vite:define",
+      "start": 1718972211666,
+      "end": 1718972211666,
+      "order": "normal"
+    },
+    {
+      "name": "vite:css-post",
+      "start": 1718972211666,
+      "end": 1718972211666,
+      "order": "normal"
+    },
+    {
+      "name": "vite:build-html",
+      "start": 1718972211666,
+      "end": 1718972211666,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker-import-meta-url",
+      "start": 1718972211666,
+      "end": 1718972211666,
+      "order": "normal"
+    },
+    {
+      "name": "vite:asset-import-meta-url",
+      "start": 1718972211666,
+      "end": 1718972211666,
+      "order": "normal"
+    },
+    {
+      "name": "commonjs",
+      "start": 1718972211666,
+      "end": 1718972211666,
+      "order": "normal"
+    },
+    {
+      "name": "vite:dynamic-import-vars",
+      "start": 1718972211666,
+      "end": 1718972211666,
+      "order": "normal"
+    },
+    {
+      "name": "vite:import-glob",
+      "start": 1718972211666,
+      "end": 1718972211666,
+      "order": "normal"
+    },
+    {
+      "name": "vite:build-import-analysis",
+      "start": 1718972211666,
+      "end": 1718972211666,
+      "order": "normal"
+    },
+    {
+      "name": "vite:reporter",
+      "start": 1718972211666,
+      "end": 1718972211666,
+      "order": "normal"
+    }
+  ]
+}

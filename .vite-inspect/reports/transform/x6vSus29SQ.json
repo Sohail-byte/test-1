@@ -1,0 +1,105 @@
+{
+  "resolvedId": "C:/Users/XFXRe/Desktop/Portfolio/node_modules/fs-extra/lib/ensure/symlink-type.js",
+  "transforms": [
+    {
+      "name": "vite:load-fallback",
+      "result": "'use strict'\n\nconst fs = require('../fs')\nconst u = require('universalify').fromPromise\n\nasync function symlinkType (srcpath, type) {\n  if (type) return type\n\n  let stats\n  try {\n    stats = await fs.lstat(srcpath)\n  } catch {\n    return 'file'\n  }\n\n  return (stats && stats.isDirectory()) ? 'dir' : 'file'\n}\n\nfunction symlinkTypeSync (srcpath, type) {\n  if (type) return type\n\n  let stats\n  try {\n    stats = fs.lstatSync(srcpath)\n  } catch {\n    return 'file'\n  }\n  return (stats && stats.isDirectory()) ? 'dir' : 'file'\n}\n\nmodule.exports = {\n  symlinkType: u(symlinkType),\n  symlinkTypeSync\n}\n",
+      "start": 1718972211642,
+      "end": 1718972211694,
+      "sourcemaps": null
+    },
+    {
+      "name": "vite:css",
+      "start": 1718972211694,
+      "end": 1718972211694,
+      "order": "normal"
+    },
+    {
+      "name": "vite:esbuild",
+      "start": 1718972211694,
+      "end": 1718972211694,
+      "order": "normal"
+    },
+    {
+      "name": "vite:json",
+      "start": 1718972211694,
+      "end": 1718972211694,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker",
+      "start": 1718972211694,
+      "end": 1718972211694,
+      "order": "normal"
+    },
+    {
+      "name": "vite:define",
+      "start": 1718972211694,
+      "end": 1718972211694,
+      "order": "normal"
+    },
+    {
+      "name": "vite:css-post",
+      "start": 1718972211694,
+      "end": 1718972211694,
+      "order": "normal"
+    },
+    {
+      "name": "vite:build-html",
+      "start": 1718972211694,
+      "end": 1718972211694,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker-import-meta-url",
+      "start": 1718972211694,
+      "end": 1718972211694,
+      "order": "normal"
+    },
+    {
+      "name": "vite:asset-import-meta-url",
+      "start": 1718972211694,
+      "end": 1718972211694,
+      "order": "normal"
+    },
+    {
+      "name": "commonjs",
+      "result": "import * as commonjsHelpers from \"\u0000commonjsHelpers.js\";\nimport require$$0 from \"\\u0000C:/Users/XFXRe/Desktop/Portfolio/node_modules/fs-extra/lib/fs/index.js?commonjs-proxy\";\nimport require$$1 from \"\\u0000C:/Users/XFXRe/Desktop/Portfolio/node_modules/universalify/index.js?commonjs-proxy\";\n\n'use strict'\n\nconst fs = require$$0\nconst u = require$$1.fromPromise\n\nasync function symlinkType (srcpath, type) {\n  if (type) return type\n\n  let stats\n  try {\n    stats = await fs.lstat(srcpath)\n  } catch {\n    return 'file'\n  }\n\n  return (stats && stats.isDirectory()) ? 'dir' : 'file'\n}\n\nfunction symlinkTypeSync (srcpath, type) {\n  if (type) return type\n\n  let stats\n  try {\n    stats = fs.lstatSync(srcpath)\n  } catch {\n    return 'file'\n  }\n  return (stats && stats.isDirectory()) ? 'dir' : 'file'\n}\n\nvar symlinkType_1 = {\n  symlinkType: u(symlinkType),\n  symlinkTypeSync\n}\n\nexport default /*@__PURE__*/commonjsHelpers.getDefaultExportFromCjs(symlinkType_1);\nexport { symlinkType_1 as __moduleExports };",
+      "start": 1718972211694,
+      "end": 1718972211806,
+      "order": "normal",
+      "sourcemaps": {
+        "version": 3,
+        "sources": [
+          ""
+        ],
+        "names": [],
+        "mappings": ";;;;AAAA,YAAY;AACZ;AACA,MAAM,EAAE,GAAG,UAAgB;AAC3B,MAAM,CAAC,GAAG,UAAuB,CAAC,WAAW;AAC7C;AACA,eAAe,WAAW,EAAE,OAAO,EAAE,IAAI,EAAE;AAC3C,EAAE,IAAI,IAAI,EAAE,OAAO,IAAI;AACvB;AACA,EAAE,IAAI,KAAK;AACX,EAAE,IAAI;AACN,IAAI,KAAK,GAAG,MAAM,EAAE,CAAC,KAAK,CAAC,OAAO,CAAC;AACnC,GAAG,CAAC,MAAM;AACV,IAAI,OAAO,MAAM;AACjB,GAAG;AACH;AACA,EAAE,OAAO,CAAC,KAAK,IAAI,KAAK,CAAC,WAAW,EAAE,IAAI,KAAK,GAAG,MAAM;AACxD,CAAC;AACD;AACA,SAAS,eAAe,EAAE,OAAO,EAAE,IAAI,EAAE;AACzC,EAAE,IAAI,IAAI,EAAE,OAAO,IAAI;AACvB;AACA,EAAE,IAAI,KAAK;AACX,EAAE,IAAI;AACN,IAAI,KAAK,GAAG,EAAE,CAAC,SAAS,CAAC,OAAO,CAAC;AACjC,GAAG,CAAC,MAAM;AACV,IAAI,OAAO,MAAM;AACjB,GAAG;AACH,EAAE,OAAO,CAAC,KAAK,IAAI,KAAK,CAAC,WAAW,EAAE,IAAI,KAAK,GAAG,MAAM;AACxD,CAAC;AACD;IACA,aAAc,GAAG;AACjB,EAAE,WAAW,EAAE,CAAC,CAAC,WAAW,CAAC;AAC7B,EAAE,eAAe;AACjB"
+      }
+    },
+    {
+      "name": "vite:dynamic-import-vars",
+      "start": 1718972211806,
+      "end": 1718972211806,
+      "order": "normal"
+    },
+    {
+      "name": "vite:import-glob",
+      "start": 1718972211806,
+      "end": 1718972211806,
+      "order": "normal"
+    },
+    {
+      "name": "vite:build-import-analysis",
+      "start": 1718972211806,
+      "end": 1718972211806,
+      "order": "normal"
+    },
+    {
+      "name": "vite:reporter",
+      "start": 1718972211806,
+      "end": 1718972211806,
+      "order": "normal"
+    }
+  ]
+}

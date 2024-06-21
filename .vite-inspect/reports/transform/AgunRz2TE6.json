@@ -1,0 +1,105 @@
+{
+  "resolvedId": "C:/Users/XFXRe/Desktop/Portfolio/node_modules/picocolors/picocolors.browser.js",
+  "transforms": [
+    {
+      "name": "vite:load-fallback",
+      "result": "var x=String;\nvar create=function() {return {isColorSupported:false,reset:x,bold:x,dim:x,italic:x,underline:x,inverse:x,hidden:x,strikethrough:x,black:x,red:x,green:x,yellow:x,blue:x,magenta:x,cyan:x,white:x,gray:x,bgBlack:x,bgRed:x,bgGreen:x,bgYellow:x,bgBlue:x,bgMagenta:x,bgCyan:x,bgWhite:x}};\nmodule.exports=create();\nmodule.exports.createColors = create;\n",
+      "start": 1718972211467,
+      "end": 1718972211505,
+      "sourcemaps": null
+    },
+    {
+      "name": "vite:css",
+      "start": 1718972211505,
+      "end": 1718972211505,
+      "order": "normal"
+    },
+    {
+      "name": "vite:esbuild",
+      "start": 1718972211505,
+      "end": 1718972211505,
+      "order": "normal"
+    },
+    {
+      "name": "vite:json",
+      "start": 1718972211505,
+      "end": 1718972211505,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker",
+      "start": 1718972211505,
+      "end": 1718972211505,
+      "order": "normal"
+    },
+    {
+      "name": "vite:define",
+      "start": 1718972211505,
+      "end": 1718972211505,
+      "order": "normal"
+    },
+    {
+      "name": "vite:css-post",
+      "start": 1718972211505,
+      "end": 1718972211505,
+      "order": "normal"
+    },
+    {
+      "name": "vite:build-html",
+      "start": 1718972211505,
+      "end": 1718972211505,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker-import-meta-url",
+      "start": 1718972211505,
+      "end": 1718972211505,
+      "order": "normal"
+    },
+    {
+      "name": "vite:asset-import-meta-url",
+      "start": 1718972211505,
+      "end": 1718972211505,
+      "order": "normal"
+    },
+    {
+      "name": "commonjs",
+      "result": "import * as commonjsHelpers from \"\u0000commonjsHelpers.js\";\nimport { __module as picocolors_browserModule } from \"\\u0000C:/Users/XFXRe/Desktop/Portfolio/node_modules/picocolors/picocolors.browser.js?commonjs-module\";\nvar picocolors_browser = picocolors_browserModule.exports;\n\nvar x=String;\nvar create=function() {return {isColorSupported:false,reset:x,bold:x,dim:x,italic:x,underline:x,inverse:x,hidden:x,strikethrough:x,black:x,red:x,green:x,yellow:x,blue:x,magenta:x,cyan:x,white:x,gray:x,bgBlack:x,bgRed:x,bgGreen:x,bgYellow:x,bgBlue:x,bgMagenta:x,bgCyan:x,bgWhite:x}};\npicocolors_browserModule.exports=create();\nvar createColors = picocolors_browserModule.exports.createColors = create;\n\nvar picocolors_browserExports = picocolors_browserModule.exports;\nexport default /*@__PURE__*/commonjsHelpers.getDefaultExportFromCjs(picocolors_browserExports);\nexport { picocolors_browserExports as __moduleExports, createColors };",
+      "start": 1718972211505,
+      "end": 1718972211510,
+      "order": "normal",
+      "sourcemaps": {
+        "version": 3,
+        "sources": [
+          ""
+        ],
+        "names": [],
+        "mappings": ";;;;AAAA,IAAI,CAAC,CAAC,MAAM,CAAC;AACb,IAAI,MAAM,CAAC,WAAW,CAAC,OAAO,CAAC,gBAAgB,CAAC,KAAK,CAAC,KAAK,CAAC,CAAC,CAAC,IAAI,CAAC,CAAC,CAAC,GAAG,CAAC,CAAC,CAAC,MAAM,CAAC,CAAC,CAAC,SAAS,CAAC,CAAC,CAAC,OAAO,CAAC,CAAC,CAAC,MAAM,CAAC,CAAC,CAAC,aAAa,CAAC,CAAC,CAAC,KAAK,CAAC,CAAC,CAAC,GAAG,CAAC,CAAC,CAAC,KAAK,CAAC,CAAC,CAAC,MAAM,CAAC,CAAC,CAAC,IAAI,CAAC,CAAC,CAAC,OAAO,CAAC,CAAC,CAAC,IAAI,CAAC,CAAC,CAAC,KAAK,CAAC,CAAC,CAAC,IAAI,CAAC,CAAC,CAAC,OAAO,CAAC,CAAC,CAAC,KAAK,CAAC,CAAC,CAAC,OAAO,CAAC,CAAC,CAAC,QAAQ,CAAC,CAAC,CAAC,MAAM,CAAC,CAAC,CAAC,SAAS,CAAC,CAAC,CAAC,MAAM,CAAC,CAAC,CAAC,OAAO,CAAC,CAAC,CAAC,CAAC,CAAC;AAC1R,gCAAc,CAAC,MAAM,EAAE,CAAC;AACxB,gEAA2B,GAAG,MAAM"
+      }
+    },
+    {
+      "name": "vite:dynamic-import-vars",
+      "start": 1718972211510,
+      "end": 1718972211510,
+      "order": "normal"
+    },
+    {
+      "name": "vite:import-glob",
+      "start": 1718972211510,
+      "end": 1718972211510,
+      "order": "normal"
+    },
+    {
+      "name": "vite:build-import-analysis",
+      "start": 1718972211510,
+      "end": 1718972211510,
+      "order": "normal"
+    },
+    {
+      "name": "vite:reporter",
+      "start": 1718972211510,
+      "end": 1718972211510,
+      "order": "normal"
+    }
+  ]
+}

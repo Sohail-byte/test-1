@@ -1,0 +1,12 @@
+{
+  "resolvedId": "\u0000__vite-browser-external?commonjs-proxy",
+  "transforms": [
+    {
+      "name": "commonjs",
+      "result": "import * as __viteBrowserExternal from \"__vite-browser-external\"; import { getAugmentedNamespace } from \"\u0000commonjsHelpers.js\"; export default /*@__PURE__*/getAugmentedNamespace(__viteBrowserExternal);",
+      "start": 1718972211824,
+      "end": 1718972211824,
+      "sourcemaps": null
+    }
+  ]
+}

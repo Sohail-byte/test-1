@@ -1,0 +1,102 @@
+{
+  "resolvedId": "C:/Users/XFXRe/Desktop/Portfolio/styles/home-page.css",
+  "transforms": [
+    {
+      "name": "vite:load-fallback",
+      "result": "\r\n.home-page{\r\n    height: 100vh;\r\n    border: 1px solid red;\r\n    width: 100%;\r\n}\r\n.container{\r\n    width: 90%;\r\n    border: 1px solid red;\r\n    height: 80%;\r\n    margin: auto;\r\n    display: flex;\r\n}\r\n.side-line{\r\n    border: 1px solid red;\r\n    width: 8.3%;\r\n    height: 100%;\r\n    display: flex;\r\n    flex-direction: column;\r\n    align-items: center;\r\n    position: absolute;\r\n}\r\n.line-1{\r\n    height: 40%;\r\n    width: 4%;\r\n    margin-top: 10%;\r\n    background: linear-gradient(transparent, #7C72FF 30%);\r\n\r\n}\r\n.middle-icon{\r\n    margin: 20px;\r\n    width: 24px;\r\n    \r\n    \r\n}\r\n.octicon{\r\n    box-shadow: #313bf2;\r\n    width: 100%;\r\n}\r\n.octicon:hover{\r\n    transform: scale(110%);\r\n    \r\n}\r\n\r\n.line-2{\r\n    height: 60%;\r\n    width: 4%;\r\n    background: linear-gradient(#7C72FF, #2DA44E 80%, #3FB950);\r\n    \r\n\r\n}\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n.about-container{\r\n    /* border: 1px solid blue; */\r\n    width: 100%;\r\n    padding-left: 20px;\r\n    padding-top: 40px;\r\n    font-family: \"Mona Sans\", \"Mona Sans Header Fallback\", -apple-system, BlinkMacSystemFont, \"Segoe UI\", Helvetica, Arial, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\";\r\n    margin-left: 10%;\r\n}\r\n.about__1{\r\n    font-size: 3rem;\r\n    color: aliceblue;\r\n    \r\n}\r\n.about__heading{\r\n    \r\n    font-size: 5rem;\r\n    color: aliceblue;\r\n    position: relative;\r\n    top: -60px;\r\n    \r\n}\r\n\r\n.about__desc{\r\n    font-weight: 400;\r\n    position: relative;\r\n    top: -120px;\r\n    color: rgb(164, 164, 164);\r\n}\r\n\r\n.about__btn{\r\n    font-weight: 600;\r\n    font-style: normal;\r\n          border-radius: 8px;\r\n          border: 1px solid transparent;\r\n          padding: 0.6em 1.2em;\r\n          font-size: 1em;\r\n          \r\n          background-color: #1a1a1a;\r\n          border-color: #7C72FF;\r\n          cursor: pointer;\r\n          transition: border-color 0.25s;\r\n          color: aliceblue;\r\n          position: relative;\r\n          top: -100px;\r\n\r\n}\r\n\r\n\r\n@media (max-width: 1440px) {\r\n    .about__1{\r\n        font-size: 2.75rem;\r\n    }\r\n    .about__heading{\r\n        font-size: 4.5rem;\r\n        top: -60px;\r\n    }\r\n    .about__btn{\r\n        top: -110px;\r\n        padding: 0.6em 1.2em;\r\n          font-size: .9rem;\r\n    }\r\n}\r\n@media (max-width: 1020px) {\r\n    .about__1{\r\n        font-size: 2.4rem;\r\n    }\r\n    .about__heading{\r\n        font-size: 4rem;\r\n        top: -40px;\r\n    }\r\n    .about__desc{\r\n        font-size: 1rem;\r\n        top: -80px;\r\n    }\r\n    .about__btn{\r\n        top: -75px;\r\n        padding: 0.6em 1.2em;\r\n          font-size: .8rem;\r\n    }\r\n}\r\n\r\n@media (max-width: 768px) {\r\n    .about__1{\r\n        font-size: 2.2rem;\r\n    }\r\n    .about__heading{\r\n        font-size: 3.5rem;\r\n        top: -40px;\r\n    }\r\n    .about__desc{\r\n        font-size: 1rem;\r\n        top: -80px;\r\n    }\r\n    .about__btn{\r\n        top: -75px;\r\n        padding: 0.6em 1.2em;\r\n          font-size: .8rem;\r\n    }\r\n}\r\n@media (max-width: 425px) {\r\n    .about__1{\r\n        font-size: 2rem;\r\n    }\r\n    .about__heading{\r\n        font-size: 3rem;\r\n        top: -40px;\r\n    }\r\n    .about__desc{\r\n        font-size: 1rem;\r\n        top: -70px;\r\n    }\r\n    .about__btn{\r\n        top: -65px;\r\n        padding: 0.6em 1.2em;\r\n          font-size: .65rem;\r\n    }\r\n}",
+      "start": 1718972211391,
+      "end": 1718972211396,
+      "sourcemaps": null
+    },
+    {
+      "name": "vite:css",
+      "result": "\r\n.home-page{\r\n    height: 100vh;\r\n    border: 1px solid red;\r\n    width: 100%;\r\n}\r\n.container{\r\n    width: 90%;\r\n    border: 1px solid red;\r\n    height: 80%;\r\n    margin: auto;\r\n    display: flex;\r\n}\r\n.side-line{\r\n    border: 1px solid red;\r\n    width: 8.3%;\r\n    height: 100%;\r\n    display: flex;\r\n    flex-direction: column;\r\n    align-items: center;\r\n    position: absolute;\r\n}\r\n.line-1{\r\n    height: 40%;\r\n    width: 4%;\r\n    margin-top: 10%;\r\n    background: linear-gradient(transparent, #7C72FF 30%);\r\n\r\n}\r\n.middle-icon{\r\n    margin: 20px;\r\n    width: 24px;\r\n    \r\n    \r\n}\r\n.octicon{\r\n    box-shadow: #313bf2;\r\n    width: 100%;\r\n}\r\n.octicon:hover{\r\n    transform: scale(110%);\r\n    \r\n}\r\n\r\n.line-2{\r\n    height: 60%;\r\n    width: 4%;\r\n    background: linear-gradient(#7C72FF, #2DA44E 80%, #3FB950);\r\n    \r\n\r\n}\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n.about-container{\r\n    /* border: 1px solid blue; */\r\n    width: 100%;\r\n    padding-left: 20px;\r\n    padding-top: 40px;\r\n    font-family: \"Mona Sans\", \"Mona Sans Header Fallback\", -apple-system, BlinkMacSystemFont, \"Segoe UI\", Helvetica, Arial, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\";\r\n    margin-left: 10%;\r\n}\r\n.about__1{\r\n    font-size: 3rem;\r\n    color: aliceblue;\r\n    \r\n}\r\n.about__heading{\r\n    \r\n    font-size: 5rem;\r\n    color: aliceblue;\r\n    position: relative;\r\n    top: -60px;\r\n    \r\n}\r\n\r\n.about__desc{\r\n    font-weight: 400;\r\n    position: relative;\r\n    top: -120px;\r\n    color: rgb(164, 164, 164);\r\n}\r\n\r\n.about__btn{\r\n    font-weight: 600;\r\n    font-style: normal;\r\n          border-radius: 8px;\r\n          border: 1px solid transparent;\r\n          padding: 0.6em 1.2em;\r\n          font-size: 1em;\r\n          \r\n          background-color: #1a1a1a;\r\n          border-color: #7C72FF;\r\n          cursor: pointer;\r\n          transition: border-color 0.25s;\r\n          color: aliceblue;\r\n          position: relative;\r\n          top: -100px;\r\n\r\n}\r\n\r\n\r\n@media (max-width: 1440px) {\r\n    .about__1{\r\n        font-size: 2.75rem;\r\n    }\r\n    .about__heading{\r\n        font-size: 4.5rem;\r\n        top: -60px;\r\n    }\r\n    .about__btn{\r\n        top: -110px;\r\n        padding: 0.6em 1.2em;\r\n          font-size: .9rem;\r\n    }\r\n}\r\n@media (max-width: 1020px) {\r\n    .about__1{\r\n        font-size: 2.4rem;\r\n    }\r\n    .about__heading{\r\n        font-size: 4rem;\r\n        top: -40px;\r\n    }\r\n    .about__desc{\r\n        font-size: 1rem;\r\n        top: -80px;\r\n    }\r\n    .about__btn{\r\n        top: -75px;\r\n        padding: 0.6em 1.2em;\r\n          font-size: .8rem;\r\n    }\r\n}\r\n\r\n@media (max-width: 768px) {\r\n    .about__1{\r\n        font-size: 2.2rem;\r\n    }\r\n    .about__heading{\r\n        font-size: 3.5rem;\r\n        top: -40px;\r\n    }\r\n    .about__desc{\r\n        font-size: 1rem;\r\n        top: -80px;\r\n    }\r\n    .about__btn{\r\n        top: -75px;\r\n        padding: 0.6em 1.2em;\r\n          font-size: .8rem;\r\n    }\r\n}\r\n@media (max-width: 425px) {\r\n    .about__1{\r\n        font-size: 2rem;\r\n    }\r\n    .about__heading{\r\n        font-size: 3rem;\r\n        top: -40px;\r\n    }\r\n    .about__desc{\r\n        font-size: 1rem;\r\n        top: -70px;\r\n    }\r\n    .about__btn{\r\n        top: -65px;\r\n        padding: 0.6em 1.2em;\r\n          font-size: .65rem;\r\n    }\r\n}",
+      "start": 1718972211396,
+      "end": 1718972211400,
+      "order": "normal",
+      "sourcemaps": null
+    },
+    {
+      "name": "vite:esbuild",
+      "start": 1718972211400,
+      "end": 1718972211400,
+      "order": "normal"
+    },
+    {
+      "name": "vite:json",
+      "start": 1718972211400,
+      "end": 1718972211400,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker",
+      "start": 1718972211400,
+      "end": 1718972211400,
+      "order": "normal"
+    },
+    {
+      "name": "vite:define",
+      "start": 1718972211400,
+      "end": 1718972211400,
+      "order": "normal"
+    },
+    {
+      "name": "vite:css-post",
+      "result": "",
+      "start": 1718972211400,
+      "end": 1718972211400,
+      "order": "normal",
+      "sourcemaps": {
+        "mappings": ""
+      }
+    },
+    {
+      "name": "vite:build-html",
+      "start": 1718972211400,
+      "end": 1718972211400,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker-import-meta-url",
+      "start": 1718972211400,
+      "end": 1718972211400,
+      "order": "normal"
+    },
+    {
+      "name": "vite:asset-import-meta-url",
+      "start": 1718972211400,
+      "end": 1718972211400,
+      "order": "normal"
+    },
+    {
+      "name": "commonjs",
+      "start": 1718972211400,
+      "end": 1718972211400,
+      "order": "normal"
+    },
+    {
+      "name": "vite:dynamic-import-vars",
+      "start": 1718972211400,
+      "end": 1718972211400,
+      "order": "normal"
+    },
+    {
+      "name": "vite:import-glob",
+      "start": 1718972211401,
+      "end": 1718972211401,
+      "order": "normal"
+    },
+    {
+      "name": "vite:build-import-analysis",
+      "start": 1718972211401,
+      "end": 1718972211401,
+      "order": "normal"
+    },
+    {
+      "name": "vite:reporter",
+      "start": 1718972211401,
+      "end": 1718972211401,
+      "order": "normal"
+    }
+  ]
+}

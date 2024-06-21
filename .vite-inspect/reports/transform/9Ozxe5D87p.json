@@ -1,0 +1,102 @@
+{
+  "resolvedId": "C:/Users/XFXRe/Desktop/Portfolio/styles/background.css",
+  "transforms": [
+    {
+      "name": "vite:load-fallback",
+      "result": ".background{\r\n    position: absolute;\r\n    right: 0;\r\n    top: 100px;\r\n    margin-right: 20px;\r\n    z-index: 1000;\r\n}\r\n\r\n.img-1{\r\n    background-color: transparent;\r\n    height: 150px;\r\n    position: absolute;\r\n    top: -15vh;\r\n    right: 250px;    \r\n}\r\n\r\n.img-2{\r\n    position: absolute;\r\n    height: 150px;\r\n    right: -40px;\r\n    top: 2vh;\r\n}\r\n\r\n.img-3{\r\n    height: 120px;\r\n    position: absolute;\r\n    right: -20px;\r\n    top: 35vh;\r\n}\r\n\r\n.img-4{\r\n    height: 150px;\r\n    position: absolute;\r\n    top: 68vh;\r\n    right: -20px;\r\n}\r\n.img-5{\r\n    height: 150px;\r\n    position: absolute;\r\n    top: 70vh;\r\n    right: 350px;\r\n}\r\nimg{\r\n    will-change: filter;\r\n    transition: filter 300ms;\r\n}\r\n\r\n\r\nimg:hover{\r\n    transform: scale(110%);\r\n    transition: all .5s;\r\n    transform-style: flat;\r\n    filter: drop-shadow(0 0 100px #313bf2);\r\n\r\n    \r\n}\r\n\r\n\r\n@media (max-width: 1440px) {\r\n\r\n    .img-1{\r\n        height: 120px;\r\n        \r\n    }\r\n    \r\n    .img-2{\r\n        height: 120px;\r\n    }\r\n    \r\n    .img-3{\r\n        height: 120px;\r\n    \r\n    }\r\n    \r\n    .img-4{\r\n        height: 120px;\r\n    \r\n    }\r\n    .img-5{\r\n        height: 120px;\r\n    }\r\n    \r\n}\r\n\r\n\r\n@media (max-width: 1024px) {\r\n\r\n    .img-1{\r\n        height: 100px;\r\n        \r\n    }\r\n    \r\n    .img-2{\r\n        height: 100px;\r\n    }\r\n    \r\n    .img-3{\r\n        height: 100px;\r\n    \r\n    }\r\n    \r\n    .img-4{\r\n        height: 100px;\r\n    \r\n    }\r\n    .img-5{\r\n        height: 100px;\r\n    }\r\n    \r\n}\r\n\r\n\r\n@media (max-width: 768px) {\r\n\r\n    .img-1{\r\n        height: 80px;\r\n        \r\n    }\r\n    \r\n    .img-2{\r\n        height: 80px;\r\n    }\r\n    \r\n    .img-3{\r\n        height: 80px;\r\n    \r\n    }\r\n    \r\n    .img-4{\r\n        height: 80px;\r\n    \r\n    }\r\n    .img-5{\r\n        height: 80px;\r\n    }\r\n    \r\n}\r\n\r\n\r\n@media (max-width: 425px) {\r\n\r\n\r\n\r\n    .background{\r\n        z-index: -10000;\r\n    }\r\n\r\n\r\n    .img-1{\r\n        background-color: transparent;\r\n        height: 60px;\r\n        position: absolute;\r\n        top: -14vh;\r\n        right: 100px;    \r\n    }\r\n    \r\n    .img-2{\r\n        position: absolute;\r\n        height: 60px;\r\n        right: -40px;\r\n        top: 10vh;\r\n    }\r\n    \r\n    .img-3{\r\n        height: 60px;\r\n        position: absolute;\r\n        right: 50px;\r\n        top: 55vh;\r\n    }\r\n    \r\n    .img-4{\r\n        height: 60px;\r\n        position: absolute;\r\n        top: 80vh;\r\n        right: -20px;\r\n    }\r\n    .img-5{\r\n        height: 60px;\r\n        position: absolute;\r\n        top: 20vh;\r\n        left: -400px;\r\n    }\r\n    \r\n}\r\n",
+      "start": 1718972211391,
+      "end": 1718972211395,
+      "sourcemaps": null
+    },
+    {
+      "name": "vite:css",
+      "result": ".background{\r\n    position: absolute;\r\n    right: 0;\r\n    top: 100px;\r\n    margin-right: 20px;\r\n    z-index: 1000;\r\n}\r\n\r\n.img-1{\r\n    background-color: transparent;\r\n    height: 150px;\r\n    position: absolute;\r\n    top: -15vh;\r\n    right: 250px;    \r\n}\r\n\r\n.img-2{\r\n    position: absolute;\r\n    height: 150px;\r\n    right: -40px;\r\n    top: 2vh;\r\n}\r\n\r\n.img-3{\r\n    height: 120px;\r\n    position: absolute;\r\n    right: -20px;\r\n    top: 35vh;\r\n}\r\n\r\n.img-4{\r\n    height: 150px;\r\n    position: absolute;\r\n    top: 68vh;\r\n    right: -20px;\r\n}\r\n.img-5{\r\n    height: 150px;\r\n    position: absolute;\r\n    top: 70vh;\r\n    right: 350px;\r\n}\r\nimg{\r\n    will-change: filter;\r\n    transition: filter 300ms;\r\n}\r\n\r\n\r\nimg:hover{\r\n    transform: scale(110%);\r\n    transition: all .5s;\r\n    transform-style: flat;\r\n    filter: drop-shadow(0 0 100px #313bf2);\r\n\r\n    \r\n}\r\n\r\n\r\n@media (max-width: 1440px) {\r\n\r\n    .img-1{\r\n        height: 120px;\r\n        \r\n    }\r\n    \r\n    .img-2{\r\n        height: 120px;\r\n    }\r\n    \r\n    .img-3{\r\n        height: 120px;\r\n    \r\n    }\r\n    \r\n    .img-4{\r\n        height: 120px;\r\n    \r\n    }\r\n    .img-5{\r\n        height: 120px;\r\n    }\r\n    \r\n}\r\n\r\n\r\n@media (max-width: 1024px) {\r\n\r\n    .img-1{\r\n        height: 100px;\r\n        \r\n    }\r\n    \r\n    .img-2{\r\n        height: 100px;\r\n    }\r\n    \r\n    .img-3{\r\n        height: 100px;\r\n    \r\n    }\r\n    \r\n    .img-4{\r\n        height: 100px;\r\n    \r\n    }\r\n    .img-5{\r\n        height: 100px;\r\n    }\r\n    \r\n}\r\n\r\n\r\n@media (max-width: 768px) {\r\n\r\n    .img-1{\r\n        height: 80px;\r\n        \r\n    }\r\n    \r\n    .img-2{\r\n        height: 80px;\r\n    }\r\n    \r\n    .img-3{\r\n        height: 80px;\r\n    \r\n    }\r\n    \r\n    .img-4{\r\n        height: 80px;\r\n    \r\n    }\r\n    .img-5{\r\n        height: 80px;\r\n    }\r\n    \r\n}\r\n\r\n\r\n@media (max-width: 425px) {\r\n\r\n\r\n\r\n    .background{\r\n        z-index: -10000;\r\n    }\r\n\r\n\r\n    .img-1{\r\n        background-color: transparent;\r\n        height: 60px;\r\n        position: absolute;\r\n        top: -14vh;\r\n        right: 100px;    \r\n    }\r\n    \r\n    .img-2{\r\n        position: absolute;\r\n        height: 60px;\r\n        right: -40px;\r\n        top: 10vh;\r\n    }\r\n    \r\n    .img-3{\r\n        height: 60px;\r\n        position: absolute;\r\n        right: 50px;\r\n        top: 55vh;\r\n    }\r\n    \r\n    .img-4{\r\n        height: 60px;\r\n        position: absolute;\r\n        top: 80vh;\r\n        right: -20px;\r\n    }\r\n    .img-5{\r\n        height: 60px;\r\n        position: absolute;\r\n        top: 20vh;\r\n        left: -400px;\r\n    }\r\n    \r\n}\r\n",
+      "start": 1718972211395,
+      "end": 1718972211400,
+      "order": "normal",
+      "sourcemaps": null
+    },
+    {
+      "name": "vite:esbuild",
+      "start": 1718972211400,
+      "end": 1718972211400,
+      "order": "normal"
+    },
+    {
+      "name": "vite:json",
+      "start": 1718972211400,
+      "end": 1718972211400,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker",
+      "start": 1718972211400,
+      "end": 1718972211400,
+      "order": "normal"
+    },
+    {
+      "name": "vite:define",
+      "start": 1718972211400,
+      "end": 1718972211400,
+      "order": "normal"
+    },
+    {
+      "name": "vite:css-post",
+      "result": "",
+      "start": 1718972211400,
+      "end": 1718972211400,
+      "order": "normal",
+      "sourcemaps": {
+        "mappings": ""
+      }
+    },
+    {
+      "name": "vite:build-html",
+      "start": 1718972211400,
+      "end": 1718972211400,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker-import-meta-url",
+      "start": 1718972211400,
+      "end": 1718972211400,
+      "order": "normal"
+    },
+    {
+      "name": "vite:asset-import-meta-url",
+      "start": 1718972211400,
+      "end": 1718972211400,
+      "order": "normal"
+    },
+    {
+      "name": "commonjs",
+      "start": 1718972211400,
+      "end": 1718972211400,
+      "order": "normal"
+    },
+    {
+      "name": "vite:dynamic-import-vars",
+      "start": 1718972211400,
+      "end": 1718972211400,
+      "order": "normal"
+    },
+    {
+      "name": "vite:import-glob",
+      "start": 1718972211401,
+      "end": 1718972211401,
+      "order": "normal"
+    },
+    {
+      "name": "vite:build-import-analysis",
+      "start": 1718972211401,
+      "end": 1718972211401,
+      "order": "normal"
+    },
+    {
+      "name": "vite:reporter",
+      "start": 1718972211401,
+      "end": 1718972211401,
+      "order": "normal"
+    }
+  ]
+}

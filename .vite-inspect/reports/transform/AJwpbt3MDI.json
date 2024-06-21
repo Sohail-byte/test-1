@@ -1,0 +1,105 @@
+{
+  "resolvedId": "C:/Users/XFXRe/Desktop/Portfolio/node_modules/fs-extra/lib/move/index.js",
+  "transforms": [
+    {
+      "name": "vite:load-fallback",
+      "result": "'use strict'\n\nconst u = require('universalify').fromPromise\nmodule.exports = {\n  move: u(require('./move')),\n  moveSync: require('./move-sync')\n}\n",
+      "start": 1718972211521,
+      "end": 1718972211569,
+      "sourcemaps": null
+    },
+    {
+      "name": "vite:css",
+      "start": 1718972211569,
+      "end": 1718972211569,
+      "order": "normal"
+    },
+    {
+      "name": "vite:esbuild",
+      "start": 1718972211569,
+      "end": 1718972211569,
+      "order": "normal"
+    },
+    {
+      "name": "vite:json",
+      "start": 1718972211569,
+      "end": 1718972211569,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker",
+      "start": 1718972211569,
+      "end": 1718972211569,
+      "order": "normal"
+    },
+    {
+      "name": "vite:define",
+      "start": 1718972211569,
+      "end": 1718972211569,
+      "order": "normal"
+    },
+    {
+      "name": "vite:css-post",
+      "start": 1718972211569,
+      "end": 1718972211569,
+      "order": "normal"
+    },
+    {
+      "name": "vite:build-html",
+      "start": 1718972211569,
+      "end": 1718972211569,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker-import-meta-url",
+      "start": 1718972211569,
+      "end": 1718972211569,
+      "order": "normal"
+    },
+    {
+      "name": "vite:asset-import-meta-url",
+      "start": 1718972211569,
+      "end": 1718972211569,
+      "order": "normal"
+    },
+    {
+      "name": "commonjs",
+      "result": "import * as commonjsHelpers from \"\u0000commonjsHelpers.js\";\nimport require$$0 from \"\\u0000C:/Users/XFXRe/Desktop/Portfolio/node_modules/universalify/index.js?commonjs-proxy\";\nimport require$$1 from \"\\u0000C:/Users/XFXRe/Desktop/Portfolio/node_modules/fs-extra/lib/move/move.js?commonjs-proxy\";\nimport require$$2 from \"\\u0000C:/Users/XFXRe/Desktop/Portfolio/node_modules/fs-extra/lib/move/move-sync.js?commonjs-proxy\";\n\n'use strict'\n\nconst u = require$$0.fromPromise\nvar move = {\n  move: u(require$$1),\n  moveSync: require$$2\n}\n\nexport default /*@__PURE__*/commonjsHelpers.getDefaultExportFromCjs(move);\nexport { move as __moduleExports };",
+      "start": 1718972211569,
+      "end": 1718972211831,
+      "order": "normal",
+      "sourcemaps": {
+        "version": 3,
+        "sources": [
+          ""
+        ],
+        "names": [],
+        "mappings": ";;;;;AAAA,YAAY;AACZ;AACA,MAAM,CAAC,GAAG,UAAuB,CAAC,WAAW;IAC7C,IAAc,GAAG;AACjB,EAAE,IAAI,EAAE,CAAC,CAAC,UAAiB,CAAC;AAC5B,EAAE,QAAQ,EAAE,UAAsB;AAClC"
+      }
+    },
+    {
+      "name": "vite:dynamic-import-vars",
+      "start": 1718972211831,
+      "end": 1718972211831,
+      "order": "normal"
+    },
+    {
+      "name": "vite:import-glob",
+      "start": 1718972211831,
+      "end": 1718972211831,
+      "order": "normal"
+    },
+    {
+      "name": "vite:build-import-analysis",
+      "start": 1718972211831,
+      "end": 1718972211831,
+      "order": "normal"
+    },
+    {
+      "name": "vite:reporter",
+      "start": 1718972211831,
+      "end": 1718972211831,
+      "order": "normal"
+    }
+  ]
+}

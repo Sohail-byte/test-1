@@ -1,0 +1,105 @@
+{
+  "resolvedId": "C:/Users/XFXRe/Desktop/Portfolio/node_modules/fs-extra/lib/ensure/symlink.js",
+  "transforms": [
+    {
+      "name": "vite:load-fallback",
+      "result": "'use strict'\n\nconst u = require('universalify').fromPromise\nconst path = require('path')\nconst fs = require('../fs')\n\nconst { mkdirs, mkdirsSync } = require('../mkdirs')\n\nconst { symlinkPaths, symlinkPathsSync } = require('./symlink-paths')\nconst { symlinkType, symlinkTypeSync } = require('./symlink-type')\n\nconst { pathExists } = require('../path-exists')\n\nconst { areIdentical } = require('../util/stat')\n\nasync function createSymlink (srcpath, dstpath, type) {\n  let stats\n  try {\n    stats = await fs.lstat(dstpath)\n  } catch { }\n\n  if (stats && stats.isSymbolicLink()) {\n    const [srcStat, dstStat] = await Promise.all([\n      fs.stat(srcpath),\n      fs.stat(dstpath)\n    ])\n\n    if (areIdentical(srcStat, dstStat)) return\n  }\n\n  const relative = await symlinkPaths(srcpath, dstpath)\n  srcpath = relative.toDst\n  const toType = await symlinkType(relative.toCwd, type)\n  const dir = path.dirname(dstpath)\n\n  if (!(await pathExists(dir))) {\n    await mkdirs(dir)\n  }\n\n  return fs.symlink(srcpath, dstpath, toType)\n}\n\nfunction createSymlinkSync (srcpath, dstpath, type) {\n  let stats\n  try {\n    stats = fs.lstatSync(dstpath)\n  } catch { }\n  if (stats && stats.isSymbolicLink()) {\n    const srcStat = fs.statSync(srcpath)\n    const dstStat = fs.statSync(dstpath)\n    if (areIdentical(srcStat, dstStat)) return\n  }\n\n  const relative = symlinkPathsSync(srcpath, dstpath)\n  srcpath = relative.toDst\n  type = symlinkTypeSync(relative.toCwd, type)\n  const dir = path.dirname(dstpath)\n  const exists = fs.existsSync(dir)\n  if (exists) return fs.symlinkSync(srcpath, dstpath, type)\n  mkdirsSync(dir)\n  return fs.symlinkSync(srcpath, dstpath, type)\n}\n\nmodule.exports = {\n  createSymlink: u(createSymlink),\n  createSymlinkSync\n}\n",
+      "start": 1718972211566,
+      "end": 1718972211638,
+      "sourcemaps": null
+    },
+    {
+      "name": "vite:css",
+      "start": 1718972211638,
+      "end": 1718972211638,
+      "order": "normal"
+    },
+    {
+      "name": "vite:esbuild",
+      "start": 1718972211638,
+      "end": 1718972211638,
+      "order": "normal"
+    },
+    {
+      "name": "vite:json",
+      "start": 1718972211638,
+      "end": 1718972211638,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker",
+      "start": 1718972211638,
+      "end": 1718972211638,
+      "order": "normal"
+    },
+    {
+      "name": "vite:define",
+      "start": 1718972211638,
+      "end": 1718972211638,
+      "order": "normal"
+    },
+    {
+      "name": "vite:css-post",
+      "start": 1718972211638,
+      "end": 1718972211638,
+      "order": "normal"
+    },
+    {
+      "name": "vite:build-html",
+      "start": 1718972211638,
+      "end": 1718972211638,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker-import-meta-url",
+      "start": 1718972211638,
+      "end": 1718972211638,
+      "order": "normal"
+    },
+    {
+      "name": "vite:asset-import-meta-url",
+      "start": 1718972211638,
+      "end": 1718972211638,
+      "order": "normal"
+    },
+    {
+      "name": "commonjs",
+      "result": "import * as commonjsHelpers from \"\u0000commonjsHelpers.js\";\nimport require$$0 from \"\\u0000C:/Users/XFXRe/Desktop/Portfolio/node_modules/universalify/index.js?commonjs-proxy\";\nimport require$$1 from \"\\u0000__vite-browser-external?commonjs-proxy\";\nimport require$$2 from \"\\u0000C:/Users/XFXRe/Desktop/Portfolio/node_modules/fs-extra/lib/fs/index.js?commonjs-proxy\";\nimport require$$3 from \"\\u0000C:/Users/XFXRe/Desktop/Portfolio/node_modules/fs-extra/lib/mkdirs/index.js?commonjs-proxy\";\nimport require$$4 from \"\\u0000C:/Users/XFXRe/Desktop/Portfolio/node_modules/fs-extra/lib/ensure/symlink-paths.js?commonjs-proxy\";\nimport require$$5 from \"\\u0000C:/Users/XFXRe/Desktop/Portfolio/node_modules/fs-extra/lib/ensure/symlink-type.js?commonjs-proxy\";\nimport require$$6 from \"\\u0000C:/Users/XFXRe/Desktop/Portfolio/node_modules/fs-extra/lib/path-exists/index.js?commonjs-proxy\";\nimport require$$7 from \"\\u0000C:/Users/XFXRe/Desktop/Portfolio/node_modules/fs-extra/lib/util/stat.js?commonjs-proxy\";\n\n'use strict'\n\nconst u = require$$0.fromPromise\nconst path = require$$1\nconst fs = require$$2\n\nconst { mkdirs, mkdirsSync } = require$$3\n\nconst { symlinkPaths, symlinkPathsSync } = require$$4\nconst { symlinkType, symlinkTypeSync } = require$$5\n\nconst { pathExists } = require$$6\n\nconst { areIdentical } = require$$7\n\nasync function createSymlink (srcpath, dstpath, type) {\n  let stats\n  try {\n    stats = await fs.lstat(dstpath)\n  } catch { }\n\n  if (stats && stats.isSymbolicLink()) {\n    const [srcStat, dstStat] = await Promise.all([\n      fs.stat(srcpath),\n      fs.stat(dstpath)\n    ])\n\n    if (areIdentical(srcStat, dstStat)) return\n  }\n\n  const relative = await symlinkPaths(srcpath, dstpath)\n  srcpath = relative.toDst\n  const toType = await symlinkType(relative.toCwd, type)\n  const dir = path.dirname(dstpath)\n\n  if (!(await pathExists(dir))) {\n    await mkdirs(dir)\n  }\n\n  return fs.symlink(srcpath, dstpath, toType)\n}\n\nfunction createSymlinkSync (srcpath, dstpath, type) {\n  let stats\n  try {\n    stats = fs.lstatSync(dstpath)\n  } catch { }\n  if (stats && stats.isSymbolicLink()) {\n    const srcStat = fs.statSync(srcpath)\n    const dstStat = fs.statSync(dstpath)\n    if (areIdentical(srcStat, dstStat)) return\n  }\n\n  const relative = symlinkPathsSync(srcpath, dstpath)\n  srcpath = relative.toDst\n  type = symlinkTypeSync(relative.toCwd, type)\n  const dir = path.dirname(dstpath)\n  const exists = fs.existsSync(dir)\n  if (exists) return fs.symlinkSync(srcpath, dstpath, type)\n  mkdirsSync(dir)\n  return fs.symlinkSync(srcpath, dstpath, type)\n}\n\nvar symlink = {\n  createSymlink: u(createSymlink),\n  createSymlinkSync\n}\n\nexport default /*@__PURE__*/commonjsHelpers.getDefaultExportFromCjs(symlink);\nexport { symlink as __moduleExports };",
+      "start": 1718972211638,
+      "end": 1718972211819,
+      "order": "normal",
+      "sourcemaps": {
+        "version": 3,
+        "sources": [
+          ""
+        ],
+        "names": [],
+        "mappings": "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"
+      }
+    },
+    {
+      "name": "vite:dynamic-import-vars",
+      "start": 1718972211819,
+      "end": 1718972211819,
+      "order": "normal"
+    },
+    {
+      "name": "vite:import-glob",
+      "start": 1718972211819,
+      "end": 1718972211819,
+      "order": "normal"
+    },
+    {
+      "name": "vite:build-import-analysis",
+      "start": 1718972211819,
+      "end": 1718972211819,
+      "order": "normal"
+    },
+    {
+      "name": "vite:reporter",
+      "start": 1718972211819,
+      "end": 1718972211819,
+      "order": "normal"
+    }
+  ]
+}

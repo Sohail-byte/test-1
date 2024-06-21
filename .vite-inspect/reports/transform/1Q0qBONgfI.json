@@ -1,0 +1,105 @@
+{
+  "resolvedId": "C:/Users/XFXRe/Desktop/Portfolio/node_modules/fs-extra/lib/ensure/file.js",
+  "transforms": [
+    {
+      "name": "vite:load-fallback",
+      "result": "'use strict'\n\nconst u = require('universalify').fromPromise\nconst path = require('path')\nconst fs = require('../fs')\nconst mkdir = require('../mkdirs')\n\nasync function createFile (file) {\n  let stats\n  try {\n    stats = await fs.stat(file)\n  } catch { }\n  if (stats && stats.isFile()) return\n\n  const dir = path.dirname(file)\n\n  let dirStats = null\n  try {\n    dirStats = await fs.stat(dir)\n  } catch (err) {\n    // if the directory doesn't exist, make it\n    if (err.code === 'ENOENT') {\n      await mkdir.mkdirs(dir)\n      await fs.writeFile(file, '')\n      return\n    } else {\n      throw err\n    }\n  }\n\n  if (dirStats.isDirectory()) {\n    await fs.writeFile(file, '')\n  } else {\n    // parent is not a directory\n    // This is just to cause an internal ENOTDIR error to be thrown\n    await fs.readdir(dir)\n  }\n}\n\nfunction createFileSync (file) {\n  let stats\n  try {\n    stats = fs.statSync(file)\n  } catch { }\n  if (stats && stats.isFile()) return\n\n  const dir = path.dirname(file)\n  try {\n    if (!fs.statSync(dir).isDirectory()) {\n      // parent is not a directory\n      // This is just to cause an internal ENOTDIR error to be thrown\n      fs.readdirSync(dir)\n    }\n  } catch (err) {\n    // If the stat call above failed because the directory doesn't exist, create it\n    if (err && err.code === 'ENOENT') mkdir.mkdirsSync(dir)\n    else throw err\n  }\n\n  fs.writeFileSync(file, '')\n}\n\nmodule.exports = {\n  createFile: u(createFile),\n  createFileSync\n}\n",
+      "start": 1718972211564,
+      "end": 1718972211629,
+      "sourcemaps": null
+    },
+    {
+      "name": "vite:css",
+      "start": 1718972211629,
+      "end": 1718972211629,
+      "order": "normal"
+    },
+    {
+      "name": "vite:esbuild",
+      "start": 1718972211629,
+      "end": 1718972211629,
+      "order": "normal"
+    },
+    {
+      "name": "vite:json",
+      "start": 1718972211629,
+      "end": 1718972211629,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker",
+      "start": 1718972211629,
+      "end": 1718972211629,
+      "order": "normal"
+    },
+    {
+      "name": "vite:define",
+      "start": 1718972211629,
+      "end": 1718972211629,
+      "order": "normal"
+    },
+    {
+      "name": "vite:css-post",
+      "start": 1718972211629,
+      "end": 1718972211629,
+      "order": "normal"
+    },
+    {
+      "name": "vite:build-html",
+      "start": 1718972211629,
+      "end": 1718972211629,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker-import-meta-url",
+      "start": 1718972211629,
+      "end": 1718972211629,
+      "order": "normal"
+    },
+    {
+      "name": "vite:asset-import-meta-url",
+      "start": 1718972211629,
+      "end": 1718972211629,
+      "order": "normal"
+    },
+    {
+      "name": "commonjs",
+      "result": "import * as commonjsHelpers from \"\u0000commonjsHelpers.js\";\nimport require$$0 from \"\\u0000C:/Users/XFXRe/Desktop/Portfolio/node_modules/universalify/index.js?commonjs-proxy\";\nimport require$$1 from \"\\u0000__vite-browser-external?commonjs-proxy\";\nimport require$$2 from \"\\u0000C:/Users/XFXRe/Desktop/Portfolio/node_modules/fs-extra/lib/fs/index.js?commonjs-proxy\";\nimport require$$3 from \"\\u0000C:/Users/XFXRe/Desktop/Portfolio/node_modules/fs-extra/lib/mkdirs/index.js?commonjs-proxy\";\n\n'use strict'\n\nconst u = require$$0.fromPromise\nconst path = require$$1\nconst fs = require$$2\nconst mkdir = require$$3\n\nasync function createFile (file) {\n  let stats\n  try {\n    stats = await fs.stat(file)\n  } catch { }\n  if (stats && stats.isFile()) return\n\n  const dir = path.dirname(file)\n\n  let dirStats = null\n  try {\n    dirStats = await fs.stat(dir)\n  } catch (err) {\n    // if the directory doesn't exist, make it\n    if (err.code === 'ENOENT') {\n      await mkdir.mkdirs(dir)\n      await fs.writeFile(file, '')\n      return\n    } else {\n      throw err\n    }\n  }\n\n  if (dirStats.isDirectory()) {\n    await fs.writeFile(file, '')\n  } else {\n    // parent is not a directory\n    // This is just to cause an internal ENOTDIR error to be thrown\n    await fs.readdir(dir)\n  }\n}\n\nfunction createFileSync (file) {\n  let stats\n  try {\n    stats = fs.statSync(file)\n  } catch { }\n  if (stats && stats.isFile()) return\n\n  const dir = path.dirname(file)\n  try {\n    if (!fs.statSync(dir).isDirectory()) {\n      // parent is not a directory\n      // This is just to cause an internal ENOTDIR error to be thrown\n      fs.readdirSync(dir)\n    }\n  } catch (err) {\n    // If the stat call above failed because the directory doesn't exist, create it\n    if (err && err.code === 'ENOENT') mkdir.mkdirsSync(dir)\n    else throw err\n  }\n\n  fs.writeFileSync(file, '')\n}\n\nvar file = {\n  createFile: u(createFile),\n  createFileSync\n}\n\nexport default /*@__PURE__*/commonjsHelpers.getDefaultExportFromCjs(file);\nexport { file as __moduleExports };",
+      "start": 1718972211629,
+      "end": 1718972211819,
+      "order": "normal",
+      "sourcemaps": {
+        "version": 3,
+        "sources": [
+          ""
+        ],
+        "names": [],
+        "mappings": ";;;;;;AAAA,YAAY;AACZ;AACA,MAAM,CAAC,GAAG,UAAuB,CAAC,WAAW;AAC7C,MAAM,IAAI,GAAG,UAAe;AAC5B,MAAM,EAAE,GAAG,UAAgB;AAC3B,MAAM,KAAK,GAAG,UAAoB;AAClC;AACA,eAAe,UAAU,EAAE,IAAI,EAAE;AACjC,EAAE,IAAI,KAAK;AACX,EAAE,IAAI;AACN,IAAI,KAAK,GAAG,MAAM,EAAE,CAAC,IAAI,CAAC,IAAI,CAAC;AAC/B,GAAG,CAAC,MAAM,GAAG;AACb,EAAE,IAAI,KAAK,IAAI,KAAK,CAAC,MAAM,EAAE,EAAE,MAAM;AACrC;AACA,EAAE,MAAM,GAAG,GAAG,IAAI,CAAC,OAAO,CAAC,IAAI,CAAC;AAChC;AACA,EAAE,IAAI,QAAQ,GAAG,IAAI;AACrB,EAAE,IAAI;AACN,IAAI,QAAQ,GAAG,MAAM,EAAE,CAAC,IAAI,CAAC,GAAG,CAAC;AACjC,GAAG,CAAC,OAAO,GAAG,EAAE;AAChB;AACA,IAAI,IAAI,GAAG,CAAC,IAAI,KAAK,QAAQ,EAAE;AAC/B,MAAM,MAAM,KAAK,CAAC,MAAM,CAAC,GAAG,CAAC;AAC7B,MAAM,MAAM,EAAE,CAAC,SAAS,CAAC,IAAI,EAAE,EAAE,CAAC;AAClC,MAAM,MAAM;AACZ,KAAK,MAAM;AACX,MAAM,MAAM,GAAG;AACf,KAAK;AACL,GAAG;AACH;AACA,EAAE,IAAI,QAAQ,CAAC,WAAW,EAAE,EAAE;AAC9B,IAAI,MAAM,EAAE,CAAC,SAAS,CAAC,IAAI,EAAE,EAAE,CAAC;AAChC,GAAG,MAAM;AACT;AACA;AACA,IAAI,MAAM,EAAE,CAAC,OAAO,CAAC,GAAG,CAAC;AACzB,GAAG;AACH,CAAC;AACD;AACA,SAAS,cAAc,EAAE,IAAI,EAAE;AAC/B,EAAE,IAAI,KAAK;AACX,EAAE,IAAI;AACN,IAAI,KAAK,GAAG,EAAE,CAAC,QAAQ,CAAC,IAAI,CAAC;AAC7B,GAAG,CAAC,MAAM,GAAG;AACb,EAAE,IAAI,KAAK,IAAI,KAAK,CAAC,MAAM,EAAE,EAAE,MAAM;AACrC;AACA,EAAE,MAAM,GAAG,GAAG,IAAI,CAAC,OAAO,CAAC,IAAI,CAAC;AAChC,EAAE,IAAI;AACN,IAAI,IAAI,CAAC,EAAE,CAAC,QAAQ,CAAC,GAAG,CAAC,CAAC,WAAW,EAAE,EAAE;AACzC;AACA;AACA,MAAM,EAAE,CAAC,WAAW,CAAC,GAAG,CAAC;AACzB,KAAK;AACL,GAAG,CAAC,OAAO,GAAG,EAAE;AAChB;AACA,IAAI,IAAI,GAAG,IAAI,GAAG,CAAC,IAAI,KAAK,QAAQ,EAAE,KAAK,CAAC,UAAU,CAAC,GAAG,CAAC;AAC3D,SAAS,MAAM,GAAG;AAClB,GAAG;AACH;AACA,EAAE,EAAE,CAAC,aAAa,CAAC,IAAI,EAAE,EAAE,CAAC;AAC5B,CAAC;AACD;IACA,IAAc,GAAG;AACjB,EAAE,UAAU,EAAE,CAAC,CAAC,UAAU,CAAC;AAC3B,EAAE,cAAc;AAChB"
+      }
+    },
+    {
+      "name": "vite:dynamic-import-vars",
+      "start": 1718972211819,
+      "end": 1718972211819,
+      "order": "normal"
+    },
+    {
+      "name": "vite:import-glob",
+      "start": 1718972211819,
+      "end": 1718972211819,
+      "order": "normal"
+    },
+    {
+      "name": "vite:build-import-analysis",
+      "start": 1718972211819,
+      "end": 1718972211819,
+      "order": "normal"
+    },
+    {
+      "name": "vite:reporter",
+      "start": 1718972211819,
+      "end": 1718972211819,
+      "order": "normal"
+    }
+  ]
+}

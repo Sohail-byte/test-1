@@ -1,0 +1,105 @@
+{
+  "resolvedId": "C:/Users/XFXRe/Desktop/Portfolio/node_modules/fs-extra/lib/path-exists/index.js",
+  "transforms": [
+    {
+      "name": "vite:load-fallback",
+      "result": "'use strict'\nconst u = require('universalify').fromPromise\nconst fs = require('../fs')\n\nfunction pathExists (path) {\n  return fs.access(path).then(() => true).catch(() => false)\n}\n\nmodule.exports = {\n  pathExists: u(pathExists),\n  pathExistsSync: fs.existsSync\n}\n",
+      "start": 1718972211521,
+      "end": 1718972211579,
+      "sourcemaps": null
+    },
+    {
+      "name": "vite:css",
+      "start": 1718972211579,
+      "end": 1718972211579,
+      "order": "normal"
+    },
+    {
+      "name": "vite:esbuild",
+      "start": 1718972211579,
+      "end": 1718972211579,
+      "order": "normal"
+    },
+    {
+      "name": "vite:json",
+      "start": 1718972211579,
+      "end": 1718972211579,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker",
+      "start": 1718972211579,
+      "end": 1718972211579,
+      "order": "normal"
+    },
+    {
+      "name": "vite:define",
+      "start": 1718972211579,
+      "end": 1718972211579,
+      "order": "normal"
+    },
+    {
+      "name": "vite:css-post",
+      "start": 1718972211579,
+      "end": 1718972211579,
+      "order": "normal"
+    },
+    {
+      "name": "vite:build-html",
+      "start": 1718972211579,
+      "end": 1718972211579,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker-import-meta-url",
+      "start": 1718972211579,
+      "end": 1718972211579,
+      "order": "normal"
+    },
+    {
+      "name": "vite:asset-import-meta-url",
+      "start": 1718972211579,
+      "end": 1718972211579,
+      "order": "normal"
+    },
+    {
+      "name": "commonjs",
+      "result": "import * as commonjsHelpers from \"\u0000commonjsHelpers.js\";\nimport require$$0 from \"\\u0000C:/Users/XFXRe/Desktop/Portfolio/node_modules/universalify/index.js?commonjs-proxy\";\nimport require$$1 from \"\\u0000C:/Users/XFXRe/Desktop/Portfolio/node_modules/fs-extra/lib/fs/index.js?commonjs-proxy\";\n\n'use strict'\nconst u = require$$0.fromPromise\nconst fs = require$$1\n\nfunction pathExists (path) {\n  return fs.access(path).then(() => true).catch(() => false)\n}\n\nvar pathExists_1 = {\n  pathExists: u(pathExists),\n  pathExistsSync: fs.existsSync\n}\n\nexport default /*@__PURE__*/commonjsHelpers.getDefaultExportFromCjs(pathExists_1);\nexport { pathExists_1 as __moduleExports };",
+      "start": 1718972211579,
+      "end": 1718972211806,
+      "order": "normal",
+      "sourcemaps": {
+        "version": 3,
+        "sources": [
+          ""
+        ],
+        "names": [],
+        "mappings": ";;;;AAAA,YAAY;AACZ,MAAM,CAAC,GAAG,UAAuB,CAAC,WAAW;AAC7C,MAAM,EAAE,GAAG,UAAgB;AAC3B;AACA,SAAS,UAAU,EAAE,IAAI,EAAE;AAC3B,EAAE,OAAO,EAAE,CAAC,MAAM,CAAC,IAAI,CAAC,CAAC,IAAI,CAAC,MAAM,IAAI,CAAC,CAAC,KAAK,CAAC,MAAM,KAAK,CAAC;AAC5D,CAAC;AACD;IACA,YAAc,GAAG;AACjB,EAAE,UAAU,EAAE,CAAC,CAAC,UAAU,CAAC;AAC3B,EAAE,cAAc,EAAE,EAAE,CAAC,UAAU;AAC/B"
+      }
+    },
+    {
+      "name": "vite:dynamic-import-vars",
+      "start": 1718972211806,
+      "end": 1718972211806,
+      "order": "normal"
+    },
+    {
+      "name": "vite:import-glob",
+      "start": 1718972211806,
+      "end": 1718972211806,
+      "order": "normal"
+    },
+    {
+      "name": "vite:build-import-analysis",
+      "start": 1718972211806,
+      "end": 1718972211806,
+      "order": "normal"
+    },
+    {
+      "name": "vite:reporter",
+      "start": 1718972211806,
+      "end": 1718972211806,
+      "order": "normal"
+    }
+  ]
+}

@@ -1,0 +1,105 @@
+{
+  "resolvedId": "C:/Users/XFXRe/Desktop/Portfolio/node_modules/fs-extra/lib/move/move.js",
+  "transforms": [
+    {
+      "name": "vite:load-fallback",
+      "result": "'use strict'\n\nconst fs = require('../fs')\nconst path = require('path')\nconst { copy } = require('../copy')\nconst { remove } = require('../remove')\nconst { mkdirp } = require('../mkdirs')\nconst { pathExists } = require('../path-exists')\nconst stat = require('../util/stat')\n\nasync function move (src, dest, opts = {}) {\n  const overwrite = opts.overwrite || opts.clobber || false\n\n  const { srcStat, isChangingCase = false } = await stat.checkPaths(src, dest, 'move', opts)\n\n  await stat.checkParentPaths(src, srcStat, dest, 'move')\n\n  // If the parent of dest is not root, make sure it exists before proceeding\n  const destParent = path.dirname(dest)\n  const parsedParentPath = path.parse(destParent)\n  if (parsedParentPath.root !== destParent) {\n    await mkdirp(destParent)\n  }\n\n  return doRename(src, dest, overwrite, isChangingCase)\n}\n\nasync function doRename (src, dest, overwrite, isChangingCase) {\n  if (!isChangingCase) {\n    if (overwrite) {\n      await remove(dest)\n    } else if (await pathExists(dest)) {\n      throw new Error('dest already exists.')\n    }\n  }\n\n  try {\n    // Try w/ rename first, and try copy + remove if EXDEV\n    await fs.rename(src, dest)\n  } catch (err) {\n    if (err.code !== 'EXDEV') {\n      throw err\n    }\n    await moveAcrossDevice(src, dest, overwrite)\n  }\n}\n\nasync function moveAcrossDevice (src, dest, overwrite) {\n  const opts = {\n    overwrite,\n    errorOnExist: true,\n    preserveTimestamps: true\n  }\n\n  await copy(src, dest, opts)\n  return remove(src)\n}\n\nmodule.exports = move\n",
+      "start": 1718972211571,
+      "end": 1718972211642,
+      "sourcemaps": null
+    },
+    {
+      "name": "vite:css",
+      "start": 1718972211643,
+      "end": 1718972211643,
+      "order": "normal"
+    },
+    {
+      "name": "vite:esbuild",
+      "start": 1718972211643,
+      "end": 1718972211643,
+      "order": "normal"
+    },
+    {
+      "name": "vite:json",
+      "start": 1718972211643,
+      "end": 1718972211643,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker",
+      "start": 1718972211643,
+      "end": 1718972211643,
+      "order": "normal"
+    },
+    {
+      "name": "vite:define",
+      "start": 1718972211643,
+      "end": 1718972211643,
+      "order": "normal"
+    },
+    {
+      "name": "vite:css-post",
+      "start": 1718972211643,
+      "end": 1718972211643,
+      "order": "normal"
+    },
+    {
+      "name": "vite:build-html",
+      "start": 1718972211643,
+      "end": 1718972211643,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker-import-meta-url",
+      "start": 1718972211643,
+      "end": 1718972211643,
+      "order": "normal"
+    },
+    {
+      "name": "vite:asset-import-meta-url",
+      "start": 1718972211643,
+      "end": 1718972211643,
+      "order": "normal"
+    },
+    {
+      "name": "commonjs",
+      "result": "import * as commonjsHelpers from \"\u0000commonjsHelpers.js\";\nimport require$$0 from \"\\u0000C:/Users/XFXRe/Desktop/Portfolio/node_modules/fs-extra/lib/fs/index.js?commonjs-proxy\";\nimport require$$1 from \"\\u0000__vite-browser-external?commonjs-proxy\";\nimport require$$2 from \"\\u0000C:/Users/XFXRe/Desktop/Portfolio/node_modules/fs-extra/lib/copy/index.js?commonjs-proxy\";\nimport require$$3 from \"\\u0000C:/Users/XFXRe/Desktop/Portfolio/node_modules/fs-extra/lib/remove/index.js?commonjs-proxy\";\nimport require$$4 from \"\\u0000C:/Users/XFXRe/Desktop/Portfolio/node_modules/fs-extra/lib/mkdirs/index.js?commonjs-proxy\";\nimport require$$5 from \"\\u0000C:/Users/XFXRe/Desktop/Portfolio/node_modules/fs-extra/lib/path-exists/index.js?commonjs-proxy\";\nimport require$$6 from \"\\u0000C:/Users/XFXRe/Desktop/Portfolio/node_modules/fs-extra/lib/util/stat.js?commonjs-proxy\";\n\n'use strict'\n\nconst fs = require$$0\nconst path = require$$1\nconst { copy } = require$$2\nconst { remove } = require$$3\nconst { mkdirp } = require$$4\nconst { pathExists } = require$$5\nconst stat = require$$6\n\nasync function move (src, dest, opts = {}) {\n  const overwrite = opts.overwrite || opts.clobber || false\n\n  const { srcStat, isChangingCase = false } = await stat.checkPaths(src, dest, 'move', opts)\n\n  await stat.checkParentPaths(src, srcStat, dest, 'move')\n\n  // If the parent of dest is not root, make sure it exists before proceeding\n  const destParent = path.dirname(dest)\n  const parsedParentPath = path.parse(destParent)\n  if (parsedParentPath.root !== destParent) {\n    await mkdirp(destParent)\n  }\n\n  return doRename(src, dest, overwrite, isChangingCase)\n}\n\nasync function doRename (src, dest, overwrite, isChangingCase) {\n  if (!isChangingCase) {\n    if (overwrite) {\n      await remove(dest)\n    } else if (await pathExists(dest)) {\n      throw new Error('dest already exists.')\n    }\n  }\n\n  try {\n    // Try w/ rename first, and try copy + remove if EXDEV\n    await fs.rename(src, dest)\n  } catch (err) {\n    if (err.code !== 'EXDEV') {\n      throw err\n    }\n    await moveAcrossDevice(src, dest, overwrite)\n  }\n}\n\nasync function moveAcrossDevice (src, dest, overwrite) {\n  const opts = {\n    overwrite,\n    errorOnExist: true,\n    preserveTimestamps: true\n  }\n\n  await copy(src, dest, opts)\n  return remove(src)\n}\n\nvar move_1 = move\n\nexport default /*@__PURE__*/commonjsHelpers.getDefaultExportFromCjs(move_1);\nexport { move_1 as __moduleExports };",
+      "start": 1718972211643,
+      "end": 1718972211830,
+      "order": "normal",
+      "sourcemaps": {
+        "version": 3,
+        "sources": [
+          ""
+        ],
+        "names": [],
+        "mappings": ";;;;;;;;;AAAA,YAAY;AACZ;AACA,MAAM,EAAE,GAAG,UAAgB;AAC3B,MAAM,IAAI,GAAG,UAAe;AAC5B,MAAM,EAAE,IAAI,EAAE,GAAG,UAAkB;AACnC,MAAM,EAAE,MAAM,EAAE,GAAG,UAAoB;AACvC,MAAM,EAAE,MAAM,EAAE,GAAG,UAAoB;AACvC,MAAM,EAAE,UAAU,EAAE,GAAG,UAAyB;AAChD,MAAM,IAAI,GAAG,UAAuB;AACpC;AACA,eAAe,IAAI,EAAE,GAAG,EAAE,IAAI,EAAE,IAAI,GAAG,EAAE,EAAE;AAC3C,EAAE,MAAM,SAAS,GAAG,IAAI,CAAC,SAAS,IAAI,IAAI,CAAC,OAAO,IAAI,KAAK;AAC3D;AACA,EAAE,MAAM,EAAE,OAAO,EAAE,cAAc,GAAG,KAAK,EAAE,GAAG,MAAM,IAAI,CAAC,UAAU,CAAC,GAAG,EAAE,IAAI,EAAE,MAAM,EAAE,IAAI,CAAC;AAC5F;AACA,EAAE,MAAM,IAAI,CAAC,gBAAgB,CAAC,GAAG,EAAE,OAAO,EAAE,IAAI,EAAE,MAAM,CAAC;AACzD;AACA;AACA,EAAE,MAAM,UAAU,GAAG,IAAI,CAAC,OAAO,CAAC,IAAI,CAAC;AACvC,EAAE,MAAM,gBAAgB,GAAG,IAAI,CAAC,KAAK,CAAC,UAAU,CAAC;AACjD,EAAE,IAAI,gBAAgB,CAAC,IAAI,KAAK,UAAU,EAAE;AAC5C,IAAI,MAAM,MAAM,CAAC,UAAU,CAAC;AAC5B,GAAG;AACH;AACA,EAAE,OAAO,QAAQ,CAAC,GAAG,EAAE,IAAI,EAAE,SAAS,EAAE,cAAc,CAAC;AACvD,CAAC;AACD;AACA,eAAe,QAAQ,EAAE,GAAG,EAAE,IAAI,EAAE,SAAS,EAAE,cAAc,EAAE;AAC/D,EAAE,IAAI,CAAC,cAAc,EAAE;AACvB,IAAI,IAAI,SAAS,EAAE;AACnB,MAAM,MAAM,MAAM,CAAC,IAAI,CAAC;AACxB,KAAK,MAAM,IAAI,MAAM,UAAU,CAAC,IAAI,CAAC,EAAE;AACvC,MAAM,MAAM,IAAI,KAAK,CAAC,sBAAsB,CAAC;AAC7C,KAAK;AACL,GAAG;AACH;AACA,EAAE,IAAI;AACN;AACA,IAAI,MAAM,EAAE,CAAC,MAAM,CAAC,GAAG,EAAE,IAAI,CAAC;AAC9B,GAAG,CAAC,OAAO,GAAG,EAAE;AAChB,IAAI,IAAI,GAAG,CAAC,IAAI,KAAK,OAAO,EAAE;AAC9B,MAAM,MAAM,GAAG;AACf,KAAK;AACL,IAAI,MAAM,gBAAgB,CAAC,GAAG,EAAE,IAAI,EAAE,SAAS,CAAC;AAChD,GAAG;AACH,CAAC;AACD;AACA,eAAe,gBAAgB,EAAE,GAAG,EAAE,IAAI,EAAE,SAAS,EAAE;AACvD,EAAE,MAAM,IAAI,GAAG;AACf,IAAI,SAAS;AACb,IAAI,YAAY,EAAE,IAAI;AACtB,IAAI,kBAAkB,EAAE,IAAI;AAC5B,GAAG;AACH;AACA,EAAE,MAAM,IAAI,CAAC,GAAG,EAAE,IAAI,EAAE,IAAI,CAAC;AAC7B,EAAE,OAAO,MAAM,CAAC,GAAG,CAAC;AACpB,CAAC;AACD;IACA,MAAc,GAAG"
+      }
+    },
+    {
+      "name": "vite:dynamic-import-vars",
+      "start": 1718972211830,
+      "end": 1718972211830,
+      "order": "normal"
+    },
+    {
+      "name": "vite:import-glob",
+      "start": 1718972211830,
+      "end": 1718972211830,
+      "order": "normal"
+    },
+    {
+      "name": "vite:build-import-analysis",
+      "start": 1718972211830,
+      "end": 1718972211830,
+      "order": "normal"
+    },
+    {
+      "name": "vite:reporter",
+      "start": 1718972211830,
+      "end": 1718972211830,
+      "order": "normal"
+    }
+  ]
+}

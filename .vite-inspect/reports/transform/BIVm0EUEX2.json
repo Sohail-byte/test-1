@@ -1,0 +1,105 @@
+{
+  "resolvedId": "C:/Users/XFXRe/Desktop/Portfolio/node_modules/fs-extra/lib/remove/index.js",
+  "transforms": [
+    {
+      "name": "vite:load-fallback",
+      "result": "'use strict'\n\nconst fs = require('graceful-fs')\nconst u = require('universalify').fromCallback\n\nfunction remove (path, callback) {\n  fs.rm(path, { recursive: true, force: true }, callback)\n}\n\nfunction removeSync (path) {\n  fs.rmSync(path, { recursive: true, force: true })\n}\n\nmodule.exports = {\n  remove: u(remove),\n  removeSync\n}\n",
+      "start": 1718972211521,
+      "end": 1718972211581,
+      "sourcemaps": null
+    },
+    {
+      "name": "vite:css",
+      "start": 1718972211581,
+      "end": 1718972211581,
+      "order": "normal"
+    },
+    {
+      "name": "vite:esbuild",
+      "start": 1718972211581,
+      "end": 1718972211581,
+      "order": "normal"
+    },
+    {
+      "name": "vite:json",
+      "start": 1718972211581,
+      "end": 1718972211581,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker",
+      "start": 1718972211581,
+      "end": 1718972211581,
+      "order": "normal"
+    },
+    {
+      "name": "vite:define",
+      "start": 1718972211581,
+      "end": 1718972211581,
+      "order": "normal"
+    },
+    {
+      "name": "vite:css-post",
+      "start": 1718972211581,
+      "end": 1718972211581,
+      "order": "normal"
+    },
+    {
+      "name": "vite:build-html",
+      "start": 1718972211581,
+      "end": 1718972211581,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker-import-meta-url",
+      "start": 1718972211581,
+      "end": 1718972211581,
+      "order": "normal"
+    },
+    {
+      "name": "vite:asset-import-meta-url",
+      "start": 1718972211581,
+      "end": 1718972211581,
+      "order": "normal"
+    },
+    {
+      "name": "commonjs",
+      "result": "import * as commonjsHelpers from \"\u0000commonjsHelpers.js\";\nimport require$$0 from \"\\u0000C:/Users/XFXRe/Desktop/Portfolio/node_modules/graceful-fs/graceful-fs.js?commonjs-proxy\";\nimport require$$1 from \"\\u0000C:/Users/XFXRe/Desktop/Portfolio/node_modules/universalify/index.js?commonjs-proxy\";\n\n'use strict'\n\nconst fs = require$$0\nconst u = require$$1.fromCallback\n\nfunction remove (path, callback) {\n  fs.rm(path, { recursive: true, force: true }, callback)\n}\n\nfunction removeSync (path) {\n  fs.rmSync(path, { recursive: true, force: true })\n}\n\nvar remove_1 = {\n  remove: u(remove),\n  removeSync\n}\n\nexport default /*@__PURE__*/commonjsHelpers.getDefaultExportFromCjs(remove_1);\nexport { remove_1 as __moduleExports };",
+      "start": 1718972211581,
+      "end": 1718972211789,
+      "order": "normal",
+      "sourcemaps": {
+        "version": 3,
+        "sources": [
+          ""
+        ],
+        "names": [],
+        "mappings": ";;;;AAAA,YAAY;AACZ;AACA,MAAM,EAAE,GAAG,UAAsB;AACjC,MAAM,CAAC,GAAG,UAAuB,CAAC,YAAY;AAC9C;AACA,SAAS,MAAM,EAAE,IAAI,EAAE,QAAQ,EAAE;AACjC,EAAE,EAAE,CAAC,EAAE,CAAC,IAAI,EAAE,EAAE,SAAS,EAAE,IAAI,EAAE,KAAK,EAAE,IAAI,EAAE,EAAE,QAAQ,CAAC;AACzD,CAAC;AACD;AACA,SAAS,UAAU,EAAE,IAAI,EAAE;AAC3B,EAAE,EAAE,CAAC,MAAM,CAAC,IAAI,EAAE,EAAE,SAAS,EAAE,IAAI,EAAE,KAAK,EAAE,IAAI,EAAE,CAAC;AACnD,CAAC;AACD;IACA,QAAc,GAAG;AACjB,EAAE,MAAM,EAAE,CAAC,CAAC,MAAM,CAAC;AACnB,EAAE,UAAU;AACZ"
+      }
+    },
+    {
+      "name": "vite:dynamic-import-vars",
+      "start": 1718972211789,
+      "end": 1718972211789,
+      "order": "normal"
+    },
+    {
+      "name": "vite:import-glob",
+      "start": 1718972211789,
+      "end": 1718972211789,
+      "order": "normal"
+    },
+    {
+      "name": "vite:build-import-analysis",
+      "start": 1718972211789,
+      "end": 1718972211789,
+      "order": "normal"
+    },
+    {
+      "name": "vite:reporter",
+      "start": 1718972211789,
+      "end": 1718972211789,
+      "order": "normal"
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "resolvedId": "\u0000C:/Users/XFXRe/Desktop/Portfolio/node_modules/debug/src/common.js?commonjs-proxy",
+  "transforms": [
+    {
+      "name": "commonjs",
+      "result": "export { __moduleExports as default } from \"C:/Users/XFXRe/Desktop/Portfolio/node_modules/debug/src/common.js\";",
+      "start": 1718972211748,
+      "end": 1718972211748,
+      "sourcemaps": null
+    }
+  ]
+}

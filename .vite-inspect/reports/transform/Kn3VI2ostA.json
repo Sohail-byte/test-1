@@ -1,0 +1,105 @@
+{
+  "resolvedId": "C:/Users/XFXRe/Desktop/Portfolio/node_modules/jsonfile/index.js",
+  "transforms": [
+    {
+      "name": "vite:load-fallback",
+      "result": "let _fs\ntry {\n  _fs = require('graceful-fs')\n} catch (_) {\n  _fs = require('fs')\n}\nconst universalify = require('universalify')\nconst { stringify, stripBom } = require('./utils')\n\nasync function _readFile (file, options = {}) {\n  if (typeof options === 'string') {\n    options = { encoding: options }\n  }\n\n  const fs = options.fs || _fs\n\n  const shouldThrow = 'throws' in options ? options.throws : true\n\n  let data = await universalify.fromCallback(fs.readFile)(file, options)\n\n  data = stripBom(data)\n\n  let obj\n  try {\n    obj = JSON.parse(data, options ? options.reviver : null)\n  } catch (err) {\n    if (shouldThrow) {\n      err.message = `${file}: ${err.message}`\n      throw err\n    } else {\n      return null\n    }\n  }\n\n  return obj\n}\n\nconst readFile = universalify.fromPromise(_readFile)\n\nfunction readFileSync (file, options = {}) {\n  if (typeof options === 'string') {\n    options = { encoding: options }\n  }\n\n  const fs = options.fs || _fs\n\n  const shouldThrow = 'throws' in options ? options.throws : true\n\n  try {\n    let content = fs.readFileSync(file, options)\n    content = stripBom(content)\n    return JSON.parse(content, options.reviver)\n  } catch (err) {\n    if (shouldThrow) {\n      err.message = `${file}: ${err.message}`\n      throw err\n    } else {\n      return null\n    }\n  }\n}\n\nasync function _writeFile (file, obj, options = {}) {\n  const fs = options.fs || _fs\n\n  const str = stringify(obj, options)\n\n  await universalify.fromCallback(fs.writeFile)(file, str, options)\n}\n\nconst writeFile = universalify.fromPromise(_writeFile)\n\nfunction writeFileSync (file, obj, options = {}) {\n  const fs = options.fs || _fs\n\n  const str = stringify(obj, options)\n  // not sure if fs.writeFileSync returns anything, but just in case\n  return fs.writeFileSync(file, str, options)\n}\n\nconst jsonfile = {\n  readFile,\n  readFileSync,\n  writeFile,\n  writeFileSync\n}\n\nmodule.exports = jsonfile\n",
+      "start": 1718972211649,
+      "end": 1718972211696,
+      "sourcemaps": null
+    },
+    {
+      "name": "vite:css",
+      "start": 1718972211696,
+      "end": 1718972211696,
+      "order": "normal"
+    },
+    {
+      "name": "vite:esbuild",
+      "start": 1718972211696,
+      "end": 1718972211696,
+      "order": "normal"
+    },
+    {
+      "name": "vite:json",
+      "start": 1718972211696,
+      "end": 1718972211696,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker",
+      "start": 1718972211696,
+      "end": 1718972211696,
+      "order": "normal"
+    },
+    {
+      "name": "vite:define",
+      "start": 1718972211696,
+      "end": 1718972211696,
+      "order": "normal"
+    },
+    {
+      "name": "vite:css-post",
+      "start": 1718972211696,
+      "end": 1718972211696,
+      "order": "normal"
+    },
+    {
+      "name": "vite:build-html",
+      "start": 1718972211696,
+      "end": 1718972211696,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker-import-meta-url",
+      "start": 1718972211696,
+      "end": 1718972211696,
+      "order": "normal"
+    },
+    {
+      "name": "vite:asset-import-meta-url",
+      "start": 1718972211696,
+      "end": 1718972211696,
+      "order": "normal"
+    },
+    {
+      "name": "commonjs",
+      "result": "import * as commonjsHelpers from \"\u0000commonjsHelpers.js\";\nimport require$$0 from \"\\u0000C:/Users/XFXRe/Desktop/Portfolio/node_modules/graceful-fs/graceful-fs.js?commonjs-proxy\";\nimport require$$1 from \"\\u0000__vite-browser-external?commonjs-proxy\";\nimport require$$2 from \"\\u0000C:/Users/XFXRe/Desktop/Portfolio/node_modules/universalify/index.js?commonjs-proxy\";\nimport require$$3 from \"\\u0000C:/Users/XFXRe/Desktop/Portfolio/node_modules/jsonfile/utils.js?commonjs-proxy\";\n\nlet _fs\ntry {\n  _fs = require$$0\n} catch (_) {\n  _fs = require$$1\n}\nconst universalify = require$$2\nconst { stringify, stripBom } = require$$3\n\nasync function _readFile (file, options = {}) {\n  if (typeof options === 'string') {\n    options = { encoding: options }\n  }\n\n  const fs = options.fs || _fs\n\n  const shouldThrow = 'throws' in options ? options.throws : true\n\n  let data = await universalify.fromCallback(fs.readFile)(file, options)\n\n  data = stripBom(data)\n\n  let obj\n  try {\n    obj = JSON.parse(data, options ? options.reviver : null)\n  } catch (err) {\n    if (shouldThrow) {\n      err.message = `${file}: ${err.message}`\n      throw err\n    } else {\n      return null\n    }\n  }\n\n  return obj\n}\n\nconst readFile = universalify.fromPromise(_readFile)\n\nfunction readFileSync (file, options = {}) {\n  if (typeof options === 'string') {\n    options = { encoding: options }\n  }\n\n  const fs = options.fs || _fs\n\n  const shouldThrow = 'throws' in options ? options.throws : true\n\n  try {\n    let content = fs.readFileSync(file, options)\n    content = stripBom(content)\n    return JSON.parse(content, options.reviver)\n  } catch (err) {\n    if (shouldThrow) {\n      err.message = `${file}: ${err.message}`\n      throw err\n    } else {\n      return null\n    }\n  }\n}\n\nasync function _writeFile (file, obj, options = {}) {\n  const fs = options.fs || _fs\n\n  const str = stringify(obj, options)\n\n  await universalify.fromCallback(fs.writeFile)(file, str, options)\n}\n\nconst writeFile = universalify.fromPromise(_writeFile)\n\nfunction writeFileSync (file, obj, options = {}) {\n  const fs = options.fs || _fs\n\n  const str = stringify(obj, options)\n  // not sure if fs.writeFileSync returns anything, but just in case\n  return fs.writeFileSync(file, str, options)\n}\n\nconst jsonfile = {\n  readFile,\n  readFileSync,\n  writeFile,\n  writeFileSync\n}\n\nvar jsonfile_1 = jsonfile\n\nexport default /*@__PURE__*/commonjsHelpers.getDefaultExportFromCjs(jsonfile_1);\nexport { jsonfile_1 as __moduleExports };",
+      "start": 1718972211696,
+      "end": 1718972211789,
+      "order": "normal",
+      "sourcemaps": {
+        "version": 3,
+        "sources": [
+          ""
+        ],
+        "names": [],
+        "mappings": "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"
+      }
+    },
+    {
+      "name": "vite:dynamic-import-vars",
+      "start": 1718972211789,
+      "end": 1718972211789,
+      "order": "normal"
+    },
+    {
+      "name": "vite:import-glob",
+      "start": 1718972211789,
+      "end": 1718972211789,
+      "order": "normal"
+    },
+    {
+      "name": "vite:build-import-analysis",
+      "start": 1718972211789,
+      "end": 1718972211789,
+      "order": "normal"
+    },
+    {
+      "name": "vite:reporter",
+      "start": 1718972211789,
+      "end": 1718972211789,
+      "order": "normal"
+    }
+  ]
+}

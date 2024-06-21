@@ -1,0 +1,11 @@
+{
+  "resolvedId": "\u0000C:/Users/XFXRe/Desktop/Portfolio/node_modules/picocolors/picocolors.browser.js?commonjs-module",
+  "transforms": [
+    {
+      "name": "commonjs",
+      "result": "var picocolors_browser = {exports: {}}; export {picocolors_browser as __module}",
+      "start": 1718972211536,
+      "end": 1718972211536
+    }
+  ]
+}

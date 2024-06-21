@@ -1,0 +1,97 @@
+{
+  "resolvedId": "C:/Users/XFXRe/Desktop/Portfolio/pages/project-1.html",
+  "transforms": [
+    {
+      "name": "vite:load-fallback",
+      "result": "<!DOCTYPE html>\r\n<html lang=\"en\">\r\n<head>\r\n    <meta charset=\"UTF-8\">\r\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\r\n    <title>Document</title>\r\n</head>\r\n<body>\r\n    <h1>Helllo</h1>\r\n</body>\r\n</html>",
+      "start": 1718972211347,
+      "end": 1718972211349,
+      "sourcemaps": null
+    },
+    {
+      "name": "vite:css",
+      "start": 1718972211349,
+      "end": 1718972211349,
+      "order": "normal"
+    },
+    {
+      "name": "vite:esbuild",
+      "start": 1718972211349,
+      "end": 1718972211350,
+      "order": "normal"
+    },
+    {
+      "name": "vite:json",
+      "start": 1718972211350,
+      "end": 1718972211350,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker",
+      "start": 1718972211350,
+      "end": 1718972211350,
+      "order": "normal"
+    },
+    {
+      "name": "vite:define",
+      "start": 1718972211350,
+      "end": 1718972211350,
+      "order": "normal"
+    },
+    {
+      "name": "vite:css-post",
+      "start": 1718972211350,
+      "end": 1718972211350,
+      "order": "normal"
+    },
+    {
+      "name": "vite:build-html",
+      "result": "",
+      "start": 1718972211350,
+      "end": 1718972211370,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker-import-meta-url",
+      "start": 1718972211370,
+      "end": 1718972211370,
+      "order": "normal"
+    },
+    {
+      "name": "vite:asset-import-meta-url",
+      "start": 1718972211370,
+      "end": 1718972211370,
+      "order": "normal"
+    },
+    {
+      "name": "commonjs",
+      "start": 1718972211371,
+      "end": 1718972211371,
+      "order": "normal"
+    },
+    {
+      "name": "vite:dynamic-import-vars",
+      "start": 1718972211371,
+      "end": 1718972211371,
+      "order": "normal"
+    },
+    {
+      "name": "vite:import-glob",
+      "start": 1718972211371,
+      "end": 1718972211371,
+      "order": "normal"
+    },
+    {
+      "name": "vite:build-import-analysis",
+      "start": 1718972211371,
+      "end": 1718972211371,
+      "order": "normal"
+    },
+    {
+      "name": "vite:reporter",
+      "start": 1718972211371,
+      "end": 1718972211372,
+      "order": "normal"
+    }
+  ]
+}

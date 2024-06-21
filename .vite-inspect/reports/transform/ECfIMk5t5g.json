@@ -1,0 +1,96 @@
+{
+  "resolvedId": "C:/Users/XFXRe/Desktop/Portfolio/node_modules/run-applescript/index.js",
+  "transforms": [
+    {
+      "name": "vite:load-fallback",
+      "result": "import process from 'node:process';\nimport {promisify} from 'node:util';\nimport {execFile, execFileSync} from 'node:child_process';\n\nconst execFileAsync = promisify(execFile);\n\nexport async function runAppleScript(script, {humanReadableOutput = true} = {}) {\n\tif (process.platform !== 'darwin') {\n\t\tthrow new Error('macOS only');\n\t}\n\n\tconst outputArguments = humanReadableOutput ? [] : ['-ss'];\n\n\tconst {stdout} = await execFileAsync('osascript', ['-e', script, outputArguments]);\n\treturn stdout.trim();\n}\n\nexport function runAppleScriptSync(script, {humanReadableOutput = true} = {}) {\n\tif (process.platform !== 'darwin') {\n\t\tthrow new Error('macOS only');\n\t}\n\n\tconst outputArguments = humanReadableOutput ? [] : ['-ss'];\n\n\tconst stdout = execFileSync('osascript', ['-e', script, ...outputArguments], {\n\t\tencoding: 'utf8',\n\t\tstdio: ['ignore', 'pipe', 'ignore'],\n\t\ttimeout: 500,\n\t});\n\n\treturn stdout.trim();\n}\n",
+      "start": 1718972211768,
+      "end": 1718972211817,
+      "sourcemaps": null
+    },
+    {
+      "name": "vite:css",
+      "start": 1718972211817,
+      "end": 1718972211817,
+      "order": "normal"
+    },
+    {
+      "name": "vite:esbuild",
+      "start": 1718972211817,
+      "end": 1718972211817,
+      "order": "normal"
+    },
+    {
+      "name": "vite:json",
+      "start": 1718972211817,
+      "end": 1718972211817,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker",
+      "start": 1718972211817,
+      "end": 1718972211817,
+      "order": "normal"
+    },
+    {
+      "name": "vite:define",
+      "start": 1718972211817,
+      "end": 1718972211817,
+      "order": "normal"
+    },
+    {
+      "name": "vite:css-post",
+      "start": 1718972211817,
+      "end": 1718972211817,
+      "order": "normal"
+    },
+    {
+      "name": "vite:build-html",
+      "start": 1718972211817,
+      "end": 1718972211817,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker-import-meta-url",
+      "start": 1718972211817,
+      "end": 1718972211817,
+      "order": "normal"
+    },
+    {
+      "name": "vite:asset-import-meta-url",
+      "start": 1718972211817,
+      "end": 1718972211817,
+      "order": "normal"
+    },
+    {
+      "name": "commonjs",
+      "start": 1718972211817,
+      "end": 1718972211818,
+      "order": "normal"
+    },
+    {
+      "name": "vite:dynamic-import-vars",
+      "start": 1718972211818,
+      "end": 1718972211818,
+      "order": "normal"
+    },
+    {
+      "name": "vite:import-glob",
+      "start": 1718972211818,
+      "end": 1718972211818,
+      "order": "normal"
+    },
+    {
+      "name": "vite:build-import-analysis",
+      "start": 1718972211818,
+      "end": 1718972211818,
+      "order": "normal"
+    },
+    {
+      "name": "vite:reporter",
+      "start": 1718972211818,
+      "end": 1718972211818,
+      "order": "normal"
+    }
+  ]
+}

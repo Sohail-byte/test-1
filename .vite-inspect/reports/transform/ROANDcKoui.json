@@ -1,0 +1,105 @@
+{
+  "resolvedId": "C:/Users/XFXRe/Desktop/Portfolio/node_modules/fs-extra/lib/json/index.js",
+  "transforms": [
+    {
+      "name": "vite:load-fallback",
+      "result": "'use strict'\n\nconst u = require('universalify').fromPromise\nconst jsonFile = require('./jsonfile')\n\njsonFile.outputJson = u(require('./output-json'))\njsonFile.outputJsonSync = require('./output-json-sync')\n// aliases\njsonFile.outputJSON = jsonFile.outputJson\njsonFile.outputJSONSync = jsonFile.outputJsonSync\njsonFile.writeJSON = jsonFile.writeJson\njsonFile.writeJSONSync = jsonFile.writeJsonSync\njsonFile.readJSON = jsonFile.readJson\njsonFile.readJSONSync = jsonFile.readJsonSync\n\nmodule.exports = jsonFile\n",
+      "start": 1718972211521,
+      "end": 1718972211571,
+      "sourcemaps": null
+    },
+    {
+      "name": "vite:css",
+      "start": 1718972211571,
+      "end": 1718972211571,
+      "order": "normal"
+    },
+    {
+      "name": "vite:esbuild",
+      "start": 1718972211571,
+      "end": 1718972211571,
+      "order": "normal"
+    },
+    {
+      "name": "vite:json",
+      "start": 1718972211571,
+      "end": 1718972211571,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker",
+      "start": 1718972211571,
+      "end": 1718972211571,
+      "order": "normal"
+    },
+    {
+      "name": "vite:define",
+      "start": 1718972211571,
+      "end": 1718972211571,
+      "order": "normal"
+    },
+    {
+      "name": "vite:css-post",
+      "start": 1718972211571,
+      "end": 1718972211571,
+      "order": "normal"
+    },
+    {
+      "name": "vite:build-html",
+      "start": 1718972211571,
+      "end": 1718972211571,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker-import-meta-url",
+      "start": 1718972211571,
+      "end": 1718972211571,
+      "order": "normal"
+    },
+    {
+      "name": "vite:asset-import-meta-url",
+      "start": 1718972211571,
+      "end": 1718972211571,
+      "order": "normal"
+    },
+    {
+      "name": "commonjs",
+      "result": "import * as commonjsHelpers from \"\u0000commonjsHelpers.js\";\nimport require$$0 from \"\\u0000C:/Users/XFXRe/Desktop/Portfolio/node_modules/universalify/index.js?commonjs-proxy\";\nimport require$$1 from \"\\u0000C:/Users/XFXRe/Desktop/Portfolio/node_modules/fs-extra/lib/json/jsonfile.js?commonjs-proxy\";\nimport require$$2 from \"\\u0000C:/Users/XFXRe/Desktop/Portfolio/node_modules/fs-extra/lib/json/output-json.js?commonjs-proxy\";\nimport require$$3 from \"\\u0000C:/Users/XFXRe/Desktop/Portfolio/node_modules/fs-extra/lib/json/output-json-sync.js?commonjs-proxy\";\n\n'use strict'\n\nconst u = require$$0.fromPromise\nconst jsonFile = require$$1\n\njsonFile.outputJson = u(require$$2)\njsonFile.outputJsonSync = require$$3\n// aliases\njsonFile.outputJSON = jsonFile.outputJson\njsonFile.outputJSONSync = jsonFile.outputJsonSync\njsonFile.writeJSON = jsonFile.writeJson\njsonFile.writeJSONSync = jsonFile.writeJsonSync\njsonFile.readJSON = jsonFile.readJson\njsonFile.readJSONSync = jsonFile.readJsonSync\n\nvar json = jsonFile\n\nexport default /*@__PURE__*/commonjsHelpers.getDefaultExportFromCjs(json);\nexport { json as __moduleExports };",
+      "start": 1718972211571,
+      "end": 1718972211830,
+      "order": "normal",
+      "sourcemaps": {
+        "version": 3,
+        "sources": [
+          ""
+        ],
+        "names": [],
+        "mappings": ";;;;;;AAAA,YAAY;AACZ;AACA,MAAM,CAAC,GAAG,UAAuB,CAAC,WAAW;AAC7C,MAAM,QAAQ,GAAG,UAAqB;AACtC;AACA,QAAQ,CAAC,UAAU,GAAG,CAAC,CAAC,UAAwB,CAAC;AACjD,QAAQ,CAAC,cAAc,GAAG,UAA6B;AACvD;AACA,QAAQ,CAAC,UAAU,GAAG,QAAQ,CAAC,UAAU;AACzC,QAAQ,CAAC,cAAc,GAAG,QAAQ,CAAC,cAAc;AACjD,QAAQ,CAAC,SAAS,GAAG,QAAQ,CAAC,SAAS;AACvC,QAAQ,CAAC,aAAa,GAAG,QAAQ,CAAC,aAAa;AAC/C,QAAQ,CAAC,QAAQ,GAAG,QAAQ,CAAC,QAAQ;AACrC,QAAQ,CAAC,YAAY,GAAG,QAAQ,CAAC,YAAY;AAC7C;IACA,IAAc,GAAG"
+      }
+    },
+    {
+      "name": "vite:dynamic-import-vars",
+      "start": 1718972211830,
+      "end": 1718972211830,
+      "order": "normal"
+    },
+    {
+      "name": "vite:import-glob",
+      "start": 1718972211830,
+      "end": 1718972211830,
+      "order": "normal"
+    },
+    {
+      "name": "vite:build-import-analysis",
+      "start": 1718972211830,
+      "end": 1718972211830,
+      "order": "normal"
+    },
+    {
+      "name": "vite:reporter",
+      "start": 1718972211830,
+      "end": 1718972211830,
+      "order": "normal"
+    }
+  ]
+}

@@ -1,0 +1,105 @@
+{
+  "resolvedId": "C:/Users/XFXRe/Desktop/Portfolio/node_modules/fs-extra/lib/util/utimes.js",
+  "transforms": [
+    {
+      "name": "vite:load-fallback",
+      "result": "'use strict'\n\nconst fs = require('../fs')\nconst u = require('universalify').fromPromise\n\nasync function utimesMillis (path, atime, mtime) {\n  // if (!HAS_MILLIS_RES) return fs.utimes(path, atime, mtime, callback)\n  const fd = await fs.open(path, 'r+')\n\n  let closeErr = null\n\n  try {\n    await fs.futimes(fd, atime, mtime)\n  } finally {\n    try {\n      await fs.close(fd)\n    } catch (e) {\n      closeErr = e\n    }\n  }\n\n  if (closeErr) {\n    throw closeErr\n  }\n}\n\nfunction utimesMillisSync (path, atime, mtime) {\n  const fd = fs.openSync(path, 'r+')\n  fs.futimesSync(fd, atime, mtime)\n  return fs.closeSync(fd)\n}\n\nmodule.exports = {\n  utimesMillis: u(utimesMillis),\n  utimesMillisSync\n}\n",
+      "start": 1718972211622,
+      "end": 1718972211686,
+      "sourcemaps": null
+    },
+    {
+      "name": "vite:css",
+      "start": 1718972211686,
+      "end": 1718972211686,
+      "order": "normal"
+    },
+    {
+      "name": "vite:esbuild",
+      "start": 1718972211686,
+      "end": 1718972211686,
+      "order": "normal"
+    },
+    {
+      "name": "vite:json",
+      "start": 1718972211686,
+      "end": 1718972211686,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker",
+      "start": 1718972211686,
+      "end": 1718972211686,
+      "order": "normal"
+    },
+    {
+      "name": "vite:define",
+      "start": 1718972211686,
+      "end": 1718972211686,
+      "order": "normal"
+    },
+    {
+      "name": "vite:css-post",
+      "start": 1718972211686,
+      "end": 1718972211686,
+      "order": "normal"
+    },
+    {
+      "name": "vite:build-html",
+      "start": 1718972211686,
+      "end": 1718972211686,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker-import-meta-url",
+      "start": 1718972211686,
+      "end": 1718972211686,
+      "order": "normal"
+    },
+    {
+      "name": "vite:asset-import-meta-url",
+      "start": 1718972211686,
+      "end": 1718972211686,
+      "order": "normal"
+    },
+    {
+      "name": "commonjs",
+      "result": "import * as commonjsHelpers from \"\u0000commonjsHelpers.js\";\nimport require$$0 from \"\\u0000C:/Users/XFXRe/Desktop/Portfolio/node_modules/fs-extra/lib/fs/index.js?commonjs-proxy\";\nimport require$$1 from \"\\u0000C:/Users/XFXRe/Desktop/Portfolio/node_modules/universalify/index.js?commonjs-proxy\";\n\n'use strict'\n\nconst fs = require$$0\nconst u = require$$1.fromPromise\n\nasync function utimesMillis (path, atime, mtime) {\n  // if (!HAS_MILLIS_RES) return fs.utimes(path, atime, mtime, callback)\n  const fd = await fs.open(path, 'r+')\n\n  let closeErr = null\n\n  try {\n    await fs.futimes(fd, atime, mtime)\n  } finally {\n    try {\n      await fs.close(fd)\n    } catch (e) {\n      closeErr = e\n    }\n  }\n\n  if (closeErr) {\n    throw closeErr\n  }\n}\n\nfunction utimesMillisSync (path, atime, mtime) {\n  const fd = fs.openSync(path, 'r+')\n  fs.futimesSync(fd, atime, mtime)\n  return fs.closeSync(fd)\n}\n\nvar utimes = {\n  utimesMillis: u(utimesMillis),\n  utimesMillisSync\n}\n\nexport default /*@__PURE__*/commonjsHelpers.getDefaultExportFromCjs(utimes);\nexport { utimes as __moduleExports };",
+      "start": 1718972211686,
+      "end": 1718972211806,
+      "order": "normal",
+      "sourcemaps": {
+        "version": 3,
+        "sources": [
+          ""
+        ],
+        "names": [],
+        "mappings": ";;;;AAAA,YAAY;AACZ;AACA,MAAM,EAAE,GAAG,UAAgB;AAC3B,MAAM,CAAC,GAAG,UAAuB,CAAC,WAAW;AAC7C;AACA,eAAe,YAAY,EAAE,IAAI,EAAE,KAAK,EAAE,KAAK,EAAE;AACjD;AACA,EAAE,MAAM,EAAE,GAAG,MAAM,EAAE,CAAC,IAAI,CAAC,IAAI,EAAE,IAAI,CAAC;AACtC;AACA,EAAE,IAAI,QAAQ,GAAG,IAAI;AACrB;AACA,EAAE,IAAI;AACN,IAAI,MAAM,EAAE,CAAC,OAAO,CAAC,EAAE,EAAE,KAAK,EAAE,KAAK,CAAC;AACtC,GAAG,SAAS;AACZ,IAAI,IAAI;AACR,MAAM,MAAM,EAAE,CAAC,KAAK,CAAC,EAAE,CAAC;AACxB,KAAK,CAAC,OAAO,CAAC,EAAE;AAChB,MAAM,QAAQ,GAAG,CAAC;AAClB,KAAK;AACL,GAAG;AACH;AACA,EAAE,IAAI,QAAQ,EAAE;AAChB,IAAI,MAAM,QAAQ;AAClB,GAAG;AACH,CAAC;AACD;AACA,SAAS,gBAAgB,EAAE,IAAI,EAAE,KAAK,EAAE,KAAK,EAAE;AAC/C,EAAE,MAAM,EAAE,GAAG,EAAE,CAAC,QAAQ,CAAC,IAAI,EAAE,IAAI,CAAC;AACpC,EAAE,EAAE,CAAC,WAAW,CAAC,EAAE,EAAE,KAAK,EAAE,KAAK,CAAC;AAClC,EAAE,OAAO,EAAE,CAAC,SAAS,CAAC,EAAE,CAAC;AACzB,CAAC;AACD;IACA,MAAc,GAAG;AACjB,EAAE,YAAY,EAAE,CAAC,CAAC,YAAY,CAAC;AAC/B,EAAE,gBAAgB;AAClB"
+      }
+    },
+    {
+      "name": "vite:dynamic-import-vars",
+      "start": 1718972211806,
+      "end": 1718972211806,
+      "order": "normal"
+    },
+    {
+      "name": "vite:import-glob",
+      "start": 1718972211806,
+      "end": 1718972211806,
+      "order": "normal"
+    },
+    {
+      "name": "vite:build-import-analysis",
+      "start": 1718972211806,
+      "end": 1718972211806,
+      "order": "normal"
+    },
+    {
+      "name": "vite:reporter",
+      "start": 1718972211806,
+      "end": 1718972211806,
+      "order": "normal"
+    }
+  ]
+}

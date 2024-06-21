@@ -1,0 +1,96 @@
+{
+  "resolvedId": "C:/Users/XFXRe/Desktop/Portfolio/vite.config.js",
+  "transforms": [
+    {
+      "name": "vite:load-fallback",
+      "result": "\r\nimport Inspect from 'vite-plugin-inspect'\r\n\r\nimport { join, resolve } from 'path'\r\n\r\n\r\n\r\n\r\nexport default{\r\n    plugins: [\r\n        Inspect({\r\n          build: true,\r\n          outputDir: '.vite-inspect'\r\n        })\r\n      ],\r\n    build: {\r\n        rollupOptions: {\r\n            input: {\r\n                main: resolve(__dirname, 'index.html'),\r\n                project: resolve(__dirname, 'pages/project-1.html')\r\n            }\r\n        }\r\n    }\r\n}",
+      "start": 1718972211383,
+      "end": 1718972211388,
+      "sourcemaps": null
+    },
+    {
+      "name": "vite:css",
+      "start": 1718972211388,
+      "end": 1718972211388,
+      "order": "normal"
+    },
+    {
+      "name": "vite:esbuild",
+      "start": 1718972211388,
+      "end": 1718972211388,
+      "order": "normal"
+    },
+    {
+      "name": "vite:json",
+      "start": 1718972211388,
+      "end": 1718972211388,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker",
+      "start": 1718972211388,
+      "end": 1718972211388,
+      "order": "normal"
+    },
+    {
+      "name": "vite:define",
+      "start": 1718972211388,
+      "end": 1718972211388,
+      "order": "normal"
+    },
+    {
+      "name": "vite:css-post",
+      "start": 1718972211388,
+      "end": 1718972211388,
+      "order": "normal"
+    },
+    {
+      "name": "vite:build-html",
+      "start": 1718972211388,
+      "end": 1718972211388,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker-import-meta-url",
+      "start": 1718972211388,
+      "end": 1718972211388,
+      "order": "normal"
+    },
+    {
+      "name": "vite:asset-import-meta-url",
+      "start": 1718972211388,
+      "end": 1718972211388,
+      "order": "normal"
+    },
+    {
+      "name": "commonjs",
+      "start": 1718972211388,
+      "end": 1718972211388,
+      "order": "normal"
+    },
+    {
+      "name": "vite:dynamic-import-vars",
+      "start": 1718972211388,
+      "end": 1718972211388,
+      "order": "normal"
+    },
+    {
+      "name": "vite:import-glob",
+      "start": 1718972211388,
+      "end": 1718972211388,
+      "order": "normal"
+    },
+    {
+      "name": "vite:build-import-analysis",
+      "start": 1718972211388,
+      "end": 1718972211388,
+      "order": "normal"
+    },
+    {
+      "name": "vite:reporter",
+      "start": 1718972211388,
+      "end": 1718972211388,
+      "order": "normal"
+    }
+  ]
+}

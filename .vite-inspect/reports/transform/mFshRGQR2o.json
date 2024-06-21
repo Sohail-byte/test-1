@@ -1,0 +1,96 @@
+{
+  "resolvedId": "C:/Users/XFXRe/Desktop/Portfolio/node_modules/error-stack-parser-es/dist/lite.mjs",
+  "transforms": [
+    {
+      "name": "vite:load-fallback",
+      "result": "const FIREFOX_SAFARI_STACK_REGEXP = /(^|@)\\S+:\\d+/;\nconst CHROME_IE_STACK_REGEXP = /^\\s*at .*(\\S+:\\d+|\\(native\\))/m;\nconst SAFARI_NATIVE_CODE_REGEXP = /^(eval@)?(\\[native code])?$/;\nfunction parse(error, options) {\n  if (typeof error.stacktrace !== \"undefined\" || typeof error[\"opera#sourceloc\"] !== \"undefined\")\n    return parseOpera(error, options);\n  else if (error.stack && error.stack.match(CHROME_IE_STACK_REGEXP))\n    return parseV8OrIE(error, options);\n  else if (error.stack)\n    return parseFFOrSafari(error, options);\n  else\n    throw new Error(\"Cannot parse given Error object\");\n}\nfunction parseStack(stackString, options) {\n  if (stackString.match(CHROME_IE_STACK_REGEXP))\n    return parseV8OrIeString(stackString, options);\n  else\n    return parseFFOrSafariString(stackString, options);\n}\nfunction extractLocation(urlLike) {\n  if (!urlLike.includes(\":\"))\n    return [urlLike, void 0, void 0];\n  const regExp = /(.+?)(?::(\\d+))?(?::(\\d+))?$/;\n  const parts = regExp.exec(urlLike.replace(/[()]/g, \"\"));\n  return [parts[1], parts[2] || void 0, parts[3] || void 0];\n}\nfunction applySlice(lines, options) {\n  if (options && options.slice != null) {\n    if (Array.isArray(options.slice))\n      return lines.slice(options.slice[0], options.slice[1]);\n    return lines.slice(0, options.slice);\n  }\n  return lines;\n}\nfunction parseV8OrIE(error, options) {\n  return parseV8OrIeString(error.stack, options);\n}\nfunction parseV8OrIeString(stack, options) {\n  const filtered = applySlice(\n    stack.split(\"\\n\").filter((line) => {\n      return !!line.match(CHROME_IE_STACK_REGEXP);\n    }),\n    options\n  );\n  return filtered.map((line) => {\n    if (line.includes(\"(eval \")) {\n      line = line.replace(/eval code/g, \"eval\").replace(/(\\(eval at [^()]*)|(,.*$)/g, \"\");\n    }\n    let sanitizedLine = line.replace(/^\\s+/, \"\").replace(/\\(eval code/g, \"(\").replace(/^.*?\\s+/, \"\");\n    const location = sanitizedLine.match(/ (\\(.+\\)$)/);\n    sanitizedLine = location ? sanitizedLine.replace(location[0], \"\") : sanitizedLine;\n    const locationParts = extractLocation(location ? location[1] : sanitizedLine);\n    const functionName = location && sanitizedLine || void 0;\n    const fileName = [\"eval\", \"<anonymous>\"].includes(locationParts[0]) ? void 0 : locationParts[0];\n    return {\n      function: functionName,\n      file: fileName,\n      line: locationParts[1] ? +locationParts[1] : void 0,\n      col: locationParts[2] ? +locationParts[2] : void 0,\n      raw: line\n    };\n  });\n}\nfunction parseFFOrSafari(error, options) {\n  return parseFFOrSafariString(error.stack, options);\n}\nfunction parseFFOrSafariString(stack, options) {\n  const filtered = applySlice(\n    stack.split(\"\\n\").filter((line) => {\n      return !line.match(SAFARI_NATIVE_CODE_REGEXP);\n    }),\n    options\n  );\n  return filtered.map((line) => {\n    if (line.includes(\" > eval\"))\n      line = line.replace(/ line (\\d+)(?: > eval line \\d+)* > eval:\\d+:\\d+/g, \":$1\");\n    if (!line.includes(\"@\") && !line.includes(\":\")) {\n      return {\n        function: line\n      };\n    } else {\n      const functionNameRegex = /((.*\".+\"[^@]*)?[^@]*)(?:@)/;\n      const matches = line.match(functionNameRegex);\n      const functionName = matches && matches[1] ? matches[1] : void 0;\n      const locationParts = extractLocation(line.replace(functionNameRegex, \"\"));\n      return {\n        function: functionName,\n        file: locationParts[0],\n        line: locationParts[1] ? +locationParts[1] : void 0,\n        col: locationParts[2] ? +locationParts[2] : void 0,\n        raw: line\n      };\n    }\n  });\n}\nfunction parseOpera(e, options) {\n  if (!e.stacktrace || e.message.includes(\"\\n\") && e.message.split(\"\\n\").length > e.stacktrace.split(\"\\n\").length)\n    return parseOpera9(e);\n  else if (!e.stack)\n    return parseOpera10(e);\n  else\n    return parseOpera11(e, options);\n}\nfunction parseOpera9(e, options) {\n  const lineRE = /Line (\\d+).*script (?:in )?(\\S+)/i;\n  const lines = e.message.split(\"\\n\");\n  const result = [];\n  for (let i = 2, len = lines.length; i < len; i += 2) {\n    const match = lineRE.exec(lines[i]);\n    if (match) {\n      result.push({\n        file: match[2],\n        line: +match[1],\n        raw: lines[i]\n      });\n    }\n  }\n  return applySlice(result, options);\n}\nfunction parseOpera10(e, options) {\n  const lineRE = /Line (\\d+).*script (?:in )?(\\S+)(?:: In function (\\S+))?$/i;\n  const lines = e.stacktrace.split(\"\\n\");\n  const result = [];\n  for (let i = 0, len = lines.length; i < len; i += 2) {\n    const match = lineRE.exec(lines[i]);\n    if (match) {\n      result.push({\n        function: match[3] || void 0,\n        file: match[2],\n        line: match[1] ? +match[1] : void 0,\n        raw: lines[i]\n      });\n    }\n  }\n  return applySlice(result, options);\n}\nfunction parseOpera11(error, options) {\n  const filtered = applySlice(\n    // @ts-expect-error missing stack property\n    error.stack.split(\"\\n\").filter((line) => {\n      return !!line.match(FIREFOX_SAFARI_STACK_REGEXP) && !line.match(/^Error created at/);\n    }),\n    options\n  );\n  return filtered.map((line) => {\n    const tokens = line.split(\"@\");\n    const locationParts = extractLocation(tokens.pop());\n    const functionCall = tokens.shift() || \"\";\n    const functionName = functionCall.replace(/<anonymous function(: (\\w+))?>/, \"$2\").replace(/\\([^)]*\\)/g, \"\") || void 0;\n    let argsRaw;\n    if (functionCall.match(/\\(([^)]*)\\)/))\n      argsRaw = functionCall.replace(/^[^(]+\\(([^)]*)\\)$/, \"$1\");\n    const args = argsRaw === void 0 || argsRaw === \"[arguments not available]\" ? void 0 : argsRaw.split(\",\");\n    return {\n      function: functionName,\n      args,\n      file: locationParts[0],\n      line: locationParts[1] ? +locationParts[1] : void 0,\n      col: locationParts[2] ? +locationParts[2] : void 0,\n      raw: line\n    };\n  });\n}\n\nexport { extractLocation, parse, parseFFOrSafari, parseFFOrSafariString, parseOpera, parseOpera10, parseOpera11, parseOpera9, parseStack, parseV8OrIE, parseV8OrIeString };\n",
+      "start": 1718972211551,
+      "end": 1718972211595,
+      "sourcemaps": null
+    },
+    {
+      "name": "vite:css",
+      "start": 1718972211595,
+      "end": 1718972211595,
+      "order": "normal"
+    },
+    {
+      "name": "vite:esbuild",
+      "start": 1718972211595,
+      "end": 1718972211595,
+      "order": "normal"
+    },
+    {
+      "name": "vite:json",
+      "start": 1718972211595,
+      "end": 1718972211595,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker",
+      "start": 1718972211595,
+      "end": 1718972211595,
+      "order": "normal"
+    },
+    {
+      "name": "vite:define",
+      "start": 1718972211595,
+      "end": 1718972211595,
+      "order": "normal"
+    },
+    {
+      "name": "vite:css-post",
+      "start": 1718972211595,
+      "end": 1718972211595,
+      "order": "normal"
+    },
+    {
+      "name": "vite:build-html",
+      "start": 1718972211595,
+      "end": 1718972211595,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker-import-meta-url",
+      "start": 1718972211595,
+      "end": 1718972211595,
+      "order": "normal"
+    },
+    {
+      "name": "vite:asset-import-meta-url",
+      "start": 1718972211595,
+      "end": 1718972211595,
+      "order": "normal"
+    },
+    {
+      "name": "commonjs",
+      "start": 1718972211595,
+      "end": 1718972211595,
+      "order": "normal"
+    },
+    {
+      "name": "vite:dynamic-import-vars",
+      "start": 1718972211596,
+      "end": 1718972211596,
+      "order": "normal"
+    },
+    {
+      "name": "vite:import-glob",
+      "start": 1718972211596,
+      "end": 1718972211596,
+      "order": "normal"
+    },
+    {
+      "name": "vite:build-import-analysis",
+      "start": 1718972211596,
+      "end": 1718972211596,
+      "order": "normal"
+    },
+    {
+      "name": "vite:reporter",
+      "start": 1718972211596,
+      "end": 1718972211596,
+      "order": "normal"
+    }
+  ]
+}

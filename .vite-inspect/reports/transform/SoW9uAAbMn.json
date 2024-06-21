@@ -1,0 +1,105 @@
+{
+  "resolvedId": "C:/Users/XFXRe/Desktop/Portfolio/node_modules/fs-extra/lib/move/move-sync.js",
+  "transforms": [
+    {
+      "name": "vite:load-fallback",
+      "result": "'use strict'\n\nconst fs = require('graceful-fs')\nconst path = require('path')\nconst copySync = require('../copy').copySync\nconst removeSync = require('../remove').removeSync\nconst mkdirpSync = require('../mkdirs').mkdirpSync\nconst stat = require('../util/stat')\n\nfunction moveSync (src, dest, opts) {\n  opts = opts || {}\n  const overwrite = opts.overwrite || opts.clobber || false\n\n  const { srcStat, isChangingCase = false } = stat.checkPathsSync(src, dest, 'move', opts)\n  stat.checkParentPathsSync(src, srcStat, dest, 'move')\n  if (!isParentRoot(dest)) mkdirpSync(path.dirname(dest))\n  return doRename(src, dest, overwrite, isChangingCase)\n}\n\nfunction isParentRoot (dest) {\n  const parent = path.dirname(dest)\n  const parsedPath = path.parse(parent)\n  return parsedPath.root === parent\n}\n\nfunction doRename (src, dest, overwrite, isChangingCase) {\n  if (isChangingCase) return rename(src, dest, overwrite)\n  if (overwrite) {\n    removeSync(dest)\n    return rename(src, dest, overwrite)\n  }\n  if (fs.existsSync(dest)) throw new Error('dest already exists.')\n  return rename(src, dest, overwrite)\n}\n\nfunction rename (src, dest, overwrite) {\n  try {\n    fs.renameSync(src, dest)\n  } catch (err) {\n    if (err.code !== 'EXDEV') throw err\n    return moveAcrossDevice(src, dest, overwrite)\n  }\n}\n\nfunction moveAcrossDevice (src, dest, overwrite) {\n  const opts = {\n    overwrite,\n    errorOnExist: true,\n    preserveTimestamps: true\n  }\n  copySync(src, dest, opts)\n  return removeSync(src)\n}\n\nmodule.exports = moveSync\n",
+      "start": 1718972211571,
+      "end": 1718972211649,
+      "sourcemaps": null
+    },
+    {
+      "name": "vite:css",
+      "start": 1718972211649,
+      "end": 1718972211649,
+      "order": "normal"
+    },
+    {
+      "name": "vite:esbuild",
+      "start": 1718972211649,
+      "end": 1718972211649,
+      "order": "normal"
+    },
+    {
+      "name": "vite:json",
+      "start": 1718972211649,
+      "end": 1718972211649,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker",
+      "start": 1718972211649,
+      "end": 1718972211649,
+      "order": "normal"
+    },
+    {
+      "name": "vite:define",
+      "start": 1718972211649,
+      "end": 1718972211649,
+      "order": "normal"
+    },
+    {
+      "name": "vite:css-post",
+      "start": 1718972211649,
+      "end": 1718972211649,
+      "order": "normal"
+    },
+    {
+      "name": "vite:build-html",
+      "start": 1718972211649,
+      "end": 1718972211649,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker-import-meta-url",
+      "start": 1718972211649,
+      "end": 1718972211649,
+      "order": "normal"
+    },
+    {
+      "name": "vite:asset-import-meta-url",
+      "start": 1718972211649,
+      "end": 1718972211649,
+      "order": "normal"
+    },
+    {
+      "name": "commonjs",
+      "result": "import * as commonjsHelpers from \"\u0000commonjsHelpers.js\";\nimport require$$0 from \"\\u0000C:/Users/XFXRe/Desktop/Portfolio/node_modules/graceful-fs/graceful-fs.js?commonjs-proxy\";\nimport require$$1 from \"\\u0000__vite-browser-external?commonjs-proxy\";\nimport require$$2 from \"\\u0000C:/Users/XFXRe/Desktop/Portfolio/node_modules/fs-extra/lib/copy/index.js?commonjs-proxy\";\nimport require$$3 from \"\\u0000C:/Users/XFXRe/Desktop/Portfolio/node_modules/fs-extra/lib/remove/index.js?commonjs-proxy\";\nimport require$$4 from \"\\u0000C:/Users/XFXRe/Desktop/Portfolio/node_modules/fs-extra/lib/mkdirs/index.js?commonjs-proxy\";\nimport require$$5 from \"\\u0000C:/Users/XFXRe/Desktop/Portfolio/node_modules/fs-extra/lib/util/stat.js?commonjs-proxy\";\n\n'use strict'\n\nconst fs = require$$0\nconst path = require$$1\nconst copySync = require$$2.copySync\nconst removeSync = require$$3.removeSync\nconst mkdirpSync = require$$4.mkdirpSync\nconst stat = require$$5\n\nfunction moveSync (src, dest, opts) {\n  opts = opts || {}\n  const overwrite = opts.overwrite || opts.clobber || false\n\n  const { srcStat, isChangingCase = false } = stat.checkPathsSync(src, dest, 'move', opts)\n  stat.checkParentPathsSync(src, srcStat, dest, 'move')\n  if (!isParentRoot(dest)) mkdirpSync(path.dirname(dest))\n  return doRename(src, dest, overwrite, isChangingCase)\n}\n\nfunction isParentRoot (dest) {\n  const parent = path.dirname(dest)\n  const parsedPath = path.parse(parent)\n  return parsedPath.root === parent\n}\n\nfunction doRename (src, dest, overwrite, isChangingCase) {\n  if (isChangingCase) return rename(src, dest, overwrite)\n  if (overwrite) {\n    removeSync(dest)\n    return rename(src, dest, overwrite)\n  }\n  if (fs.existsSync(dest)) throw new Error('dest already exists.')\n  return rename(src, dest, overwrite)\n}\n\nfunction rename (src, dest, overwrite) {\n  try {\n    fs.renameSync(src, dest)\n  } catch (err) {\n    if (err.code !== 'EXDEV') throw err\n    return moveAcrossDevice(src, dest, overwrite)\n  }\n}\n\nfunction moveAcrossDevice (src, dest, overwrite) {\n  const opts = {\n    overwrite,\n    errorOnExist: true,\n    preserveTimestamps: true\n  }\n  copySync(src, dest, opts)\n  return removeSync(src)\n}\n\nvar moveSync_1 = moveSync\n\nexport default /*@__PURE__*/commonjsHelpers.getDefaultExportFromCjs(moveSync_1);\nexport { moveSync_1 as __moduleExports };",
+      "start": 1718972211649,
+      "end": 1718972211830,
+      "order": "normal",
+      "sourcemaps": {
+        "version": 3,
+        "sources": [
+          ""
+        ],
+        "names": [],
+        "mappings": ";;;;;;;;AAAA,YAAY;AACZ;AACA,MAAM,EAAE,GAAG,UAAsB;AACjC,MAAM,IAAI,GAAG,UAAe;AAC5B,MAAM,QAAQ,GAAG,UAAkB,CAAC,QAAQ;AAC5C,MAAM,UAAU,GAAG,UAAoB,CAAC,UAAU;AAClD,MAAM,UAAU,GAAG,UAAoB,CAAC,UAAU;AAClD,MAAM,IAAI,GAAG,UAAuB;AACpC;AACA,SAAS,QAAQ,EAAE,GAAG,EAAE,IAAI,EAAE,IAAI,EAAE;AACpC,EAAE,IAAI,GAAG,IAAI,IAAI,EAAE;AACnB,EAAE,MAAM,SAAS,GAAG,IAAI,CAAC,SAAS,IAAI,IAAI,CAAC,OAAO,IAAI,KAAK;AAC3D;AACA,EAAE,MAAM,EAAE,OAAO,EAAE,cAAc,GAAG,KAAK,EAAE,GAAG,IAAI,CAAC,cAAc,CAAC,GAAG,EAAE,IAAI,EAAE,MAAM,EAAE,IAAI,CAAC;AAC1F,EAAE,IAAI,CAAC,oBAAoB,CAAC,GAAG,EAAE,OAAO,EAAE,IAAI,EAAE,MAAM,CAAC;AACvD,EAAE,IAAI,CAAC,YAAY,CAAC,IAAI,CAAC,EAAE,UAAU,CAAC,IAAI,CAAC,OAAO,CAAC,IAAI,CAAC,CAAC;AACzD,EAAE,OAAO,QAAQ,CAAC,GAAG,EAAE,IAAI,EAAE,SAAS,EAAE,cAAc,CAAC;AACvD,CAAC;AACD;AACA,SAAS,YAAY,EAAE,IAAI,EAAE;AAC7B,EAAE,MAAM,MAAM,GAAG,IAAI,CAAC,OAAO,CAAC,IAAI,CAAC;AACnC,EAAE,MAAM,UAAU,GAAG,IAAI,CAAC,KAAK,CAAC,MAAM,CAAC;AACvC,EAAE,OAAO,UAAU,CAAC,IAAI,KAAK,MAAM;AACnC,CAAC;AACD;AACA,SAAS,QAAQ,EAAE,GAAG,EAAE,IAAI,EAAE,SAAS,EAAE,cAAc,EAAE;AACzD,EAAE,IAAI,cAAc,EAAE,OAAO,MAAM,CAAC,GAAG,EAAE,IAAI,EAAE,SAAS,CAAC;AACzD,EAAE,IAAI,SAAS,EAAE;AACjB,IAAI,UAAU,CAAC,IAAI,CAAC;AACpB,IAAI,OAAO,MAAM,CAAC,GAAG,EAAE,IAAI,EAAE,SAAS,CAAC;AACvC,GAAG;AACH,EAAE,IAAI,EAAE,CAAC,UAAU,CAAC,IAAI,CAAC,EAAE,MAAM,IAAI,KAAK,CAAC,sBAAsB,CAAC;AAClE,EAAE,OAAO,MAAM,CAAC,GAAG,EAAE,IAAI,EAAE,SAAS,CAAC;AACrC,CAAC;AACD;AACA,SAAS,MAAM,EAAE,GAAG,EAAE,IAAI,EAAE,SAAS,EAAE;AACvC,EAAE,IAAI;AACN,IAAI,EAAE,CAAC,UAAU,CAAC,GAAG,EAAE,IAAI,CAAC;AAC5B,GAAG,CAAC,OAAO,GAAG,EAAE;AAChB,IAAI,IAAI,GAAG,CAAC,IAAI,KAAK,OAAO,EAAE,MAAM,GAAG;AACvC,IAAI,OAAO,gBAAgB,CAAC,GAAG,EAAE,IAAI,EAAE,SAAS,CAAC;AACjD,GAAG;AACH,CAAC;AACD;AACA,SAAS,gBAAgB,EAAE,GAAG,EAAE,IAAI,EAAE,SAAS,EAAE;AACjD,EAAE,MAAM,IAAI,GAAG;AACf,IAAI,SAAS;AACb,IAAI,YAAY,EAAE,IAAI;AACtB,IAAI,kBAAkB,EAAE,IAAI;AAC5B,GAAG;AACH,EAAE,QAAQ,CAAC,GAAG,EAAE,IAAI,EAAE,IAAI,CAAC;AAC3B,EAAE,OAAO,UAAU,CAAC,GAAG,CAAC;AACxB,CAAC;AACD;IACA,UAAc,GAAG"
+      }
+    },
+    {
+      "name": "vite:dynamic-import-vars",
+      "start": 1718972211830,
+      "end": 1718972211830,
+      "order": "normal"
+    },
+    {
+      "name": "vite:import-glob",
+      "start": 1718972211830,
+      "end": 1718972211830,
+      "order": "normal"
+    },
+    {
+      "name": "vite:build-import-analysis",
+      "start": 1718972211830,
+      "end": 1718972211830,
+      "order": "normal"
+    },
+    {
+      "name": "vite:reporter",
+      "start": 1718972211830,
+      "end": 1718972211830,
+      "order": "normal"
+    }
+  ]
+}

@@ -1,0 +1,105 @@
+{
+  "resolvedId": "C:/Users/XFXRe/Desktop/Portfolio/node_modules/fs-extra/lib/empty/index.js",
+  "transforms": [
+    {
+      "name": "vite:load-fallback",
+      "result": "'use strict'\n\nconst u = require('universalify').fromPromise\nconst fs = require('../fs')\nconst path = require('path')\nconst mkdir = require('../mkdirs')\nconst remove = require('../remove')\n\nconst emptyDir = u(async function emptyDir (dir) {\n  let items\n  try {\n    items = await fs.readdir(dir)\n  } catch {\n    return mkdir.mkdirs(dir)\n  }\n\n  return Promise.all(items.map(item => remove.remove(path.join(dir, item))))\n})\n\nfunction emptyDirSync (dir) {\n  let items\n  try {\n    items = fs.readdirSync(dir)\n  } catch {\n    return mkdir.mkdirsSync(dir)\n  }\n\n  items.forEach(item => {\n    item = path.join(dir, item)\n    remove.removeSync(item)\n  })\n}\n\nmodule.exports = {\n  emptyDirSync,\n  emptydirSync: emptyDirSync,\n  emptyDir,\n  emptydir: emptyDir\n}\n",
+      "start": 1718972211521,
+      "end": 1718972211564,
+      "sourcemaps": null
+    },
+    {
+      "name": "vite:css",
+      "start": 1718972211564,
+      "end": 1718972211564,
+      "order": "normal"
+    },
+    {
+      "name": "vite:esbuild",
+      "start": 1718972211564,
+      "end": 1718972211564,
+      "order": "normal"
+    },
+    {
+      "name": "vite:json",
+      "start": 1718972211564,
+      "end": 1718972211564,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker",
+      "start": 1718972211564,
+      "end": 1718972211564,
+      "order": "normal"
+    },
+    {
+      "name": "vite:define",
+      "start": 1718972211564,
+      "end": 1718972211564,
+      "order": "normal"
+    },
+    {
+      "name": "vite:css-post",
+      "start": 1718972211564,
+      "end": 1718972211564,
+      "order": "normal"
+    },
+    {
+      "name": "vite:build-html",
+      "start": 1718972211565,
+      "end": 1718972211565,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker-import-meta-url",
+      "start": 1718972211565,
+      "end": 1718972211565,
+      "order": "normal"
+    },
+    {
+      "name": "vite:asset-import-meta-url",
+      "start": 1718972211565,
+      "end": 1718972211565,
+      "order": "normal"
+    },
+    {
+      "name": "commonjs",
+      "result": "import * as commonjsHelpers from \"\u0000commonjsHelpers.js\";\nimport require$$0 from \"\\u0000C:/Users/XFXRe/Desktop/Portfolio/node_modules/universalify/index.js?commonjs-proxy\";\nimport require$$1 from \"\\u0000C:/Users/XFXRe/Desktop/Portfolio/node_modules/fs-extra/lib/fs/index.js?commonjs-proxy\";\nimport require$$2 from \"\\u0000__vite-browser-external?commonjs-proxy\";\nimport require$$3 from \"\\u0000C:/Users/XFXRe/Desktop/Portfolio/node_modules/fs-extra/lib/mkdirs/index.js?commonjs-proxy\";\nimport require$$4 from \"\\u0000C:/Users/XFXRe/Desktop/Portfolio/node_modules/fs-extra/lib/remove/index.js?commonjs-proxy\";\n\n'use strict'\n\nconst u = require$$0.fromPromise\nconst fs = require$$1\nconst path = require$$2\nconst mkdir = require$$3\nconst remove = require$$4\n\nconst emptyDir = u(async function emptyDir (dir) {\n  let items\n  try {\n    items = await fs.readdir(dir)\n  } catch {\n    return mkdir.mkdirs(dir)\n  }\n\n  return Promise.all(items.map(item => remove.remove(path.join(dir, item))))\n})\n\nfunction emptyDirSync (dir) {\n  let items\n  try {\n    items = fs.readdirSync(dir)\n  } catch {\n    return mkdir.mkdirsSync(dir)\n  }\n\n  items.forEach(item => {\n    item = path.join(dir, item)\n    remove.removeSync(item)\n  })\n}\n\nvar empty = {\n  emptyDirSync,\n  emptydirSync: emptyDirSync,\n  emptyDir,\n  emptydir: emptyDir\n}\n\nexport default /*@__PURE__*/commonjsHelpers.getDefaultExportFromCjs(empty);\nexport { empty as __moduleExports };",
+      "start": 1718972211565,
+      "end": 1718972211819,
+      "order": "normal",
+      "sourcemaps": {
+        "version": 3,
+        "sources": [
+          ""
+        ],
+        "names": [],
+        "mappings": ";;;;;;;AAAA,YAAY;AACZ;AACA,MAAM,CAAC,GAAG,UAAuB,CAAC,WAAW;AAC7C,MAAM,EAAE,GAAG,UAAgB;AAC3B,MAAM,IAAI,GAAG,UAAe;AAC5B,MAAM,KAAK,GAAG,UAAoB;AAClC,MAAM,MAAM,GAAG,UAAoB;AACnC;AACA,MAAM,QAAQ,GAAG,CAAC,CAAC,eAAe,QAAQ,EAAE,GAAG,EAAE;AACjD,EAAE,IAAI,KAAK;AACX,EAAE,IAAI;AACN,IAAI,KAAK,GAAG,MAAM,EAAE,CAAC,OAAO,CAAC,GAAG,CAAC;AACjC,GAAG,CAAC,MAAM;AACV,IAAI,OAAO,KAAK,CAAC,MAAM,CAAC,GAAG,CAAC;AAC5B,GAAG;AACH;AACA,EAAE,OAAO,OAAO,CAAC,GAAG,CAAC,KAAK,CAAC,GAAG,CAAC,IAAI,IAAI,MAAM,CAAC,MAAM,CAAC,IAAI,CAAC,IAAI,CAAC,GAAG,EAAE,IAAI,CAAC,CAAC,CAAC,CAAC;AAC5E,CAAC,CAAC;AACF;AACA,SAAS,YAAY,EAAE,GAAG,EAAE;AAC5B,EAAE,IAAI,KAAK;AACX,EAAE,IAAI;AACN,IAAI,KAAK,GAAG,EAAE,CAAC,WAAW,CAAC,GAAG,CAAC;AAC/B,GAAG,CAAC,MAAM;AACV,IAAI,OAAO,KAAK,CAAC,UAAU,CAAC,GAAG,CAAC;AAChC,GAAG;AACH;AACA,EAAE,KAAK,CAAC,OAAO,CAAC,IAAI,IAAI;AACxB,IAAI,IAAI,GAAG,IAAI,CAAC,IAAI,CAAC,GAAG,EAAE,IAAI,CAAC;AAC/B,IAAI,MAAM,CAAC,UAAU,CAAC,IAAI,CAAC;AAC3B,GAAG,CAAC;AACJ,CAAC;AACD;IACA,KAAc,GAAG;AACjB,EAAE,YAAY;AACd,EAAE,YAAY,EAAE,YAAY;AAC5B,EAAE,QAAQ;AACV,EAAE,QAAQ,EAAE,QAAQ;AACpB"
+      }
+    },
+    {
+      "name": "vite:dynamic-import-vars",
+      "start": 1718972211819,
+      "end": 1718972211819,
+      "order": "normal"
+    },
+    {
+      "name": "vite:import-glob",
+      "start": 1718972211819,
+      "end": 1718972211819,
+      "order": "normal"
+    },
+    {
+      "name": "vite:build-import-analysis",
+      "start": 1718972211819,
+      "end": 1718972211819,
+      "order": "normal"
+    },
+    {
+      "name": "vite:reporter",
+      "start": 1718972211819,
+      "end": 1718972211819,
+      "order": "normal"
+    }
+  ]
+}

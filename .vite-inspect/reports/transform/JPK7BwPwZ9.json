@@ -1,0 +1,96 @@
+{
+  "resolvedId": "C:/Users/XFXRe/Desktop/Portfolio/node_modules/default-browser/windows.js",
+  "transforms": [
+    {
+      "name": "vite:load-fallback",
+      "result": "import {promisify} from 'node:util';\nimport {execFile} from 'node:child_process';\n\nconst execFileAsync = promisify(execFile);\n\n// Windows doesn't have browser IDs in the same way macOS/Linux does so we give fake\n// ones that look real and match the macOS/Linux versions for cross-platform apps.\nconst windowsBrowserProgIds = {\n\tAppXq0fevzme2pys62n3e0fbqa7peapykr8v: {name: 'Edge', id: 'com.microsoft.edge.old'},\n\tMSEdgeDHTML: {name: 'Edge', id: 'com.microsoft.edge'}, // On macOS, it's \"com.microsoft.edgemac\"\n\tMSEdgeHTM: {name: 'Edge', id: 'com.microsoft.edge'}, // Newer Edge/Win10 releases\n\t'IE.HTTP': {name: 'Internet Explorer', id: 'com.microsoft.ie'},\n\tFirefoxURL: {name: 'Firefox', id: 'org.mozilla.firefox'},\n\tChromeHTML: {name: 'Chrome', id: 'com.google.chrome'},\n\tBraveHTML: {name: 'Brave', id: 'com.brave.Browser'},\n\tBraveBHTML: {name: 'Brave Beta', id: 'com.brave.Browser.beta'},\n\tBraveSSHTM: {name: 'Brave Nightly', id: 'com.brave.Browser.nightly'},\n};\n\nexport class UnknownBrowserError extends Error {}\n\nexport default async function defaultBrowser(_execFileAsync = execFileAsync) {\n\tconst {stdout} = await _execFileAsync('reg', [\n\t\t'QUERY',\n\t\t' HKEY_CURRENT_USER\\\\Software\\\\Microsoft\\\\Windows\\\\Shell\\\\Associations\\\\UrlAssociations\\\\http\\\\UserChoice',\n\t\t'/v',\n\t\t'ProgId',\n\t]);\n\n\tconst match = /ProgId\\s*REG_SZ\\s*(?<id>\\S+)/.exec(stdout);\n\tif (!match) {\n\t\tthrow new UnknownBrowserError(`Cannot find Windows browser in stdout: ${JSON.stringify(stdout)}`);\n\t}\n\n\tconst {id} = match.groups;\n\n\tconst browser = windowsBrowserProgIds[id];\n\tif (!browser) {\n\t\tthrow new UnknownBrowserError(`Unknown browser ID: ${id}`);\n\t}\n\n\treturn browser;\n}\n",
+      "start": 1718972211681,
+      "end": 1718972211750,
+      "sourcemaps": null
+    },
+    {
+      "name": "vite:css",
+      "start": 1718972211750,
+      "end": 1718972211750,
+      "order": "normal"
+    },
+    {
+      "name": "vite:esbuild",
+      "start": 1718972211750,
+      "end": 1718972211750,
+      "order": "normal"
+    },
+    {
+      "name": "vite:json",
+      "start": 1718972211750,
+      "end": 1718972211750,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker",
+      "start": 1718972211750,
+      "end": 1718972211750,
+      "order": "normal"
+    },
+    {
+      "name": "vite:define",
+      "start": 1718972211750,
+      "end": 1718972211750,
+      "order": "normal"
+    },
+    {
+      "name": "vite:css-post",
+      "start": 1718972211750,
+      "end": 1718972211750,
+      "order": "normal"
+    },
+    {
+      "name": "vite:build-html",
+      "start": 1718972211750,
+      "end": 1718972211750,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker-import-meta-url",
+      "start": 1718972211750,
+      "end": 1718972211750,
+      "order": "normal"
+    },
+    {
+      "name": "vite:asset-import-meta-url",
+      "start": 1718972211750,
+      "end": 1718972211750,
+      "order": "normal"
+    },
+    {
+      "name": "commonjs",
+      "start": 1718972211750,
+      "end": 1718972211750,
+      "order": "normal"
+    },
+    {
+      "name": "vite:dynamic-import-vars",
+      "start": 1718972211750,
+      "end": 1718972211750,
+      "order": "normal"
+    },
+    {
+      "name": "vite:import-glob",
+      "start": 1718972211750,
+      "end": 1718972211750,
+      "order": "normal"
+    },
+    {
+      "name": "vite:build-import-analysis",
+      "start": 1718972211750,
+      "end": 1718972211750,
+      "order": "normal"
+    },
+    {
+      "name": "vite:reporter",
+      "start": 1718972211750,
+      "end": 1718972211750,
+      "order": "normal"
+    }
+  ]
+}

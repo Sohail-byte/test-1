@@ -1,0 +1,96 @@
+{
+  "resolvedId": "__vite-browser-external",
+  "transforms": [
+    {
+      "name": "vite:resolve",
+      "result": "export default {}",
+      "start": 1718972211394,
+      "end": 1718972211394,
+      "sourcemaps": null
+    },
+    {
+      "name": "vite:css",
+      "start": 1718972211394,
+      "end": 1718972211394,
+      "order": "normal"
+    },
+    {
+      "name": "vite:esbuild",
+      "start": 1718972211394,
+      "end": 1718972211394,
+      "order": "normal"
+    },
+    {
+      "name": "vite:json",
+      "start": 1718972211394,
+      "end": 1718972211394,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker",
+      "start": 1718972211394,
+      "end": 1718972211394,
+      "order": "normal"
+    },
+    {
+      "name": "vite:define",
+      "start": 1718972211394,
+      "end": 1718972211394,
+      "order": "normal"
+    },
+    {
+      "name": "vite:css-post",
+      "start": 1718972211394,
+      "end": 1718972211394,
+      "order": "normal"
+    },
+    {
+      "name": "vite:build-html",
+      "start": 1718972211394,
+      "end": 1718972211394,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker-import-meta-url",
+      "start": 1718972211394,
+      "end": 1718972211394,
+      "order": "normal"
+    },
+    {
+      "name": "vite:asset-import-meta-url",
+      "start": 1718972211394,
+      "end": 1718972211394,
+      "order": "normal"
+    },
+    {
+      "name": "commonjs",
+      "start": 1718972211394,
+      "end": 1718972211394,
+      "order": "normal"
+    },
+    {
+      "name": "vite:dynamic-import-vars",
+      "start": 1718972211394,
+      "end": 1718972211394,
+      "order": "normal"
+    },
+    {
+      "name": "vite:import-glob",
+      "start": 1718972211394,
+      "end": 1718972211394,
+      "order": "normal"
+    },
+    {
+      "name": "vite:build-import-analysis",
+      "start": 1718972211394,
+      "end": 1718972211394,
+      "order": "normal"
+    },
+    {
+      "name": "vite:reporter",
+      "start": 1718972211394,
+      "end": 1718972211394,
+      "order": "normal"
+    }
+  ]
+}

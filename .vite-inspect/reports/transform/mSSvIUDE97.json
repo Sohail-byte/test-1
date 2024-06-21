@@ -1,0 +1,96 @@
+{
+  "resolvedId": "C:/Users/XFXRe/Desktop/Portfolio/node_modules/default-browser-id/index.js",
+  "transforms": [
+    {
+      "name": "vite:load-fallback",
+      "result": "import {promisify} from 'node:util';\nimport process from 'node:process';\nimport {execFile} from 'node:child_process';\n\nconst execFileAsync = promisify(execFile);\n\nexport default async function defaultBrowserId() {\n\tif (process.platform !== 'darwin') {\n\t\tthrow new Error('macOS only');\n\t}\n\n\tconst {stdout} = await execFileAsync('defaults', ['read', 'com.apple.LaunchServices/com.apple.launchservices.secure', 'LSHandlers']);\n\n\t// `(?!-)` is to prevent matching `LSHandlerRoleAll = \"-\";`.\n\tconst match = /LSHandlerRoleAll = \"(?!-)(?<id>[^\"]+?)\";\\s+?LSHandlerURLScheme = (?:http|https);/.exec(stdout);\n\n\treturn match?.groups.id ?? 'com.apple.Safari';\n}\n",
+      "start": 1718972211681,
+      "end": 1718972211750,
+      "sourcemaps": null
+    },
+    {
+      "name": "vite:css",
+      "start": 1718972211750,
+      "end": 1718972211750,
+      "order": "normal"
+    },
+    {
+      "name": "vite:esbuild",
+      "start": 1718972211750,
+      "end": 1718972211750,
+      "order": "normal"
+    },
+    {
+      "name": "vite:json",
+      "start": 1718972211750,
+      "end": 1718972211750,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker",
+      "start": 1718972211750,
+      "end": 1718972211750,
+      "order": "normal"
+    },
+    {
+      "name": "vite:define",
+      "start": 1718972211750,
+      "end": 1718972211750,
+      "order": "normal"
+    },
+    {
+      "name": "vite:css-post",
+      "start": 1718972211750,
+      "end": 1718972211750,
+      "order": "normal"
+    },
+    {
+      "name": "vite:build-html",
+      "start": 1718972211750,
+      "end": 1718972211750,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker-import-meta-url",
+      "start": 1718972211750,
+      "end": 1718972211750,
+      "order": "normal"
+    },
+    {
+      "name": "vite:asset-import-meta-url",
+      "start": 1718972211750,
+      "end": 1718972211750,
+      "order": "normal"
+    },
+    {
+      "name": "commonjs",
+      "start": 1718972211750,
+      "end": 1718972211750,
+      "order": "normal"
+    },
+    {
+      "name": "vite:dynamic-import-vars",
+      "start": 1718972211750,
+      "end": 1718972211750,
+      "order": "normal"
+    },
+    {
+      "name": "vite:import-glob",
+      "start": 1718972211750,
+      "end": 1718972211750,
+      "order": "normal"
+    },
+    {
+      "name": "vite:build-import-analysis",
+      "start": 1718972211750,
+      "end": 1718972211750,
+      "order": "normal"
+    },
+    {
+      "name": "vite:reporter",
+      "start": 1718972211750,
+      "end": 1718972211750,
+      "order": "normal"
+    }
+  ]
+}

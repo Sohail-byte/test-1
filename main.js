@@ -1,6 +1,3 @@
-
-
-import './router.js'
 import './styles/style.css'
 import './styles/background.css'
 import './styles/nav-bar.css'
@@ -15,3 +12,7 @@ const navBar = document.querySelector('.small-menu')
 navBtn.addEventListener('click', function(e){
  navBar.classList.toggle('open')
 })
+
+
+
+

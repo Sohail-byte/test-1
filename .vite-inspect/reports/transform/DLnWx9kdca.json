@@ -1,0 +1,11 @@
+{
+  "resolvedId": "\u0000C:/Users/XFXRe/Desktop/Portfolio/node_modules/fs-extra/lib/mkdirs/make-dir.js?commonjs-exports",
+  "transforms": [
+    {
+      "name": "commonjs",
+      "result": "var makeDir = {}; export {makeDir as __exports}",
+      "start": 1718972211837,
+      "end": 1718972211837
+    }
+  ]
+}

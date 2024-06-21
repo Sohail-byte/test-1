@@ -1,0 +1,96 @@
+{
+  "resolvedId": "C:/Users/XFXRe/Desktop/Portfolio/node_modules/is-inside-container/index.js",
+  "transforms": [
+    {
+      "name": "vite:load-fallback",
+      "result": "import fs from 'node:fs';\nimport isDocker from 'is-docker';\n\nlet cachedResult;\n\n// Podman detection\nconst hasContainerEnv = () => {\n\ttry {\n\t\tfs.statSync('/run/.containerenv');\n\t\treturn true;\n\t} catch {\n\t\treturn false;\n\t}\n};\n\nexport default function isInsideContainer() {\n\t// TODO: Use `??=` when targeting Node.js 16.\n\tif (cachedResult === undefined) {\n\t\tcachedResult = hasContainerEnv() || isDocker();\n\t}\n\n\treturn cachedResult;\n}\n",
+      "start": 1718972211595,
+      "end": 1718972211665,
+      "sourcemaps": null
+    },
+    {
+      "name": "vite:css",
+      "start": 1718972211665,
+      "end": 1718972211665,
+      "order": "normal"
+    },
+    {
+      "name": "vite:esbuild",
+      "start": 1718972211665,
+      "end": 1718972211665,
+      "order": "normal"
+    },
+    {
+      "name": "vite:json",
+      "start": 1718972211665,
+      "end": 1718972211665,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker",
+      "start": 1718972211665,
+      "end": 1718972211665,
+      "order": "normal"
+    },
+    {
+      "name": "vite:define",
+      "start": 1718972211665,
+      "end": 1718972211665,
+      "order": "normal"
+    },
+    {
+      "name": "vite:css-post",
+      "start": 1718972211665,
+      "end": 1718972211665,
+      "order": "normal"
+    },
+    {
+      "name": "vite:build-html",
+      "start": 1718972211665,
+      "end": 1718972211665,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker-import-meta-url",
+      "start": 1718972211665,
+      "end": 1718972211665,
+      "order": "normal"
+    },
+    {
+      "name": "vite:asset-import-meta-url",
+      "start": 1718972211665,
+      "end": 1718972211665,
+      "order": "normal"
+    },
+    {
+      "name": "commonjs",
+      "start": 1718972211665,
+      "end": 1718972211665,
+      "order": "normal"
+    },
+    {
+      "name": "vite:dynamic-import-vars",
+      "start": 1718972211665,
+      "end": 1718972211665,
+      "order": "normal"
+    },
+    {
+      "name": "vite:import-glob",
+      "start": 1718972211665,
+      "end": 1718972211665,
+      "order": "normal"
+    },
+    {
+      "name": "vite:build-import-analysis",
+      "start": 1718972211665,
+      "end": 1718972211665,
+      "order": "normal"
+    },
+    {
+      "name": "vite:reporter",
+      "start": 1718972211665,
+      "end": 1718972211665,
+      "order": "normal"
+    }
+  ]
+}

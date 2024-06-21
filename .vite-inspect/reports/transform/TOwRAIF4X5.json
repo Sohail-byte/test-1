@@ -1,0 +1,105 @@
+{
+  "resolvedId": "C:/Users/XFXRe/Desktop/Portfolio/node_modules/fs-extra/lib/output-file/index.js",
+  "transforms": [
+    {
+      "name": "vite:load-fallback",
+      "result": "'use strict'\n\nconst u = require('universalify').fromPromise\nconst fs = require('../fs')\nconst path = require('path')\nconst mkdir = require('../mkdirs')\nconst pathExists = require('../path-exists').pathExists\n\nasync function outputFile (file, data, encoding = 'utf-8') {\n  const dir = path.dirname(file)\n\n  if (!(await pathExists(dir))) {\n    await mkdir.mkdirs(dir)\n  }\n\n  return fs.writeFile(file, data, encoding)\n}\n\nfunction outputFileSync (file, ...args) {\n  const dir = path.dirname(file)\n  if (!fs.existsSync(dir)) {\n    mkdir.mkdirsSync(dir)\n  }\n\n  fs.writeFileSync(file, ...args)\n}\n\nmodule.exports = {\n  outputFile: u(outputFile),\n  outputFileSync\n}\n",
+      "start": 1718972211521,
+      "end": 1718972211572,
+      "sourcemaps": null
+    },
+    {
+      "name": "vite:css",
+      "start": 1718972211572,
+      "end": 1718972211572,
+      "order": "normal"
+    },
+    {
+      "name": "vite:esbuild",
+      "start": 1718972211572,
+      "end": 1718972211572,
+      "order": "normal"
+    },
+    {
+      "name": "vite:json",
+      "start": 1718972211573,
+      "end": 1718972211573,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker",
+      "start": 1718972211573,
+      "end": 1718972211573,
+      "order": "normal"
+    },
+    {
+      "name": "vite:define",
+      "start": 1718972211573,
+      "end": 1718972211573,
+      "order": "normal"
+    },
+    {
+      "name": "vite:css-post",
+      "start": 1718972211573,
+      "end": 1718972211573,
+      "order": "normal"
+    },
+    {
+      "name": "vite:build-html",
+      "start": 1718972211573,
+      "end": 1718972211573,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker-import-meta-url",
+      "start": 1718972211573,
+      "end": 1718972211573,
+      "order": "normal"
+    },
+    {
+      "name": "vite:asset-import-meta-url",
+      "start": 1718972211573,
+      "end": 1718972211573,
+      "order": "normal"
+    },
+    {
+      "name": "commonjs",
+      "result": "import * as commonjsHelpers from \"\u0000commonjsHelpers.js\";\nimport require$$0 from \"\\u0000C:/Users/XFXRe/Desktop/Portfolio/node_modules/universalify/index.js?commonjs-proxy\";\nimport require$$1 from \"\\u0000C:/Users/XFXRe/Desktop/Portfolio/node_modules/fs-extra/lib/fs/index.js?commonjs-proxy\";\nimport require$$2 from \"\\u0000__vite-browser-external?commonjs-proxy\";\nimport require$$3 from \"\\u0000C:/Users/XFXRe/Desktop/Portfolio/node_modules/fs-extra/lib/mkdirs/index.js?commonjs-proxy\";\nimport require$$4 from \"\\u0000C:/Users/XFXRe/Desktop/Portfolio/node_modules/fs-extra/lib/path-exists/index.js?commonjs-proxy\";\n\n'use strict'\n\nconst u = require$$0.fromPromise\nconst fs = require$$1\nconst path = require$$2\nconst mkdir = require$$3\nconst pathExists = require$$4.pathExists\n\nasync function outputFile (file, data, encoding = 'utf-8') {\n  const dir = path.dirname(file)\n\n  if (!(await pathExists(dir))) {\n    await mkdir.mkdirs(dir)\n  }\n\n  return fs.writeFile(file, data, encoding)\n}\n\nfunction outputFileSync (file, ...args) {\n  const dir = path.dirname(file)\n  if (!fs.existsSync(dir)) {\n    mkdir.mkdirsSync(dir)\n  }\n\n  fs.writeFileSync(file, ...args)\n}\n\nvar outputFile_1 = {\n  outputFile: u(outputFile),\n  outputFileSync\n}\n\nexport default /*@__PURE__*/commonjsHelpers.getDefaultExportFromCjs(outputFile_1);\nexport { outputFile_1 as __moduleExports };",
+      "start": 1718972211573,
+      "end": 1718972211819,
+      "order": "normal",
+      "sourcemaps": {
+        "version": 3,
+        "sources": [
+          ""
+        ],
+        "names": [],
+        "mappings": ";;;;;;;AAAA,YAAY;AACZ;AACA,MAAM,CAAC,GAAG,UAAuB,CAAC,WAAW;AAC7C,MAAM,EAAE,GAAG,UAAgB;AAC3B,MAAM,IAAI,GAAG,UAAe;AAC5B,MAAM,KAAK,GAAG,UAAoB;AAClC,MAAM,UAAU,GAAG,UAAyB,CAAC,UAAU;AACvD;AACA,eAAe,UAAU,EAAE,IAAI,EAAE,IAAI,EAAE,QAAQ,GAAG,OAAO,EAAE;AAC3D,EAAE,MAAM,GAAG,GAAG,IAAI,CAAC,OAAO,CAAC,IAAI,CAAC;AAChC;AACA,EAAE,IAAI,EAAE,MAAM,UAAU,CAAC,GAAG,CAAC,CAAC,EAAE;AAChC,IAAI,MAAM,KAAK,CAAC,MAAM,CAAC,GAAG,CAAC;AAC3B,GAAG;AACH;AACA,EAAE,OAAO,EAAE,CAAC,SAAS,CAAC,IAAI,EAAE,IAAI,EAAE,QAAQ,CAAC;AAC3C,CAAC;AACD;AACA,SAAS,cAAc,EAAE,IAAI,EAAE,GAAG,IAAI,EAAE;AACxC,EAAE,MAAM,GAAG,GAAG,IAAI,CAAC,OAAO,CAAC,IAAI,CAAC;AAChC,EAAE,IAAI,CAAC,EAAE,CAAC,UAAU,CAAC,GAAG,CAAC,EAAE;AAC3B,IAAI,KAAK,CAAC,UAAU,CAAC,GAAG,CAAC;AACzB,GAAG;AACH;AACA,EAAE,EAAE,CAAC,aAAa,CAAC,IAAI,EAAE,GAAG,IAAI,CAAC;AACjC,CAAC;AACD;IACA,YAAc,GAAG;AACjB,EAAE,UAAU,EAAE,CAAC,CAAC,UAAU,CAAC;AAC3B,EAAE,cAAc;AAChB"
+      }
+    },
+    {
+      "name": "vite:dynamic-import-vars",
+      "start": 1718972211819,
+      "end": 1718972211819,
+      "order": "normal"
+    },
+    {
+      "name": "vite:import-glob",
+      "start": 1718972211819,
+      "end": 1718972211819,
+      "order": "normal"
+    },
+    {
+      "name": "vite:build-import-analysis",
+      "start": 1718972211819,
+      "end": 1718972211819,
+      "order": "normal"
+    },
+    {
+      "name": "vite:reporter",
+      "start": 1718972211819,
+      "end": 1718972211819,
+      "order": "normal"
+    }
+  ]
+}

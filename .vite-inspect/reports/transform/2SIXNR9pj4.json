@@ -1,0 +1,96 @@
+{
+  "resolvedId": "C:/Users/XFXRe/Desktop/Portfolio/node_modules/is-docker/index.js",
+  "transforms": [
+    {
+      "name": "vite:load-fallback",
+      "result": "import fs from 'node:fs';\n\nlet isDockerCached;\n\nfunction hasDockerEnv() {\n\ttry {\n\t\tfs.statSync('/.dockerenv');\n\t\treturn true;\n\t} catch {\n\t\treturn false;\n\t}\n}\n\nfunction hasDockerCGroup() {\n\ttry {\n\t\treturn fs.readFileSync('/proc/self/cgroup', 'utf8').includes('docker');\n\t} catch {\n\t\treturn false;\n\t}\n}\n\nexport default function isDocker() {\n\t// TODO: Use `??=` when targeting Node.js 16.\n\tif (isDockerCached === undefined) {\n\t\tisDockerCached = hasDockerEnv() || hasDockerCGroup();\n\t}\n\n\treturn isDockerCached;\n}\n",
+      "start": 1718972211675,
+      "end": 1718972211749,
+      "sourcemaps": null
+    },
+    {
+      "name": "vite:css",
+      "start": 1718972211749,
+      "end": 1718972211749,
+      "order": "normal"
+    },
+    {
+      "name": "vite:esbuild",
+      "start": 1718972211749,
+      "end": 1718972211749,
+      "order": "normal"
+    },
+    {
+      "name": "vite:json",
+      "start": 1718972211749,
+      "end": 1718972211749,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker",
+      "start": 1718972211749,
+      "end": 1718972211749,
+      "order": "normal"
+    },
+    {
+      "name": "vite:define",
+      "start": 1718972211749,
+      "end": 1718972211749,
+      "order": "normal"
+    },
+    {
+      "name": "vite:css-post",
+      "start": 1718972211749,
+      "end": 1718972211749,
+      "order": "normal"
+    },
+    {
+      "name": "vite:build-html",
+      "start": 1718972211749,
+      "end": 1718972211749,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker-import-meta-url",
+      "start": 1718972211749,
+      "end": 1718972211749,
+      "order": "normal"
+    },
+    {
+      "name": "vite:asset-import-meta-url",
+      "start": 1718972211749,
+      "end": 1718972211749,
+      "order": "normal"
+    },
+    {
+      "name": "commonjs",
+      "start": 1718972211749,
+      "end": 1718972211749,
+      "order": "normal"
+    },
+    {
+      "name": "vite:dynamic-import-vars",
+      "start": 1718972211749,
+      "end": 1718972211749,
+      "order": "normal"
+    },
+    {
+      "name": "vite:import-glob",
+      "start": 1718972211749,
+      "end": 1718972211749,
+      "order": "normal"
+    },
+    {
+      "name": "vite:build-import-analysis",
+      "start": 1718972211749,
+      "end": 1718972211749,
+      "order": "normal"
+    },
+    {
+      "name": "vite:reporter",
+      "start": 1718972211749,
+      "end": 1718972211749,
+      "order": "normal"
+    }
+  ]
+}

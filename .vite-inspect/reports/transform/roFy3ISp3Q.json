@@ -1,0 +1,105 @@
+{
+  "resolvedId": "C:/Users/XFXRe/Desktop/Portfolio/node_modules/fs-extra/lib/mkdirs/make-dir.js",
+  "transforms": [
+    {
+      "name": "vite:load-fallback",
+      "result": "'use strict'\nconst fs = require('../fs')\nconst { checkPath } = require('./utils')\n\nconst getMode = options => {\n  const defaults = { mode: 0o777 }\n  if (typeof options === 'number') return options\n  return ({ ...defaults, ...options }).mode\n}\n\nmodule.exports.makeDir = async (dir, options) => {\n  checkPath(dir)\n\n  return fs.mkdir(dir, {\n    mode: getMode(options),\n    recursive: true\n  })\n}\n\nmodule.exports.makeDirSync = (dir, options) => {\n  checkPath(dir)\n\n  return fs.mkdirSync(dir, {\n    mode: getMode(options),\n    recursive: true\n  })\n}\n",
+      "start": 1718972211562,
+      "end": 1718972211636,
+      "sourcemaps": null
+    },
+    {
+      "name": "vite:css",
+      "start": 1718972211636,
+      "end": 1718972211636,
+      "order": "normal"
+    },
+    {
+      "name": "vite:esbuild",
+      "start": 1718972211636,
+      "end": 1718972211636,
+      "order": "normal"
+    },
+    {
+      "name": "vite:json",
+      "start": 1718972211637,
+      "end": 1718972211637,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker",
+      "start": 1718972211637,
+      "end": 1718972211637,
+      "order": "normal"
+    },
+    {
+      "name": "vite:define",
+      "start": 1718972211637,
+      "end": 1718972211637,
+      "order": "normal"
+    },
+    {
+      "name": "vite:css-post",
+      "start": 1718972211637,
+      "end": 1718972211637,
+      "order": "normal"
+    },
+    {
+      "name": "vite:build-html",
+      "start": 1718972211637,
+      "end": 1718972211637,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker-import-meta-url",
+      "start": 1718972211637,
+      "end": 1718972211637,
+      "order": "normal"
+    },
+    {
+      "name": "vite:asset-import-meta-url",
+      "start": 1718972211637,
+      "end": 1718972211637,
+      "order": "normal"
+    },
+    {
+      "name": "commonjs",
+      "result": "import * as commonjsHelpers from \"\u0000commonjsHelpers.js\";\nimport { __exports as makeDir } from \"\\u0000C:/Users/XFXRe/Desktop/Portfolio/node_modules/fs-extra/lib/mkdirs/make-dir.js?commonjs-exports\";\nimport require$$0 from \"\\u0000C:/Users/XFXRe/Desktop/Portfolio/node_modules/fs-extra/lib/fs/index.js?commonjs-proxy\";\nimport require$$1 from \"\\u0000C:/Users/XFXRe/Desktop/Portfolio/node_modules/fs-extra/lib/mkdirs/utils.js?commonjs-proxy\";\n\n'use strict'\nconst fs = require$$0\nconst { checkPath } = require$$1\n\nconst getMode = options => {\n  const defaults = { mode: 0o777 }\n  if (typeof options === 'number') return options\n  return ({ ...defaults, ...options }).mode\n}\n\nvar makeDir_1 = makeDir.makeDir = async (dir, options) => {\n  checkPath(dir)\n\n  return fs.mkdir(dir, {\n    mode: getMode(options),\n    recursive: true\n  })\n}\n\nvar makeDirSync = makeDir.makeDirSync = (dir, options) => {\n  checkPath(dir)\n\n  return fs.mkdirSync(dir, {\n    mode: getMode(options),\n    recursive: true\n  })\n}\n\nexport { makeDir as __moduleExports, makeDir_1 as makeDir, makeDirSync, makeDir as default };",
+      "start": 1718972211637,
+      "end": 1718972211806,
+      "order": "normal",
+      "sourcemaps": {
+        "version": 3,
+        "sources": [
+          ""
+        ],
+        "names": [],
+        "mappings": ";;;;;AAAA,YAAY;AACZ,MAAM,EAAE,GAAG,UAAgB;AAC3B,MAAM,EAAE,SAAS,EAAE,GAAG,UAAkB;AACxC;AACA,MAAM,OAAO,GAAG,OAAO,IAAI;AAC3B,EAAE,MAAM,QAAQ,GAAG,EAAE,IAAI,EAAE,KAAK,EAAE;AAClC,EAAE,IAAI,OAAO,OAAO,KAAK,QAAQ,EAAE,OAAO,OAAO;AACjD,EAAE,OAAO,CAAC,EAAE,GAAG,QAAQ,EAAE,GAAG,OAAO,EAAE,EAAE,IAAI;AAC3C,CAAC;AACD;AACA,+BAAsB,GAAG,OAAO,GAAG,EAAE,OAAO,KAAK;AACjD,EAAE,SAAS,CAAC,GAAG,CAAC;AAChB;AACA,EAAE,OAAO,EAAE,CAAC,KAAK,CAAC,GAAG,EAAE;AACvB,IAAI,IAAI,EAAE,OAAO,CAAC,OAAO,CAAC;AAC1B,IAAI,SAAS,EAAE,IAAI;AACnB,GAAG,CAAC;AACJ,CAAC;AACD;AACA,qCAA0B,GAAG,CAAC,GAAG,EAAE,OAAO,KAAK;AAC/C,EAAE,SAAS,CAAC,GAAG,CAAC;AAChB;AACA,EAAE,OAAO,EAAE,CAAC,SAAS,CAAC,GAAG,EAAE;AAC3B,IAAI,IAAI,EAAE,OAAO,CAAC,OAAO,CAAC;AAC1B,IAAI,SAAS,EAAE,IAAI;AACnB,GAAG,CAAC;AACJ"
+      }
+    },
+    {
+      "name": "vite:dynamic-import-vars",
+      "start": 1718972211806,
+      "end": 1718972211806,
+      "order": "normal"
+    },
+    {
+      "name": "vite:import-glob",
+      "start": 1718972211806,
+      "end": 1718972211806,
+      "order": "normal"
+    },
+    {
+      "name": "vite:build-import-analysis",
+      "start": 1718972211806,
+      "end": 1718972211806,
+      "order": "normal"
+    },
+    {
+      "name": "vite:reporter",
+      "start": 1718972211806,
+      "end": 1718972211806,
+      "order": "normal"
+    }
+  ]
+}

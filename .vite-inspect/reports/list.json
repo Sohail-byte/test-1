@@ -1,0 +1,2886 @@
+{
+  "root": "C:/Users/XFXRe/Desktop/Portfolio",
+  "modules": [
+    {
+      "id": "\u0000C:/Users/XFXRe/Desktop/Portfolio/node_modules/debug/src/browser.js?commonjs-module",
+      "deps": [],
+      "plugins": [
+        {
+          "name": "commonjs",
+          "transform": 0
+        }
+      ],
+      "virtual": true,
+      "totalTime": 0,
+      "invokeCount": 1,
+      "sourceSize": 57,
+      "distSize": 57
+    },
+    {
+      "id": "\u0000C:/Users/XFXRe/Desktop/Portfolio/node_modules/debug/src/common.js?commonjs-proxy",
+      "deps": [],
+      "plugins": [
+        {
+          "name": "commonjs",
+          "transform": 0
+        }
+      ],
+      "virtual": true,
+      "totalTime": 0,
+      "invokeCount": 1,
+      "sourceSize": 111,
+      "distSize": 111
+    },
+    {
+      "id": "\u0000C:/Users/XFXRe/Desktop/Portfolio/node_modules/fs-extra/lib/copy/copy-sync.js?commonjs-proxy",
+      "deps": [],
+      "plugins": [
+        {
+          "name": "commonjs",
+          "transform": 0
+        }
+      ],
+      "virtual": true,
+      "totalTime": 0,
+      "invokeCount": 1,
+      "sourceSize": 122,
+      "distSize": 122
+    },
+    {
+      "id": "\u0000C:/Users/XFXRe/Desktop/Portfolio/node_modules/fs-extra/lib/copy/copy.js?commonjs-proxy",
+      "deps": [],
+      "plugins": [
+        {
+          "name": "commonjs",
+          "transform": 0
+        }
+      ],
+      "virtual": true,
+      "totalTime": 0,
+      "invokeCount": 1,
+      "sourceSize": 117,
+      "distSize": 117
+    },
+    {
+      "id": "\u0000C:/Users/XFXRe/Desktop/Portfolio/node_modules/fs-extra/lib/copy/index.js?commonjs-proxy",
+      "deps": [],
+      "plugins": [
+        {
+          "name": "commonjs",
+          "transform": 0
+        }
+      ],
+      "virtual": true,
+      "totalTime": 0,
+      "invokeCount": 1,
+      "sourceSize": 118,
+      "distSize": 118
+    },
+    {
+      "id": "\u0000C:/Users/XFXRe/Desktop/Portfolio/node_modules/fs-extra/lib/empty/index.js?commonjs-proxy",
+      "deps": [],
+      "plugins": [
+        {
+          "name": "commonjs",
+          "transform": 0
+        }
+      ],
+      "virtual": true,
+      "totalTime": 0,
+      "invokeCount": 1,
+      "sourceSize": 119,
+      "distSize": 119
+    },
+    {
+      "id": "\u0000C:/Users/XFXRe/Desktop/Portfolio/node_modules/fs-extra/lib/ensure/file.js?commonjs-proxy",
+      "deps": [],
+      "plugins": [
+        {
+          "name": "commonjs",
+          "transform": 0
+        }
+      ],
+      "virtual": true,
+      "totalTime": 0,
+      "invokeCount": 1,
+      "sourceSize": 119,
+      "distSize": 119
+    },
+    {
+      "id": "\u0000C:/Users/XFXRe/Desktop/Portfolio/node_modules/fs-extra/lib/ensure/index.js?commonjs-proxy",
+      "deps": [],
+      "plugins": [
+        {
+          "name": "commonjs",
+          "transform": 0
+        }
+      ],
+      "virtual": true,
+      "totalTime": 0,
+      "invokeCount": 1,
+      "sourceSize": 120,
+      "distSize": 120
+    },
+    {
+      "id": "\u0000C:/Users/XFXRe/Desktop/Portfolio/node_modules/fs-extra/lib/ensure/link.js?commonjs-proxy",
+      "deps": [],
+      "plugins": [
+        {
+          "name": "commonjs",
+          "transform": 0
+        }
+      ],
+      "virtual": true,
+      "totalTime": 0,
+      "invokeCount": 1,
+      "sourceSize": 119,
+      "distSize": 119
+    },
+    {
+      "id": "\u0000C:/Users/XFXRe/Desktop/Portfolio/node_modules/fs-extra/lib/ensure/symlink-paths.js?commonjs-proxy",
+      "deps": [],
+      "plugins": [
+        {
+          "name": "commonjs",
+          "transform": 0
+        }
+      ],
+      "virtual": true,
+      "totalTime": 0,
+      "invokeCount": 1,
+      "sourceSize": 128,
+      "distSize": 128
+    },
+    {
+      "id": "\u0000C:/Users/XFXRe/Desktop/Portfolio/node_modules/fs-extra/lib/ensure/symlink-type.js?commonjs-proxy",
+      "deps": [],
+      "plugins": [
+        {
+          "name": "commonjs",
+          "transform": 0
+        }
+      ],
+      "virtual": true,
+      "totalTime": 0,
+      "invokeCount": 1,
+      "sourceSize": 127,
+      "distSize": 127
+    },
+    {
+      "id": "\u0000C:/Users/XFXRe/Desktop/Portfolio/node_modules/fs-extra/lib/ensure/symlink.js?commonjs-proxy",
+      "deps": [],
+      "plugins": [
+        {
+          "name": "commonjs",
+          "transform": 0
+        }
+      ],
+      "virtual": true,
+      "totalTime": 0,
+      "invokeCount": 1,
+      "sourceSize": 122,
+      "distSize": 122
+    },
+    {
+      "id": "\u0000C:/Users/XFXRe/Desktop/Portfolio/node_modules/fs-extra/lib/fs/index.js?commonjs-exports",
+      "deps": [],
+      "plugins": [
+        {
+          "name": "commonjs",
+          "transform": 0
+        }
+      ],
+      "virtual": true,
+      "totalTime": 0,
+      "invokeCount": 1,
+      "sourceSize": 37,
+      "distSize": 37
+    },
+    {
+      "id": "\u0000C:/Users/XFXRe/Desktop/Portfolio/node_modules/fs-extra/lib/fs/index.js?commonjs-proxy",
+      "deps": [],
+      "plugins": [
+        {
+          "name": "commonjs",
+          "transform": 0
+        }
+      ],
+      "virtual": true,
+      "totalTime": 0,
+      "invokeCount": 1,
+      "sourceSize": 116,
+      "distSize": 116
+    },
+    {
+      "id": "\u0000C:/Users/XFXRe/Desktop/Portfolio/node_modules/fs-extra/lib/json/index.js?commonjs-proxy",
+      "deps": [],
+      "plugins": [
+        {
+          "name": "commonjs",
+          "transform": 0
+        }
+      ],
+      "virtual": true,
+      "totalTime": 0,
+      "invokeCount": 1,
+      "sourceSize": 118,
+      "distSize": 118
+    },
+    {
+      "id": "\u0000C:/Users/XFXRe/Desktop/Portfolio/node_modules/fs-extra/lib/json/jsonfile.js?commonjs-proxy",
+      "deps": [],
+      "plugins": [
+        {
+          "name": "commonjs",
+          "transform": 0
+        }
+      ],
+      "virtual": true,
+      "totalTime": 0,
+      "invokeCount": 1,
+      "sourceSize": 121,
+      "distSize": 121
+    },
+    {
+      "id": "\u0000C:/Users/XFXRe/Desktop/Portfolio/node_modules/fs-extra/lib/json/output-json-sync.js?commonjs-proxy",
+      "deps": [],
+      "plugins": [
+        {
+          "name": "commonjs",
+          "transform": 0
+        }
+      ],
+      "virtual": true,
+      "totalTime": 0,
+      "invokeCount": 1,
+      "sourceSize": 129,
+      "distSize": 129
+    },
+    {
+      "id": "\u0000C:/Users/XFXRe/Desktop/Portfolio/node_modules/fs-extra/lib/json/output-json.js?commonjs-proxy",
+      "deps": [],
+      "plugins": [
+        {
+          "name": "commonjs",
+          "transform": 0
+        }
+      ],
+      "virtual": true,
+      "totalTime": 0,
+      "invokeCount": 1,
+      "sourceSize": 124,
+      "distSize": 124
+    },
+    {
+      "id": "\u0000C:/Users/XFXRe/Desktop/Portfolio/node_modules/fs-extra/lib/mkdirs/index.js?commonjs-proxy",
+      "deps": [],
+      "plugins": [
+        {
+          "name": "commonjs",
+          "transform": 0
+        }
+      ],
+      "virtual": true,
+      "totalTime": 0,
+      "invokeCount": 1,
+      "sourceSize": 120,
+      "distSize": 120
+    },
+    {
+      "id": "\u0000C:/Users/XFXRe/Desktop/Portfolio/node_modules/fs-extra/lib/mkdirs/make-dir.js?commonjs-exports",
+      "deps": [],
+      "plugins": [
+        {
+          "name": "commonjs",
+          "transform": 0
+        }
+      ],
+      "virtual": true,
+      "totalTime": 0,
+      "invokeCount": 1,
+      "sourceSize": 47,
+      "distSize": 47
+    },
+    {
+      "id": "\u0000C:/Users/XFXRe/Desktop/Portfolio/node_modules/fs-extra/lib/mkdirs/make-dir.js?commonjs-proxy",
+      "deps": [],
+      "plugins": [
+        {
+          "name": "commonjs",
+          "transform": 0
+        }
+      ],
+      "virtual": true,
+      "totalTime": 0,
+      "invokeCount": 1,
+      "sourceSize": 123,
+      "distSize": 123
+    },
+    {
+      "id": "\u0000C:/Users/XFXRe/Desktop/Portfolio/node_modules/fs-extra/lib/mkdirs/utils.js?commonjs-exports",
+      "deps": [],
+      "plugins": [
+        {
+          "name": "commonjs",
+          "transform": 0
+        }
+      ],
+      "virtual": true,
+      "totalTime": 0,
+      "invokeCount": 1,
+      "sourceSize": 43,
+      "distSize": 43
+    },
+    {
+      "id": "\u0000C:/Users/XFXRe/Desktop/Portfolio/node_modules/fs-extra/lib/mkdirs/utils.js?commonjs-proxy",
+      "deps": [],
+      "plugins": [
+        {
+          "name": "commonjs",
+          "transform": 0
+        }
+      ],
+      "virtual": true,
+      "totalTime": 0,
+      "invokeCount": 1,
+      "sourceSize": 120,
+      "distSize": 120
+    },
+    {
+      "id": "\u0000C:/Users/XFXRe/Desktop/Portfolio/node_modules/fs-extra/lib/move/index.js?commonjs-proxy",
+      "deps": [],
+      "plugins": [
+        {
+          "name": "commonjs",
+          "transform": 0
+        }
+      ],
+      "virtual": true,
+      "totalTime": 0,
+      "invokeCount": 1,
+      "sourceSize": 118,
+      "distSize": 118
+    },
+    {
+      "id": "\u0000C:/Users/XFXRe/Desktop/Portfolio/node_modules/fs-extra/lib/move/move-sync.js?commonjs-proxy",
+      "deps": [],
+      "plugins": [
+        {
+          "name": "commonjs",
+          "transform": 0
+        }
+      ],
+      "virtual": true,
+      "totalTime": 0,
+      "invokeCount": 1,
+      "sourceSize": 122,
+      "distSize": 122
+    },
+    {
+      "id": "\u0000C:/Users/XFXRe/Desktop/Portfolio/node_modules/fs-extra/lib/move/move.js?commonjs-proxy",
+      "deps": [],
+      "plugins": [
+        {
+          "name": "commonjs",
+          "transform": 0
+        }
+      ],
+      "virtual": true,
+      "totalTime": 0,
+      "invokeCount": 1,
+      "sourceSize": 117,
+      "distSize": 117
+    },
+    {
+      "id": "\u0000C:/Users/XFXRe/Desktop/Portfolio/node_modules/fs-extra/lib/output-file/index.js?commonjs-proxy",
+      "deps": [],
+      "plugins": [
+        {
+          "name": "commonjs",
+          "transform": 0
+        }
+      ],
+      "virtual": true,
+      "totalTime": 0,
+      "invokeCount": 1,
+      "sourceSize": 125,
+      "distSize": 125
+    },
+    {
+      "id": "\u0000C:/Users/XFXRe/Desktop/Portfolio/node_modules/fs-extra/lib/path-exists/index.js?commonjs-proxy",
+      "deps": [],
+      "plugins": [
+        {
+          "name": "commonjs",
+          "transform": 0
+        }
+      ],
+      "virtual": true,
+      "totalTime": 0,
+      "invokeCount": 1,
+      "sourceSize": 125,
+      "distSize": 125
+    },
+    {
+      "id": "\u0000C:/Users/XFXRe/Desktop/Portfolio/node_modules/fs-extra/lib/remove/index.js?commonjs-proxy",
+      "deps": [],
+      "plugins": [
+        {
+          "name": "commonjs",
+          "transform": 0
+        }
+      ],
+      "virtual": true,
+      "totalTime": 0,
+      "invokeCount": 1,
+      "sourceSize": 120,
+      "distSize": 120
+    },
+    {
+      "id": "\u0000C:/Users/XFXRe/Desktop/Portfolio/node_modules/fs-extra/lib/util/stat.js?commonjs-proxy",
+      "deps": [],
+      "plugins": [
+        {
+          "name": "commonjs",
+          "transform": 0
+        }
+      ],
+      "virtual": true,
+      "totalTime": 0,
+      "invokeCount": 1,
+      "sourceSize": 117,
+      "distSize": 117
+    },
+    {
+      "id": "\u0000C:/Users/XFXRe/Desktop/Portfolio/node_modules/fs-extra/lib/util/utimes.js?commonjs-proxy",
+      "deps": [],
+      "plugins": [
+        {
+          "name": "commonjs",
+          "transform": 0
+        }
+      ],
+      "virtual": true,
+      "totalTime": 0,
+      "invokeCount": 1,
+      "sourceSize": 119,
+      "distSize": 119
+    },
+    {
+      "id": "\u0000C:/Users/XFXRe/Desktop/Portfolio/node_modules/graceful-fs/clone.js?commonjs-proxy",
+      "deps": [],
+      "plugins": [
+        {
+          "name": "commonjs",
+          "transform": 0
+        }
+      ],
+      "virtual": true,
+      "totalTime": 0,
+      "invokeCount": 1,
+      "sourceSize": 112,
+      "distSize": 112
+    },
+    {
+      "id": "\u0000C:/Users/XFXRe/Desktop/Portfolio/node_modules/graceful-fs/graceful-fs.js?commonjs-proxy",
+      "deps": [],
+      "plugins": [
+        {
+          "name": "commonjs",
+          "transform": 0
+        }
+      ],
+      "virtual": true,
+      "totalTime": 0,
+      "invokeCount": 1,
+      "sourceSize": 118,
+      "distSize": 118
+    },
+    {
+      "id": "\u0000C:/Users/XFXRe/Desktop/Portfolio/node_modules/graceful-fs/legacy-streams.js?commonjs-proxy",
+      "deps": [],
+      "plugins": [
+        {
+          "name": "commonjs",
+          "transform": 0
+        }
+      ],
+      "virtual": true,
+      "totalTime": 0,
+      "invokeCount": 1,
+      "sourceSize": 121,
+      "distSize": 121
+    },
+    {
+      "id": "\u0000C:/Users/XFXRe/Desktop/Portfolio/node_modules/graceful-fs/polyfills.js?commonjs-proxy",
+      "deps": [],
+      "plugins": [
+        {
+          "name": "commonjs",
+          "transform": 0
+        }
+      ],
+      "virtual": true,
+      "totalTime": 0,
+      "invokeCount": 1,
+      "sourceSize": 116,
+      "distSize": 116
+    },
+    {
+      "id": "\u0000C:/Users/XFXRe/Desktop/Portfolio/node_modules/jsonfile/index.js?commonjs-proxy",
+      "deps": [],
+      "plugins": [
+        {
+          "name": "commonjs",
+          "transform": 0
+        }
+      ],
+      "virtual": true,
+      "totalTime": 0,
+      "invokeCount": 1,
+      "sourceSize": 109,
+      "distSize": 109
+    },
+    {
+      "id": "\u0000C:/Users/XFXRe/Desktop/Portfolio/node_modules/jsonfile/utils.js?commonjs-proxy",
+      "deps": [],
+      "plugins": [
+        {
+          "name": "commonjs",
+          "transform": 0
+        }
+      ],
+      "virtual": true,
+      "totalTime": 0,
+      "invokeCount": 1,
+      "sourceSize": 109,
+      "distSize": 109
+    },
+    {
+      "id": "\u0000C:/Users/XFXRe/Desktop/Portfolio/node_modules/picocolors/picocolors.browser.js?commonjs-module",
+      "deps": [],
+      "plugins": [
+        {
+          "name": "commonjs",
+          "transform": 0
+        }
+      ],
+      "virtual": true,
+      "totalTime": 0,
+      "invokeCount": 1,
+      "sourceSize": 79,
+      "distSize": 79
+    },
+    {
+      "id": "\u0000C:/Users/XFXRe/Desktop/Portfolio/node_modules/picomatch/lib/constants.js?commonjs-proxy",
+      "deps": [],
+      "plugins": [
+        {
+          "name": "commonjs",
+          "transform": 0
+        }
+      ],
+      "virtual": true,
+      "totalTime": 0,
+      "invokeCount": 1,
+      "sourceSize": 118,
+      "distSize": 118
+    },
+    {
+      "id": "\u0000C:/Users/XFXRe/Desktop/Portfolio/node_modules/picomatch/lib/parse.js?commonjs-proxy",
+      "deps": [],
+      "plugins": [
+        {
+          "name": "commonjs",
+          "transform": 0
+        }
+      ],
+      "virtual": true,
+      "totalTime": 0,
+      "invokeCount": 1,
+      "sourceSize": 114,
+      "distSize": 114
+    },
+    {
+      "id": "\u0000C:/Users/XFXRe/Desktop/Portfolio/node_modules/picomatch/lib/picomatch.js?commonjs-proxy",
+      "deps": [],
+      "plugins": [
+        {
+          "name": "commonjs",
+          "transform": 0
+        }
+      ],
+      "virtual": true,
+      "totalTime": 0,
+      "invokeCount": 1,
+      "sourceSize": 118,
+      "distSize": 118
+    },
+    {
+      "id": "\u0000C:/Users/XFXRe/Desktop/Portfolio/node_modules/picomatch/lib/scan.js?commonjs-proxy",
+      "deps": [],
+      "plugins": [
+        {
+          "name": "commonjs",
+          "transform": 0
+        }
+      ],
+      "virtual": true,
+      "totalTime": 0,
+      "invokeCount": 1,
+      "sourceSize": 113,
+      "distSize": 113
+    },
+    {
+      "id": "\u0000C:/Users/XFXRe/Desktop/Portfolio/node_modules/picomatch/lib/utils.js?commonjs-exports",
+      "deps": [],
+      "plugins": [
+        {
+          "name": "commonjs",
+          "transform": 0
+        }
+      ],
+      "virtual": true,
+      "totalTime": 0,
+      "invokeCount": 1,
+      "sourceSize": 43,
+      "distSize": 43
+    },
+    {
+      "id": "\u0000C:/Users/XFXRe/Desktop/Portfolio/node_modules/picomatch/lib/utils.js?commonjs-proxy",
+      "deps": [],
+      "plugins": [
+        {
+          "name": "commonjs",
+          "transform": 0
+        }
+      ],
+      "virtual": true,
+      "totalTime": 0,
+      "invokeCount": 1,
+      "sourceSize": 114,
+      "distSize": 114
+    },
+    {
+      "id": "\u0000C:/Users/XFXRe/Desktop/Portfolio/node_modules/universalify/index.js?commonjs-exports",
+      "deps": [],
+      "plugins": [
+        {
+          "name": "commonjs",
+          "transform": 0
+        }
+      ],
+      "virtual": true,
+      "totalTime": 0,
+      "invokeCount": 1,
+      "sourceSize": 57,
+      "distSize": 57
+    },
+    {
+      "id": "\u0000C:/Users/XFXRe/Desktop/Portfolio/node_modules/universalify/index.js?commonjs-proxy",
+      "deps": [],
+      "plugins": [
+        {
+          "name": "commonjs",
+          "transform": 0
+        }
+      ],
+      "virtual": true,
+      "totalTime": 0,
+      "invokeCount": 1,
+      "sourceSize": 113,
+      "distSize": 113
+    },
+    {
+      "id": "\u0000__vite-browser-external?commonjs-proxy",
+      "deps": [],
+      "plugins": [
+        {
+          "name": "commonjs",
+          "transform": 0
+        }
+      ],
+      "virtual": true,
+      "totalTime": 0,
+      "invokeCount": 1,
+      "sourceSize": 200,
+      "distSize": 200
+    },
+    {
+      "id": "\u0000commonjsHelpers.js",
+      "deps": [],
+      "plugins": [
+        {
+          "name": "commonjs",
+          "transform": 0
+        }
+      ],
+      "virtual": true,
+      "totalTime": 0,
+      "invokeCount": 1,
+      "sourceSize": 1294,
+      "distSize": 1294
+    },
+    {
+      "id": "\u0000vite/modulepreload-polyfill.js",
+      "deps": [],
+      "plugins": [
+        {
+          "name": "vite:modulepreload-polyfill",
+          "transform": 0
+        },
+        {
+          "name": "vite:modulepreload-polyfill",
+          "resolveId": 0
+        }
+      ],
+      "virtual": true,
+      "totalTime": 0,
+      "invokeCount": 1,
+      "sourceSize": 1548,
+      "distSize": 1548
+    },
+    {
+      "id": "\u0000vite/preload-helper.js",
+      "deps": [],
+      "plugins": [
+        {
+          "name": "vite:build-import-analysis",
+          "transform": 0
+        }
+      ],
+      "virtual": true,
+      "totalTime": 0,
+      "invokeCount": 1,
+      "sourceSize": 3283,
+      "distSize": 3283
+    },
+    {
+      "id": "C:/Users/XFXRe/Desktop/Portfolio/index.html",
+      "deps": [],
+      "plugins": [
+        {
+          "name": "vite:load-fallback",
+          "transform": 5
+        },
+        {
+          "name": "vite:build-html",
+          "transform": 28
+        },
+        {
+          "name": "vite:resolve",
+          "resolveId": 1
+        }
+      ],
+      "virtual": false,
+      "totalTime": 33,
+      "invokeCount": 1,
+      "sourceSize": 3816,
+      "distSize": 0
+    },
+    {
+      "id": "C:/Users/XFXRe/Desktop/Portfolio/main.js",
+      "deps": [],
+      "plugins": [
+        {
+          "name": "vite:load-fallback",
+          "transform": 4
+        },
+        {
+          "name": "vite:resolve",
+          "resolveId": 1
+        }
+      ],
+      "virtual": false,
+      "totalTime": 4,
+      "invokeCount": 1,
+      "sourceSize": 344,
+      "distSize": 0
+    },
+    {
+      "id": "C:/Users/XFXRe/Desktop/Portfolio/node_modules/@polka/url/build.mjs",
+      "deps": [],
+      "plugins": [
+        {
+          "name": "vite:load-fallback",
+          "transform": 44
+        },
+        {
+          "name": "vite:resolve",
+          "resolveId": 1
+        }
+      ],
+      "virtual": false,
+      "totalTime": 44,
+      "invokeCount": 1,
+      "sourceSize": 730,
+      "distSize": 0
+    },
+    {
+      "id": "C:/Users/XFXRe/Desktop/Portfolio/node_modules/@rollup/pluginutils/dist/es/index.js",
+      "deps": [],
+      "plugins": [
+        {
+          "name": "vite:load-fallback",
+          "transform": 54
+        },
+        {
+          "name": "vite:resolve",
+          "resolveId": 4
+        }
+      ],
+      "virtual": false,
+      "totalTime": 54,
+      "invokeCount": 1,
+      "sourceSize": 14230,
+      "distSize": 0
+    },
+    {
+      "id": "C:/Users/XFXRe/Desktop/Portfolio/node_modules/bundle-name/index.js",
+      "deps": [],
+      "plugins": [
+        {
+          "name": "vite:load-fallback",
+          "transform": 69
+        },
+        {
+          "name": "vite:resolve",
+          "resolveId": 1
+        }
+      ],
+      "virtual": false,
+      "totalTime": 69,
+      "invokeCount": 1,
+      "sourceSize": 362,
+      "distSize": 0
+    },
+    {
+      "id": "C:/Users/XFXRe/Desktop/Portfolio/node_modules/debug/src/browser.js",
+      "deps": [],
+      "plugins": [
+        {
+          "name": "vite:load-fallback",
+          "transform": 59
+        },
+        {
+          "name": "vite:define",
+          "transform": 26
+        },
+        {
+          "name": "commonjs",
+          "transform": 158
+        },
+        {
+          "name": "vite:resolve",
+          "resolveId": 3
+        }
+      ],
+      "virtual": false,
+      "totalTime": 243,
+      "invokeCount": 1,
+      "sourceSize": 6010,
+      "distSize": 0
+    },
+    {
+      "id": "C:/Users/XFXRe/Desktop/Portfolio/node_modules/debug/src/common.js",
+      "deps": [],
+      "plugins": [
+        {
+          "name": "vite:load-fallback",
+          "transform": 40
+        },
+        {
+          "name": "commonjs",
+          "transform": 88
+        },
+        {
+          "name": "vite:resolve",
+          "resolveId": 0
+        }
+      ],
+      "virtual": false,
+      "totalTime": 128,
+      "invokeCount": 1,
+      "sourceSize": 6289,
+      "distSize": 0
+    },
+    {
+      "id": "C:/Users/XFXRe/Desktop/Portfolio/node_modules/default-browser-id/index.js",
+      "deps": [],
+      "plugins": [
+        {
+          "name": "vite:load-fallback",
+          "transform": 69
+        },
+        {
+          "name": "vite:resolve",
+          "resolveId": 2
+        }
+      ],
+      "virtual": false,
+      "totalTime": 69,
+      "invokeCount": 1,
+      "sourceSize": 650,
+      "distSize": 0
+    },
+    {
+      "id": "C:/Users/XFXRe/Desktop/Portfolio/node_modules/default-browser/index.js",
+      "deps": [],
+      "plugins": [
+        {
+          "name": "vite:load-fallback",
+          "transform": 71
+        },
+        {
+          "name": "vite:resolve",
+          "resolveId": 1
+        }
+      ],
+      "virtual": false,
+      "totalTime": 71,
+      "invokeCount": 1,
+      "sourceSize": 1038,
+      "distSize": 0
+    },
+    {
+      "id": "C:/Users/XFXRe/Desktop/Portfolio/node_modules/default-browser/windows.js",
+      "deps": [],
+      "plugins": [
+        {
+          "name": "vite:load-fallback",
+          "transform": 69
+        },
+        {
+          "name": "vite:resolve",
+          "resolveId": 0
+        }
+      ],
+      "virtual": false,
+      "totalTime": 69,
+      "invokeCount": 1,
+      "sourceSize": 1647,
+      "distSize": 0
+    },
+    {
+      "id": "C:/Users/XFXRe/Desktop/Portfolio/node_modules/define-lazy-prop/index.js",
+      "deps": [],
+      "plugins": [
+        {
+          "name": "vite:load-fallback",
+          "transform": 71
+        },
+        {
+          "name": "vite:resolve",
+          "resolveId": 2
+        }
+      ],
+      "virtual": false,
+      "totalTime": 71,
+      "invokeCount": 1,
+      "sourceSize": 429,
+      "distSize": 0
+    },
+    {
+      "id": "C:/Users/XFXRe/Desktop/Portfolio/node_modules/error-stack-parser-es/dist/index.mjs",
+      "deps": [],
+      "plugins": [
+        {
+          "name": "vite:load-fallback",
+          "transform": 65
+        },
+        {
+          "name": "vite:resolve",
+          "resolveId": 2
+        }
+      ],
+      "virtual": false,
+      "totalTime": 65,
+      "invokeCount": 1,
+      "sourceSize": 1392,
+      "distSize": 0
+    },
+    {
+      "id": "C:/Users/XFXRe/Desktop/Portfolio/node_modules/error-stack-parser-es/dist/lite.mjs",
+      "deps": [],
+      "plugins": [
+        {
+          "name": "vite:load-fallback",
+          "transform": 44
+        },
+        {
+          "name": "vite:resolve",
+          "resolveId": 1
+        }
+      ],
+      "virtual": false,
+      "totalTime": 44,
+      "invokeCount": 1,
+      "sourceSize": 5962,
+      "distSize": 0
+    },
+    {
+      "id": "C:/Users/XFXRe/Desktop/Portfolio/node_modules/estree-walker/dist/esm/estree-walker.js",
+      "deps": [],
+      "plugins": [
+        {
+          "name": "vite:load-fallback",
+          "transform": 51
+        },
+        {
+          "name": "vite:resolve",
+          "resolveId": 2
+        }
+      ],
+      "virtual": false,
+      "totalTime": 51,
+      "invokeCount": 1,
+      "sourceSize": 7158,
+      "distSize": 0
+    },
+    {
+      "id": "C:/Users/XFXRe/Desktop/Portfolio/node_modules/fs-extra/lib/copy/copy-sync.js",
+      "deps": [],
+      "plugins": [
+        {
+          "name": "vite:load-fallback",
+          "transform": 53
+        },
+        {
+          "name": "commonjs",
+          "transform": 205
+        },
+        {
+          "name": "vite:resolve",
+          "resolveId": 1
+        }
+      ],
+      "virtual": false,
+      "totalTime": 258,
+      "invokeCount": 1,
+      "sourceSize": 5533,
+      "distSize": 0
+    },
+    {
+      "id": "C:/Users/XFXRe/Desktop/Portfolio/node_modules/fs-extra/lib/copy/copy.js",
+      "deps": [],
+      "plugins": [
+        {
+          "name": "vite:load-fallback",
+          "transform": 61
+        },
+        {
+          "name": "commonjs",
+          "transform": 197
+        },
+        {
+          "name": "vite:resolve",
+          "resolveId": 1
+        }
+      ],
+      "virtual": false,
+      "totalTime": 258,
+      "invokeCount": 1,
+      "sourceSize": 5649,
+      "distSize": 0
+    },
+    {
+      "id": "C:/Users/XFXRe/Desktop/Portfolio/node_modules/fs-extra/lib/copy/index.js",
+      "deps": [],
+      "plugins": [
+        {
+          "name": "vite:load-fallback",
+          "transform": 38
+        },
+        {
+          "name": "commonjs",
+          "transform": 268
+        },
+        {
+          "name": "vite:resolve",
+          "resolveId": 6
+        },
+        {
+          "name": "vite:resolve",
+          "resolveId": 2
+        },
+        {
+          "name": "vite:resolve",
+          "resolveId": 2
+        }
+      ],
+      "virtual": false,
+      "totalTime": 306,
+      "invokeCount": 1,
+      "sourceSize": 146,
+      "distSize": 0
+    },
+    {
+      "id": "C:/Users/XFXRe/Desktop/Portfolio/node_modules/fs-extra/lib/empty/index.js",
+      "deps": [],
+      "plugins": [
+        {
+          "name": "vite:load-fallback",
+          "transform": 43
+        },
+        {
+          "name": "commonjs",
+          "transform": 254
+        },
+        {
+          "name": "vite:resolve",
+          "resolveId": 5
+        }
+      ],
+      "virtual": false,
+      "totalTime": 297,
+      "invokeCount": 1,
+      "sourceSize": 747,
+      "distSize": 0
+    },
+    {
+      "id": "C:/Users/XFXRe/Desktop/Portfolio/node_modules/fs-extra/lib/ensure/file.js",
+      "deps": [],
+      "plugins": [
+        {
+          "name": "vite:load-fallback",
+          "transform": 65
+        },
+        {
+          "name": "commonjs",
+          "transform": 190
+        },
+        {
+          "name": "vite:resolve",
+          "resolveId": 1
+        }
+      ],
+      "virtual": false,
+      "totalTime": 255,
+      "invokeCount": 1,
+      "sourceSize": 1459,
+      "distSize": 0
+    },
+    {
+      "id": "C:/Users/XFXRe/Desktop/Portfolio/node_modules/fs-extra/lib/ensure/index.js",
+      "deps": [],
+      "plugins": [
+        {
+          "name": "vite:load-fallback",
+          "transform": 41
+        },
+        {
+          "name": "commonjs",
+          "transform": 265
+        },
+        {
+          "name": "vite:resolve",
+          "resolveId": 5
+        }
+      ],
+      "virtual": false,
+      "totalTime": 306,
+      "invokeCount": 1,
+      "sourceSize": 542,
+      "distSize": 0
+    },
+    {
+      "id": "C:/Users/XFXRe/Desktop/Portfolio/node_modules/fs-extra/lib/ensure/link.js",
+      "deps": [],
+      "plugins": [
+        {
+          "name": "vite:load-fallback",
+          "transform": 69
+        },
+        {
+          "name": "commonjs",
+          "transform": 186
+        },
+        {
+          "name": "vite:resolve",
+          "resolveId": 1
+        }
+      ],
+      "virtual": false,
+      "totalTime": 255,
+      "invokeCount": 1,
+      "sourceSize": 1366,
+      "distSize": 0
+    },
+    {
+      "id": "C:/Users/XFXRe/Desktop/Portfolio/node_modules/fs-extra/lib/ensure/symlink-paths.js",
+      "deps": [],
+      "plugins": [
+        {
+          "name": "vite:load-fallback",
+          "transform": 57
+        },
+        {
+          "name": "commonjs",
+          "transform": 116
+        },
+        {
+          "name": "vite:resolve",
+          "resolveId": 1
+        }
+      ],
+      "virtual": false,
+      "totalTime": 173,
+      "invokeCount": 1,
+      "sourceSize": 3103,
+      "distSize": 0
+    },
+    {
+      "id": "C:/Users/XFXRe/Desktop/Portfolio/node_modules/fs-extra/lib/ensure/symlink-type.js",
+      "deps": [],
+      "plugins": [
+        {
+          "name": "vite:load-fallback",
+          "transform": 52
+        },
+        {
+          "name": "commonjs",
+          "transform": 112
+        },
+        {
+          "name": "vite:resolve",
+          "resolveId": 1
+        }
+      ],
+      "virtual": false,
+      "totalTime": 164,
+      "invokeCount": 1,
+      "sourceSize": 596,
+      "distSize": 0
+    },
+    {
+      "id": "C:/Users/XFXRe/Desktop/Portfolio/node_modules/fs-extra/lib/ensure/symlink.js",
+      "deps": [],
+      "plugins": [
+        {
+          "name": "vite:load-fallback",
+          "transform": 72
+        },
+        {
+          "name": "commonjs",
+          "transform": 181
+        },
+        {
+          "name": "vite:resolve",
+          "resolveId": 0
+        }
+      ],
+      "virtual": false,
+      "totalTime": 253,
+      "invokeCount": 1,
+      "sourceSize": 1724,
+      "distSize": 0
+    },
+    {
+      "id": "C:/Users/XFXRe/Desktop/Portfolio/node_modules/fs-extra/lib/fs/index.js",
+      "deps": [],
+      "plugins": [
+        {
+          "name": "vite:load-fallback",
+          "transform": 36
+        },
+        {
+          "name": "commonjs",
+          "transform": 233
+        },
+        {
+          "name": "vite:resolve",
+          "resolveId": 7
+        },
+        {
+          "name": "vite:resolve",
+          "resolveId": 3
+        },
+        {
+          "name": "vite:resolve",
+          "resolveId": 6
+        },
+        {
+          "name": "vite:resolve",
+          "resolveId": 1
+        },
+        {
+          "name": "vite:resolve",
+          "resolveId": 5
+        },
+        {
+          "name": "vite:resolve",
+          "resolveId": 1
+        },
+        {
+          "name": "vite:resolve",
+          "resolveId": 1
+        },
+        {
+          "name": "vite:resolve",
+          "resolveId": 1
+        },
+        {
+          "name": "vite:resolve",
+          "resolveId": 2
+        },
+        {
+          "name": "vite:resolve",
+          "resolveId": 4
+        },
+        {
+          "name": "vite:resolve",
+          "resolveId": 1
+        },
+        {
+          "name": "vite:resolve",
+          "resolveId": 2
+        },
+        {
+          "name": "vite:resolve",
+          "resolveId": 1
+        },
+        {
+          "name": "vite:resolve",
+          "resolveId": 1
+        }
+      ],
+      "virtual": false,
+      "totalTime": 269,
+      "invokeCount": 1,
+      "sourceSize": 3699,
+      "distSize": 0
+    },
+    {
+      "id": "C:/Users/XFXRe/Desktop/Portfolio/node_modules/fs-extra/lib/index.js",
+      "deps": [],
+      "plugins": [
+        {
+          "name": "vite:load-fallback",
+          "transform": 44
+        },
+        {
+          "name": "commonjs",
+          "transform": 321
+        },
+        {
+          "name": "vite:resolve",
+          "resolveId": 1
+        }
+      ],
+      "virtual": false,
+      "totalTime": 365,
+      "invokeCount": 1,
+      "sourceSize": 358,
+      "distSize": 0
+    },
+    {
+      "id": "C:/Users/XFXRe/Desktop/Portfolio/node_modules/fs-extra/lib/json/index.js",
+      "deps": [],
+      "plugins": [
+        {
+          "name": "vite:load-fallback",
+          "transform": 50
+        },
+        {
+          "name": "commonjs",
+          "transform": 259
+        },
+        {
+          "name": "vite:resolve",
+          "resolveId": 4
+        }
+      ],
+      "virtual": false,
+      "totalTime": 309,
+      "invokeCount": 1,
+      "sourceSize": 508,
+      "distSize": 0
+    },
+    {
+      "id": "C:/Users/XFXRe/Desktop/Portfolio/node_modules/fs-extra/lib/json/jsonfile.js",
+      "deps": [],
+      "plugins": [
+        {
+          "name": "vite:load-fallback",
+          "transform": 74
+        },
+        {
+          "name": "commonjs",
+          "transform": 161
+        },
+        {
+          "name": "vite:resolve",
+          "resolveId": 0
+        }
+      ],
+      "virtual": false,
+      "totalTime": 235,
+      "invokeCount": 1,
+      "sourceSize": 238,
+      "distSize": 0
+    },
+    {
+      "id": "C:/Users/XFXRe/Desktop/Portfolio/node_modules/fs-extra/lib/json/output-json-sync.js",
+      "deps": [],
+      "plugins": [
+        {
+          "name": "vite:load-fallback",
+          "transform": 71
+        },
+        {
+          "name": "commonjs",
+          "transform": 173
+        },
+        {
+          "name": "vite:resolve",
+          "resolveId": 0
+        }
+      ],
+      "virtual": false,
+      "totalTime": 244,
+      "invokeCount": 1,
+      "sourceSize": 276,
+      "distSize": 0
+    },
+    {
+      "id": "C:/Users/XFXRe/Desktop/Portfolio/node_modules/fs-extra/lib/json/output-json.js",
+      "deps": [],
+      "plugins": [
+        {
+          "name": "vite:load-fallback",
+          "transform": 74
+        },
+        {
+          "name": "commonjs",
+          "transform": 171
+        },
+        {
+          "name": "vite:resolve",
+          "resolveId": 0
+        }
+      ],
+      "virtual": false,
+      "totalTime": 245,
+      "invokeCount": 1,
+      "sourceSize": 277,
+      "distSize": 0
+    },
+    {
+      "id": "C:/Users/XFXRe/Desktop/Portfolio/node_modules/fs-extra/lib/mkdirs/index.js",
+      "deps": [],
+      "plugins": [
+        {
+          "name": "vite:load-fallback",
+          "transform": 40
+        },
+        {
+          "name": "commonjs",
+          "transform": 255
+        },
+        {
+          "name": "vite:resolve",
+          "resolveId": 3
+        },
+        {
+          "name": "vite:resolve",
+          "resolveId": 1
+        },
+        {
+          "name": "vite:resolve",
+          "resolveId": 4
+        },
+        {
+          "name": "vite:resolve",
+          "resolveId": 1
+        },
+        {
+          "name": "vite:resolve",
+          "resolveId": 2
+        },
+        {
+          "name": "vite:resolve",
+          "resolveId": 0
+        },
+        {
+          "name": "vite:resolve",
+          "resolveId": 1
+        },
+        {
+          "name": "vite:resolve",
+          "resolveId": 2
+        },
+        {
+          "name": "vite:resolve",
+          "resolveId": 1
+        },
+        {
+          "name": "vite:resolve",
+          "resolveId": 1
+        }
+      ],
+      "virtual": false,
+      "totalTime": 295,
+      "invokeCount": 1,
+      "sourceSize": 328,
+      "distSize": 0
+    },
+    {
+      "id": "C:/Users/XFXRe/Desktop/Portfolio/node_modules/fs-extra/lib/mkdirs/make-dir.js",
+      "deps": [],
+      "plugins": [
+        {
+          "name": "vite:load-fallback",
+          "transform": 74
+        },
+        {
+          "name": "commonjs",
+          "transform": 169
+        },
+        {
+          "name": "vite:resolve",
+          "resolveId": 1
+        }
+      ],
+      "virtual": false,
+      "totalTime": 243,
+      "invokeCount": 1,
+      "sourceSize": 545,
+      "distSize": 0
+    },
+    {
+      "id": "C:/Users/XFXRe/Desktop/Portfolio/node_modules/fs-extra/lib/mkdirs/utils.js",
+      "deps": [],
+      "plugins": [
+        {
+          "name": "vite:load-fallback",
+          "transform": 50
+        },
+        {
+          "name": "commonjs",
+          "transform": 2
+        },
+        {
+          "name": "vite:resolve",
+          "resolveId": 1
+        }
+      ],
+      "virtual": false,
+      "totalTime": 52,
+      "invokeCount": 1,
+      "sourceSize": 1655,
+      "distSize": 0
+    },
+    {
+      "id": "C:/Users/XFXRe/Desktop/Portfolio/node_modules/fs-extra/lib/move/index.js",
+      "deps": [],
+      "plugins": [
+        {
+          "name": "vite:load-fallback",
+          "transform": 48
+        },
+        {
+          "name": "commonjs",
+          "transform": 262
+        },
+        {
+          "name": "vite:resolve",
+          "resolveId": 3
+        }
+      ],
+      "virtual": false,
+      "totalTime": 310,
+      "invokeCount": 1,
+      "sourceSize": 146,
+      "distSize": 0
+    },
+    {
+      "id": "C:/Users/XFXRe/Desktop/Portfolio/node_modules/fs-extra/lib/move/move-sync.js",
+      "deps": [],
+      "plugins": [
+        {
+          "name": "vite:load-fallback",
+          "transform": 78
+        },
+        {
+          "name": "commonjs",
+          "transform": 181
+        },
+        {
+          "name": "vite:resolve",
+          "resolveId": 1
+        }
+      ],
+      "virtual": false,
+      "totalTime": 259,
+      "invokeCount": 1,
+      "sourceSize": 1515,
+      "distSize": 0
+    },
+    {
+      "id": "C:/Users/XFXRe/Desktop/Portfolio/node_modules/fs-extra/lib/move/move.js",
+      "deps": [],
+      "plugins": [
+        {
+          "name": "vite:load-fallback",
+          "transform": 71
+        },
+        {
+          "name": "commonjs",
+          "transform": 187
+        },
+        {
+          "name": "vite:resolve",
+          "resolveId": 1
+        }
+      ],
+      "virtual": false,
+      "totalTime": 258,
+      "invokeCount": 1,
+      "sourceSize": 1523,
+      "distSize": 0
+    },
+    {
+      "id": "C:/Users/XFXRe/Desktop/Portfolio/node_modules/fs-extra/lib/output-file/index.js",
+      "deps": [],
+      "plugins": [
+        {
+          "name": "vite:load-fallback",
+          "transform": 51
+        },
+        {
+          "name": "commonjs",
+          "transform": 246
+        },
+        {
+          "name": "vite:resolve",
+          "resolveId": 2
+        },
+        {
+          "name": "vite:resolve",
+          "resolveId": 1
+        },
+        {
+          "name": "vite:resolve",
+          "resolveId": 1
+        }
+      ],
+      "virtual": false,
+      "totalTime": 297,
+      "invokeCount": 1,
+      "sourceSize": 657,
+      "distSize": 0
+    },
+    {
+      "id": "C:/Users/XFXRe/Desktop/Portfolio/node_modules/fs-extra/lib/path-exists/index.js",
+      "deps": [],
+      "plugins": [
+        {
+          "name": "vite:load-fallback",
+          "transform": 58
+        },
+        {
+          "name": "commonjs",
+          "transform": 227
+        },
+        {
+          "name": "vite:resolve",
+          "resolveId": 2
+        },
+        {
+          "name": "vite:resolve",
+          "resolveId": 1
+        },
+        {
+          "name": "vite:resolve",
+          "resolveId": 2
+        },
+        {
+          "name": "vite:resolve",
+          "resolveId": 0
+        },
+        {
+          "name": "vite:resolve",
+          "resolveId": 1
+        },
+        {
+          "name": "vite:resolve",
+          "resolveId": 1
+        },
+        {
+          "name": "vite:resolve",
+          "resolveId": 1
+        }
+      ],
+      "virtual": false,
+      "totalTime": 285,
+      "invokeCount": 1,
+      "sourceSize": 263,
+      "distSize": 0
+    },
+    {
+      "id": "C:/Users/XFXRe/Desktop/Portfolio/node_modules/fs-extra/lib/remove/index.js",
+      "deps": [],
+      "plugins": [
+        {
+          "name": "vite:load-fallback",
+          "transform": 60
+        },
+        {
+          "name": "commonjs",
+          "transform": 208
+        },
+        {
+          "name": "vite:resolve",
+          "resolveId": 1
+        },
+        {
+          "name": "vite:resolve",
+          "resolveId": 1
+        },
+        {
+          "name": "vite:resolve",
+          "resolveId": 2
+        },
+        {
+          "name": "vite:resolve",
+          "resolveId": 1
+        }
+      ],
+      "virtual": false,
+      "totalTime": 268,
+      "invokeCount": 1,
+      "sourceSize": 331,
+      "distSize": 0
+    },
+    {
+      "id": "C:/Users/XFXRe/Desktop/Portfolio/node_modules/fs-extra/lib/util/stat.js",
+      "deps": [],
+      "plugins": [
+        {
+          "name": "vite:load-fallback",
+          "transform": 68
+        },
+        {
+          "name": "commonjs",
+          "transform": 115
+        },
+        {
+          "name": "vite:resolve",
+          "resolveId": 1
+        },
+        {
+          "name": "vite:resolve",
+          "resolveId": 1
+        },
+        {
+          "name": "vite:resolve",
+          "resolveId": 0
+        },
+        {
+          "name": "vite:resolve",
+          "resolveId": 0
+        },
+        {
+          "name": "vite:resolve",
+          "resolveId": 1
+        },
+        {
+          "name": "vite:resolve",
+          "resolveId": 0
+        }
+      ],
+      "virtual": false,
+      "totalTime": 183,
+      "invokeCount": 1,
+      "sourceSize": 5134,
+      "distSize": 0
+    },
+    {
+      "id": "C:/Users/XFXRe/Desktop/Portfolio/node_modules/fs-extra/lib/util/utimes.js",
+      "deps": [],
+      "plugins": [
+        {
+          "name": "vite:load-fallback",
+          "transform": 64
+        },
+        {
+          "name": "commonjs",
+          "transform": 120
+        },
+        {
+          "name": "vite:resolve",
+          "resolveId": 1
+        },
+        {
+          "name": "vite:resolve",
+          "resolveId": 1
+        }
+      ],
+      "virtual": false,
+      "totalTime": 184,
+      "invokeCount": 1,
+      "sourceSize": 687,
+      "distSize": 0
+    },
+    {
+      "id": "C:/Users/XFXRe/Desktop/Portfolio/node_modules/graceful-fs/clone.js",
+      "deps": [],
+      "plugins": [
+        {
+          "name": "vite:load-fallback",
+          "transform": 48
+        },
+        {
+          "name": "commonjs",
+          "transform": 1
+        },
+        {
+          "name": "vite:resolve",
+          "resolveId": 3
+        }
+      ],
+      "virtual": false,
+      "totalTime": 49,
+      "invokeCount": 1,
+      "sourceSize": 496,
+      "distSize": 0
+    },
+    {
+      "id": "C:/Users/XFXRe/Desktop/Portfolio/node_modules/graceful-fs/graceful-fs.js",
+      "deps": [],
+      "plugins": [
+        {
+          "name": "vite:load-fallback",
+          "transform": 55
+        },
+        {
+          "name": "vite:define",
+          "transform": 42
+        },
+        {
+          "name": "commonjs",
+          "transform": 120
+        },
+        {
+          "name": "vite:resolve",
+          "resolveId": 0
+        },
+        {
+          "name": "vite:resolve",
+          "resolveId": 0
+        },
+        {
+          "name": "vite:resolve",
+          "resolveId": 2
+        },
+        {
+          "name": "vite:resolve",
+          "resolveId": 3
+        },
+        {
+          "name": "vite:resolve",
+          "resolveId": 2
+        }
+      ],
+      "virtual": false,
+      "totalTime": 217,
+      "invokeCount": 1,
+      "sourceSize": 12680,
+      "distSize": 0
+    },
+    {
+      "id": "C:/Users/XFXRe/Desktop/Portfolio/node_modules/graceful-fs/legacy-streams.js",
+      "deps": [],
+      "plugins": [
+        {
+          "name": "vite:load-fallback",
+          "transform": 49
+        },
+        {
+          "name": "commonjs",
+          "transform": 3
+        },
+        {
+          "name": "vite:resolve",
+          "resolveId": 3
+        }
+      ],
+      "virtual": false,
+      "totalTime": 52,
+      "invokeCount": 1,
+      "sourceSize": 2655,
+      "distSize": 0
+    },
+    {
+      "id": "C:/Users/XFXRe/Desktop/Portfolio/node_modules/graceful-fs/polyfills.js",
+      "deps": [],
+      "plugins": [
+        {
+          "name": "vite:load-fallback",
+          "transform": 47
+        },
+        {
+          "name": "vite:define",
+          "transform": 41
+        },
+        {
+          "name": "commonjs",
+          "transform": 4
+        },
+        {
+          "name": "vite:resolve",
+          "resolveId": 4
+        }
+      ],
+      "virtual": false,
+      "totalTime": 92,
+      "invokeCount": 1,
+      "sourceSize": 10141,
+      "distSize": 0
+    },
+    {
+      "id": "C:/Users/XFXRe/Desktop/Portfolio/node_modules/is-docker/index.js",
+      "deps": [],
+      "plugins": [
+        {
+          "name": "vite:load-fallback",
+          "transform": 74
+        },
+        {
+          "name": "vite:resolve",
+          "resolveId": 1
+        }
+      ],
+      "virtual": false,
+      "totalTime": 74,
+      "invokeCount": 1,
+      "sourceSize": 509,
+      "distSize": 0
+    },
+    {
+      "id": "C:/Users/XFXRe/Desktop/Portfolio/node_modules/is-inside-container/index.js",
+      "deps": [],
+      "plugins": [
+        {
+          "name": "vite:load-fallback",
+          "transform": 70
+        },
+        {
+          "name": "vite:resolve",
+          "resolveId": 1
+        },
+        {
+          "name": "vite:resolve",
+          "resolveId": 1
+        }
+      ],
+      "virtual": false,
+      "totalTime": 70,
+      "invokeCount": 1,
+      "sourceSize": 431,
+      "distSize": 0
+    },
+    {
+      "id": "C:/Users/XFXRe/Desktop/Portfolio/node_modules/is-wsl/index.js",
+      "deps": [],
+      "plugins": [
+        {
+          "name": "vite:load-fallback",
+          "transform": 71
+        },
+        {
+          "name": "vite:define",
+          "transform": 18
+        },
+        {
+          "name": "vite:resolve",
+          "resolveId": 4
+        }
+      ],
+      "virtual": false,
+      "totalTime": 89,
+      "invokeCount": 1,
+      "sourceSize": 572,
+      "distSize": 0
+    },
+    {
+      "id": "C:/Users/XFXRe/Desktop/Portfolio/node_modules/jsonfile/index.js",
+      "deps": [],
+      "plugins": [
+        {
+          "name": "vite:load-fallback",
+          "transform": 47
+        },
+        {
+          "name": "commonjs",
+          "transform": 93
+        },
+        {
+          "name": "vite:resolve",
+          "resolveId": 1
+        }
+      ],
+      "virtual": false,
+      "totalTime": 140,
+      "invokeCount": 1,
+      "sourceSize": 1900,
+      "distSize": 0
+    },
+    {
+      "id": "C:/Users/XFXRe/Desktop/Portfolio/node_modules/jsonfile/utils.js",
+      "deps": [],
+      "plugins": [
+        {
+          "name": "vite:load-fallback",
+          "transform": 48
+        },
+        {
+          "name": "commonjs",
+          "transform": 1
+        },
+        {
+          "name": "vite:resolve",
+          "resolveId": 0
+        },
+        {
+          "name": "vite:resolve",
+          "resolveId": 2
+        },
+        {
+          "name": "vite:resolve",
+          "resolveId": 1
+        }
+      ],
+      "virtual": false,
+      "totalTime": 49,
+      "invokeCount": 1,
+      "sourceSize": 498,
+      "distSize": 0
+    },
+    {
+      "id": "C:/Users/XFXRe/Desktop/Portfolio/node_modules/mrmime/index.mjs",
+      "deps": [],
+      "plugins": [
+        {
+          "name": "vite:load-fallback",
+          "transform": 46
+        },
+        {
+          "name": "vite:resolve",
+          "resolveId": 0
+        }
+      ],
+      "virtual": false,
+      "totalTime": 46,
+      "invokeCount": 1,
+      "sourceSize": 13494,
+      "distSize": 0
+    },
+    {
+      "id": "C:/Users/XFXRe/Desktop/Portfolio/node_modules/ms/index.js",
+      "deps": [],
+      "plugins": [
+        {
+          "name": "vite:load-fallback",
+          "transform": 70
+        },
+        {
+          "name": "commonjs",
+          "transform": 2
+        },
+        {
+          "name": "vite:resolve",
+          "resolveId": 2
+        }
+      ],
+      "virtual": false,
+      "totalTime": 72,
+      "invokeCount": 1,
+      "sourceSize": 3023,
+      "distSize": 0
+    },
+    {
+      "id": "C:/Users/XFXRe/Desktop/Portfolio/node_modules/open/index.js",
+      "deps": [],
+      "plugins": [
+        {
+          "name": "vite:load-fallback",
+          "transform": 59
+        },
+        {
+          "name": "vite:define",
+          "transform": 25
+        },
+        {
+          "name": "vite:resolve",
+          "resolveId": 1
+        }
+      ],
+      "virtual": false,
+      "totalTime": 84,
+      "invokeCount": 1,
+      "sourceSize": 8925,
+      "distSize": 0
+    },
+    {
+      "id": "C:/Users/XFXRe/Desktop/Portfolio/node_modules/perfect-debounce/dist/index.mjs",
+      "deps": [],
+      "plugins": [
+        {
+          "name": "vite:load-fallback",
+          "transform": 60
+        },
+        {
+          "name": "vite:resolve",
+          "resolveId": 7
+        }
+      ],
+      "virtual": false,
+      "totalTime": 60,
+      "invokeCount": 1,
+      "sourceSize": 1549,
+      "distSize": 0
+    },
+    {
+      "id": "C:/Users/XFXRe/Desktop/Portfolio/node_modules/picocolors/picocolors.browser.js",
+      "deps": [],
+      "plugins": [
+        {
+          "name": "vite:load-fallback",
+          "transform": 38
+        },
+        {
+          "name": "commonjs",
+          "transform": 5
+        },
+        {
+          "name": "vite:resolve",
+          "resolveId": 8
+        }
+      ],
+      "virtual": false,
+      "totalTime": 43,
+      "invokeCount": 1,
+      "sourceSize": 360,
+      "distSize": 0
+    },
+    {
+      "id": "C:/Users/XFXRe/Desktop/Portfolio/node_modules/picomatch/index.js",
+      "deps": [],
+      "plugins": [
+        {
+          "name": "vite:load-fallback",
+          "transform": 50
+        },
+        {
+          "name": "commonjs",
+          "transform": 217
+        },
+        {
+          "name": "vite:resolve",
+          "resolveId": 1
+        }
+      ],
+      "virtual": false,
+      "totalTime": 267,
+      "invokeCount": 1,
+      "sourceSize": 60,
+      "distSize": 0
+    },
+    {
+      "id": "C:/Users/XFXRe/Desktop/Portfolio/node_modules/picomatch/lib/constants.js",
+      "deps": [],
+      "plugins": [
+        {
+          "name": "vite:load-fallback",
+          "transform": 67
+        },
+        {
+          "name": "commonjs",
+          "transform": 4
+        },
+        {
+          "name": "vite:resolve",
+          "resolveId": 0
+        },
+        {
+          "name": "vite:resolve",
+          "resolveId": 0
+        },
+        {
+          "name": "vite:resolve",
+          "resolveId": 0
+        },
+        {
+          "name": "vite:resolve",
+          "resolveId": 1
+        }
+      ],
+      "virtual": false,
+      "totalTime": 71,
+      "invokeCount": 1,
+      "sourceSize": 4448,
+      "distSize": 0
+    },
+    {
+      "id": "C:/Users/XFXRe/Desktop/Portfolio/node_modules/picomatch/lib/parse.js",
+      "deps": [],
+      "plugins": [
+        {
+          "name": "vite:load-fallback",
+          "transform": 55
+        },
+        {
+          "name": "commonjs",
+          "transform": 56
+        },
+        {
+          "name": "vite:resolve",
+          "resolveId": 0
+        }
+      ],
+      "virtual": false,
+      "totalTime": 111,
+      "invokeCount": 1,
+      "sourceSize": 27763,
+      "distSize": 0
+    },
+    {
+      "id": "C:/Users/XFXRe/Desktop/Portfolio/node_modules/picomatch/lib/picomatch.js",
+      "deps": [],
+      "plugins": [
+        {
+          "name": "vite:load-fallback",
+          "transform": 71
+        },
+        {
+          "name": "commonjs",
+          "transform": 135
+        },
+        {
+          "name": "vite:resolve",
+          "resolveId": 1
+        }
+      ],
+      "virtual": false,
+      "totalTime": 206,
+      "invokeCount": 1,
+      "sourceSize": 9956,
+      "distSize": 0
+    },
+    {
+      "id": "C:/Users/XFXRe/Desktop/Portfolio/node_modules/picomatch/lib/scan.js",
+      "deps": [],
+      "plugins": [
+        {
+          "name": "vite:load-fallback",
+          "transform": 46
+        },
+        {
+          "name": "commonjs",
+          "transform": 64
+        },
+        {
+          "name": "vite:resolve",
+          "resolveId": 1
+        }
+      ],
+      "virtual": false,
+      "totalTime": 110,
+      "invokeCount": 1,
+      "sourceSize": 9189,
+      "distSize": 0
+    },
+    {
+      "id": "C:/Users/XFXRe/Desktop/Portfolio/node_modules/picomatch/lib/utils.js",
+      "deps": [],
+      "plugins": [
+        {
+          "name": "vite:load-fallback",
+          "transform": 51
+        },
+        {
+          "name": "commonjs",
+          "transform": 38
+        },
+        {
+          "name": "vite:resolve",
+          "resolveId": 0
+        },
+        {
+          "name": "vite:resolve",
+          "resolveId": 1
+        },
+        {
+          "name": "vite:resolve",
+          "resolveId": 0
+        }
+      ],
+      "virtual": false,
+      "totalTime": 89,
+      "invokeCount": 1,
+      "sourceSize": 1885,
+      "distSize": 0
+    },
+    {
+      "id": "C:/Users/XFXRe/Desktop/Portfolio/node_modules/run-applescript/index.js",
+      "deps": [],
+      "plugins": [
+        {
+          "name": "vite:load-fallback",
+          "transform": 49
+        },
+        {
+          "name": "vite:resolve",
+          "resolveId": 2
+        }
+      ],
+      "virtual": false,
+      "totalTime": 49,
+      "invokeCount": 1,
+      "sourceSize": 910,
+      "distSize": 0
+    },
+    {
+      "id": "C:/Users/XFXRe/Desktop/Portfolio/node_modules/sirv/build.mjs",
+      "deps": [],
+      "plugins": [
+        {
+          "name": "vite:load-fallback",
+          "transform": 60
+        },
+        {
+          "name": "vite:resolve",
+          "resolveId": 10
+        }
+      ],
+      "virtual": false,
+      "totalTime": 60,
+      "invokeCount": 1,
+      "sourceSize": 5194,
+      "distSize": 0
+    },
+    {
+      "id": "C:/Users/XFXRe/Desktop/Portfolio/node_modules/totalist/sync/index.mjs",
+      "deps": [],
+      "plugins": [
+        {
+          "name": "vite:load-fallback",
+          "transform": 45
+        },
+        {
+          "name": "vite:resolve",
+          "resolveId": 2
+        }
+      ],
+      "virtual": false,
+      "totalTime": 45,
+      "invokeCount": 1,
+      "sourceSize": 414,
+      "distSize": 0
+    },
+    {
+      "id": "C:/Users/XFXRe/Desktop/Portfolio/node_modules/universalify/index.js",
+      "deps": [],
+      "plugins": [
+        {
+          "name": "vite:load-fallback",
+          "transform": 52
+        },
+        {
+          "name": "commonjs",
+          "transform": 1
+        },
+        {
+          "name": "vite:resolve",
+          "resolveId": 1
+        },
+        {
+          "name": "vite:resolve",
+          "resolveId": 1
+        },
+        {
+          "name": "vite:resolve",
+          "resolveId": 1
+        },
+        {
+          "name": "vite:resolve",
+          "resolveId": 3
+        },
+        {
+          "name": "vite:resolve",
+          "resolveId": 1
+        },
+        {
+          "name": "vite:resolve",
+          "resolveId": 1
+        },
+        {
+          "name": "vite:resolve",
+          "resolveId": 6
+        },
+        {
+          "name": "vite:resolve",
+          "resolveId": 1
+        },
+        {
+          "name": "vite:resolve",
+          "resolveId": 0
+        },
+        {
+          "name": "vite:resolve",
+          "resolveId": 2
+        },
+        {
+          "name": "vite:resolve",
+          "resolveId": 2
+        },
+        {
+          "name": "vite:resolve",
+          "resolveId": 3
+        },
+        {
+          "name": "vite:resolve",
+          "resolveId": 0
+        },
+        {
+          "name": "vite:resolve",
+          "resolveId": 0
+        },
+        {
+          "name": "vite:resolve",
+          "resolveId": 0
+        },
+        {
+          "name": "vite:resolve",
+          "resolveId": 1
+        },
+        {
+          "name": "vite:resolve",
+          "resolveId": 0
+        }
+      ],
+      "virtual": false,
+      "totalTime": 53,
+      "invokeCount": 1,
+      "sourceSize": 706,
+      "distSize": 0
+    },
+    {
+      "id": "C:/Users/XFXRe/Desktop/Portfolio/node_modules/vite-plugin-inspect/dist/index.mjs",
+      "deps": [],
+      "plugins": [
+        {
+          "name": "vite:load-fallback",
+          "transform": 2
+        },
+        {
+          "name": "vite:define",
+          "transform": 6
+        },
+        {
+          "name": "vite:build-import-analysis",
+          "transform": 2
+        },
+        {
+          "name": "vite:resolve",
+          "resolveId": 2
+        }
+      ],
+      "virtual": false,
+      "totalTime": 10,
+      "invokeCount": 1,
+      "sourceSize": 39530,
+      "distSize": 0
+    },
+    {
+      "id": "C:/Users/XFXRe/Desktop/Portfolio/pages/project-1.html",
+      "deps": [],
+      "plugins": [
+        {
+          "name": "vite:load-fallback",
+          "transform": 2
+        },
+        {
+          "name": "vite:resolve",
+          "resolveId": 0
+        }
+      ],
+      "virtual": false,
+      "totalTime": 2,
+      "invokeCount": 1,
+      "sourceSize": 230,
+      "distSize": 0
+    },
+    {
+      "id": "C:/Users/XFXRe/Desktop/Portfolio/styles/background.css",
+      "deps": [],
+      "plugins": [
+        {
+          "name": "vite:load-fallback",
+          "transform": 4
+        },
+        {
+          "name": "vite:css",
+          "transform": 5
+        },
+        {
+          "name": "vite:resolve",
+          "resolveId": 1
+        }
+      ],
+      "virtual": false,
+      "totalTime": 9,
+      "invokeCount": 1,
+      "sourceSize": 2497,
+      "distSize": 0
+    },
+    {
+      "id": "C:/Users/XFXRe/Desktop/Portfolio/styles/home-page.css",
+      "deps": [],
+      "plugins": [
+        {
+          "name": "vite:load-fallback",
+          "transform": 5
+        },
+        {
+          "name": "vite:css",
+          "transform": 4
+        },
+        {
+          "name": "vite:resolve",
+          "resolveId": 1
+        }
+      ],
+      "virtual": false,
+      "totalTime": 9,
+      "invokeCount": 1,
+      "sourceSize": 3207,
+      "distSize": 0
+    },
+    {
+      "id": "C:/Users/XFXRe/Desktop/Portfolio/styles/nav-bar.css",
+      "deps": [],
+      "plugins": [
+        {
+          "name": "vite:load-fallback",
+          "transform": 5
+        },
+        {
+          "name": "vite:css",
+          "transform": 108
+        },
+        {
+          "name": "vite:resolve",
+          "resolveId": 1
+        }
+      ],
+      "virtual": false,
+      "totalTime": 113,
+      "invokeCount": 1,
+      "sourceSize": 3010,
+      "distSize": 0
+    },
+    {
+      "id": "C:/Users/XFXRe/Desktop/Portfolio/styles/projects.css",
+      "deps": [],
+      "plugins": [
+        {
+          "name": "vite:load-fallback",
+          "transform": 5
+        },
+        {
+          "name": "vite:css",
+          "transform": 3
+        },
+        {
+          "name": "vite:resolve",
+          "resolveId": 0
+        }
+      ],
+      "virtual": false,
+      "totalTime": 8,
+      "invokeCount": 1,
+      "sourceSize": 772,
+      "distSize": 0
+    },
+    {
+      "id": "C:/Users/XFXRe/Desktop/Portfolio/styles/style.css",
+      "deps": [],
+      "plugins": [
+        {
+          "name": "vite:load-fallback",
+          "transform": 4
+        },
+        {
+          "name": "vite:css",
+          "transform": 5
+        },
+        {
+          "name": "vite:resolve",
+          "resolveId": 1
+        }
+      ],
+      "virtual": false,
+      "totalTime": 9,
+      "invokeCount": 1,
+      "sourceSize": 113,
+      "distSize": 0
+    },
+    {
+      "id": "C:/Users/XFXRe/Desktop/Portfolio/vite.config.js",
+      "deps": [],
+      "plugins": [
+        {
+          "name": "vite:load-fallback",
+          "transform": 5
+        },
+        {
+          "name": "vite:resolve",
+          "resolveId": 0
+        }
+      ],
+      "virtual": false,
+      "totalTime": 5,
+      "invokeCount": 1,
+      "sourceSize": 451,
+      "distSize": 0
+    },
+    {
+      "id": "__vite-browser-external",
+      "deps": [],
+      "plugins": [
+        {
+          "name": "vite:resolve",
+          "transform": 0
+        },
+        {
+          "name": "vite:resolve",
+          "resolveId": 1
+        },
+        {
+          "name": "vite:resolve",
+          "resolveId": 3
+        },
+        {
+          "name": "vite:resolve",
+          "resolveId": 3
+        },
+        {
+          "name": "vite:resolve",
+          "resolveId": 2
+        },
+        {
+          "name": "vite:resolve",
+          "resolveId": 5
+        },
+        {
+          "name": "vite:resolve",
+          "resolveId": 2
+        },
+        {
+          "name": "vite:resolve",
+          "resolveId": 2
+        },
+        {
+          "name": "vite:resolve",
+          "resolveId": 4
+        },
+        {
+          "name": "vite:resolve",
+          "resolveId": 2
+        },
+        {
+          "name": "vite:resolve",
+          "resolveId": 2
+        },
+        {
+          "name": "vite:resolve",
+          "resolveId": 3
+        },
+        {
+          "name": "vite:resolve",
+          "resolveId": 3
+        },
+        {
+          "name": "vite:resolve",
+          "resolveId": 2
+        },
+        {
+          "name": "vite:resolve",
+          "resolveId": 2
+        },
+        {
+          "name": "vite:resolve",
+          "resolveId": 1
+        },
+        {
+          "name": "vite:resolve",
+          "resolveId": 1
+        },
+        {
+          "name": "vite:resolve",
+          "resolveId": 2
+        },
+        {
+          "name": "vite:resolve",
+          "resolveId": 2
+        },
+        {
+          "name": "vite:resolve",
+          "resolveId": 1
+        },
+        {
+          "name": "vite:resolve",
+          "resolveId": 11
+        },
+        {
+          "name": "vite:resolve",
+          "resolveId": 8
+        },
+        {
+          "name": "vite:resolve",
+          "resolveId": 3
+        },
+        {
+          "name": "vite:resolve",
+          "resolveId": 3
+        },
+        {
+          "name": "vite:resolve",
+          "resolveId": 3
+        },
+        {
+          "name": "vite:resolve",
+          "resolveId": 3
+        },
+        {
+          "name": "vite:resolve",
+          "resolveId": 6
+        },
+        {
+          "name": "vite:resolve",
+          "resolveId": 6
+        },
+        {
+          "name": "vite:resolve",
+          "resolveId": 5
+        },
+        {
+          "name": "vite:resolve",
+          "resolveId": 5
+        },
+        {
+          "name": "vite:resolve",
+          "resolveId": 5
+        },
+        {
+          "name": "vite:resolve",
+          "resolveId": 6
+        },
+        {
+          "name": "vite:resolve",
+          "resolveId": 1
+        },
+        {
+          "name": "vite:resolve",
+          "resolveId": 4
+        },
+        {
+          "name": "vite:resolve",
+          "resolveId": 1
+        },
+        {
+          "name": "vite:resolve",
+          "resolveId": 5
+        },
+        {
+          "name": "vite:resolve",
+          "resolveId": 2
+        },
+        {
+          "name": "vite:resolve",
+          "resolveId": 5
+        },
+        {
+          "name": "vite:resolve",
+          "resolveId": 3
+        },
+        {
+          "name": "vite:resolve",
+          "resolveId": 1
+        },
+        {
+          "name": "vite:resolve",
+          "resolveId": 0
+        },
+        {
+          "name": "vite:resolve",
+          "resolveId": 1
+        },
+        {
+          "name": "vite:resolve",
+          "resolveId": 4
+        },
+        {
+          "name": "vite:resolve",
+          "resolveId": 1
+        },
+        {
+          "name": "vite:resolve",
+          "resolveId": 2
+        },
+        {
+          "name": "vite:resolve",
+          "resolveId": 1
+        },
+        {
+          "name": "vite:resolve",
+          "resolveId": 2
+        },
+        {
+          "name": "vite:resolve",
+          "resolveId": 1
+        },
+        {
+          "name": "vite:resolve",
+          "resolveId": 1
+        },
+        {
+          "name": "vite:resolve",
+          "resolveId": 4
+        },
+        {
+          "name": "vite:resolve",
+          "resolveId": 4
+        },
+        {
+          "name": "vite:resolve",
+          "resolveId": 1
+        },
+        {
+          "name": "vite:resolve",
+          "resolveId": 2
+        },
+        {
+          "name": "vite:resolve",
+          "resolveId": 2
+        },
+        {
+          "name": "vite:resolve",
+          "resolveId": 1
+        },
+        {
+          "name": "vite:resolve",
+          "resolveId": 1
+        }
+      ],
+      "virtual": true,
+      "totalTime": 0,
+      "invokeCount": 1,
+      "sourceSize": 17,
+      "distSize": 0
+    }
+  ],
+  "ssrModules": []
+}

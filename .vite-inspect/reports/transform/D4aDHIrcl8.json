@@ -1,0 +1,96 @@
+{
+  "resolvedId": "C:/Users/XFXRe/Desktop/Portfolio/node_modules/define-lazy-prop/index.js",
+  "transforms": [
+    {
+      "name": "vite:load-fallback",
+      "result": "export default function defineLazyProperty(object, propertyName, valueGetter) {\n\tconst define = value => Object.defineProperty(object, propertyName, {value, enumerable: true, writable: true});\n\n\tObject.defineProperty(object, propertyName, {\n\t\tconfigurable: true,\n\t\tenumerable: true,\n\t\tget() {\n\t\t\tconst result = valueGetter();\n\t\t\tdefine(result);\n\t\t\treturn result;\n\t\t},\n\t\tset(value) {\n\t\t\tdefine(value);\n\t\t}\n\t});\n\n\treturn object;\n}\n",
+      "start": 1718972211594,
+      "end": 1718972211665,
+      "sourcemaps": null
+    },
+    {
+      "name": "vite:css",
+      "start": 1718972211665,
+      "end": 1718972211665,
+      "order": "normal"
+    },
+    {
+      "name": "vite:esbuild",
+      "start": 1718972211665,
+      "end": 1718972211665,
+      "order": "normal"
+    },
+    {
+      "name": "vite:json",
+      "start": 1718972211665,
+      "end": 1718972211665,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker",
+      "start": 1718972211665,
+      "end": 1718972211665,
+      "order": "normal"
+    },
+    {
+      "name": "vite:define",
+      "start": 1718972211665,
+      "end": 1718972211665,
+      "order": "normal"
+    },
+    {
+      "name": "vite:css-post",
+      "start": 1718972211665,
+      "end": 1718972211665,
+      "order": "normal"
+    },
+    {
+      "name": "vite:build-html",
+      "start": 1718972211665,
+      "end": 1718972211665,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker-import-meta-url",
+      "start": 1718972211665,
+      "end": 1718972211665,
+      "order": "normal"
+    },
+    {
+      "name": "vite:asset-import-meta-url",
+      "start": 1718972211665,
+      "end": 1718972211665,
+      "order": "normal"
+    },
+    {
+      "name": "commonjs",
+      "start": 1718972211665,
+      "end": 1718972211665,
+      "order": "normal"
+    },
+    {
+      "name": "vite:dynamic-import-vars",
+      "start": 1718972211665,
+      "end": 1718972211665,
+      "order": "normal"
+    },
+    {
+      "name": "vite:import-glob",
+      "start": 1718972211665,
+      "end": 1718972211665,
+      "order": "normal"
+    },
+    {
+      "name": "vite:build-import-analysis",
+      "start": 1718972211665,
+      "end": 1718972211665,
+      "order": "normal"
+    },
+    {
+      "name": "vite:reporter",
+      "start": 1718972211665,
+      "end": 1718972211665,
+      "order": "normal"
+    }
+  ]
+}

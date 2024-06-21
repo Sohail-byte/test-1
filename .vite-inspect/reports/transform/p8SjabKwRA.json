@@ -1,0 +1,12 @@
+{
+  "resolvedId": "\u0000C:/Users/XFXRe/Desktop/Portfolio/node_modules/fs-extra/lib/json/output-json-sync.js?commonjs-proxy",
+  "transforms": [
+    {
+      "name": "commonjs",
+      "result": "export { __moduleExports as default } from \"C:/Users/XFXRe/Desktop/Portfolio/node_modules/fs-extra/lib/json/output-json-sync.js\";",
+      "start": 1718972211835,
+      "end": 1718972211835,
+      "sourcemaps": null
+    }
+  ]
+}

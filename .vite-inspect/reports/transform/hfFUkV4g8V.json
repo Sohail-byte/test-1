@@ -1,0 +1,96 @@
+{
+  "resolvedId": "C:/Users/XFXRe/Desktop/Portfolio/node_modules/error-stack-parser-es/dist/index.mjs",
+  "transforms": [
+    {
+      "name": "vite:load-fallback",
+      "result": "import { parse as parse$1, parseV8OrIE as parseV8OrIE$1, parseFFOrSafari as parseFFOrSafari$1, parseOpera as parseOpera$1, parseOpera9 as parseOpera9$1, parseOpera10 as parseOpera10$1, parseOpera11 as parseOpera11$1 } from './lite.mjs';\nexport { extractLocation } from './lite.mjs';\n\nfunction stackframesLiteToStackframes(liteStackframes) {\n  return liteStackframes.map((liteStackframe) => {\n    return {\n      functionName: liteStackframe.function,\n      args: liteStackframe.args,\n      fileName: liteStackframe.file,\n      lineNumber: liteStackframe.line,\n      columnNumber: liteStackframe.col,\n      source: liteStackframe.raw\n    };\n  });\n}\nfunction parse(error, options) {\n  return stackframesLiteToStackframes(parse$1(error, options));\n}\nfunction parseV8OrIE(error) {\n  return stackframesLiteToStackframes(parseV8OrIE$1(error));\n}\nfunction parseFFOrSafari(error) {\n  return stackframesLiteToStackframes(parseFFOrSafari$1(error));\n}\nfunction parseOpera(e) {\n  return stackframesLiteToStackframes(parseOpera$1(e));\n}\nfunction parseOpera9(e) {\n  return stackframesLiteToStackframes(parseOpera9$1(e));\n}\nfunction parseOpera10(e) {\n  return stackframesLiteToStackframes(parseOpera10$1(e));\n}\nfunction parseOpera11(error) {\n  return stackframesLiteToStackframes(parseOpera11$1(error));\n}\n\nexport { parse, parseFFOrSafari, parseOpera, parseOpera10, parseOpera11, parseOpera9, parseV8OrIE };\n",
+      "start": 1718972211467,
+      "end": 1718972211532,
+      "sourcemaps": null
+    },
+    {
+      "name": "vite:css",
+      "start": 1718972211532,
+      "end": 1718972211532,
+      "order": "normal"
+    },
+    {
+      "name": "vite:esbuild",
+      "start": 1718972211532,
+      "end": 1718972211532,
+      "order": "normal"
+    },
+    {
+      "name": "vite:json",
+      "start": 1718972211532,
+      "end": 1718972211532,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker",
+      "start": 1718972211532,
+      "end": 1718972211532,
+      "order": "normal"
+    },
+    {
+      "name": "vite:define",
+      "start": 1718972211532,
+      "end": 1718972211532,
+      "order": "normal"
+    },
+    {
+      "name": "vite:css-post",
+      "start": 1718972211532,
+      "end": 1718972211532,
+      "order": "normal"
+    },
+    {
+      "name": "vite:build-html",
+      "start": 1718972211532,
+      "end": 1718972211532,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker-import-meta-url",
+      "start": 1718972211532,
+      "end": 1718972211532,
+      "order": "normal"
+    },
+    {
+      "name": "vite:asset-import-meta-url",
+      "start": 1718972211532,
+      "end": 1718972211532,
+      "order": "normal"
+    },
+    {
+      "name": "commonjs",
+      "start": 1718972211532,
+      "end": 1718972211532,
+      "order": "normal"
+    },
+    {
+      "name": "vite:dynamic-import-vars",
+      "start": 1718972211532,
+      "end": 1718972211532,
+      "order": "normal"
+    },
+    {
+      "name": "vite:import-glob",
+      "start": 1718972211532,
+      "end": 1718972211532,
+      "order": "normal"
+    },
+    {
+      "name": "vite:build-import-analysis",
+      "start": 1718972211532,
+      "end": 1718972211532,
+      "order": "normal"
+    },
+    {
+      "name": "vite:reporter",
+      "start": 1718972211532,
+      "end": 1718972211532,
+      "order": "normal"
+    }
+  ]
+}

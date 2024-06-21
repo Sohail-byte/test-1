@@ -1,0 +1,96 @@
+{
+  "resolvedId": "C:/Users/XFXRe/Desktop/Portfolio/node_modules/@polka/url/build.mjs",
+  "transforms": [
+    {
+      "name": "vite:load-fallback",
+      "result": "import * as qs from 'querystring';\n\n/**\n * @typedef ParsedURL\n * @type {import('.').ParsedURL}\n */\n\n/**\n * @typedef Request\n * @property {string} url\n * @property {ParsedURL} _parsedUrl\n */\n\n/**\n * @param {Request} req\n * @returns {ParsedURL|void}\n */\nexport function parse(req) {\n\tlet raw = req.url;\n\tif (raw == null) return;\n\n\tlet prev = req._parsedUrl;\n\tif (prev && prev.raw === raw) return prev;\n\n\tlet pathname=raw, search='', query;\n\n\tif (raw.length > 1) {\n\t\tlet idx = raw.indexOf('?', 1);\n\n\t\tif (idx !== -1) {\n\t\t\tsearch = raw.substring(idx);\n\t\t\tpathname = raw.substring(0, idx);\n\t\t\tif (search.length > 1) {\n\t\t\t\tquery = qs.parse(search.substring(1));\n\t\t\t}\n\t\t}\n\t}\n\n\treturn req._parsedUrl = { pathname, search, query, raw };\n}\n",
+      "start": 1718972211550,
+      "end": 1718972211594,
+      "sourcemaps": null
+    },
+    {
+      "name": "vite:css",
+      "start": 1718972211594,
+      "end": 1718972211594,
+      "order": "normal"
+    },
+    {
+      "name": "vite:esbuild",
+      "start": 1718972211594,
+      "end": 1718972211594,
+      "order": "normal"
+    },
+    {
+      "name": "vite:json",
+      "start": 1718972211594,
+      "end": 1718972211594,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker",
+      "start": 1718972211594,
+      "end": 1718972211594,
+      "order": "normal"
+    },
+    {
+      "name": "vite:define",
+      "start": 1718972211594,
+      "end": 1718972211594,
+      "order": "normal"
+    },
+    {
+      "name": "vite:css-post",
+      "start": 1718972211594,
+      "end": 1718972211594,
+      "order": "normal"
+    },
+    {
+      "name": "vite:build-html",
+      "start": 1718972211594,
+      "end": 1718972211594,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker-import-meta-url",
+      "start": 1718972211594,
+      "end": 1718972211594,
+      "order": "normal"
+    },
+    {
+      "name": "vite:asset-import-meta-url",
+      "start": 1718972211594,
+      "end": 1718972211594,
+      "order": "normal"
+    },
+    {
+      "name": "commonjs",
+      "start": 1718972211594,
+      "end": 1718972211594,
+      "order": "normal"
+    },
+    {
+      "name": "vite:dynamic-import-vars",
+      "start": 1718972211594,
+      "end": 1718972211594,
+      "order": "normal"
+    },
+    {
+      "name": "vite:import-glob",
+      "start": 1718972211594,
+      "end": 1718972211594,
+      "order": "normal"
+    },
+    {
+      "name": "vite:build-import-analysis",
+      "start": 1718972211594,
+      "end": 1718972211594,
+      "order": "normal"
+    },
+    {
+      "name": "vite:reporter",
+      "start": 1718972211594,
+      "end": 1718972211594,
+      "order": "normal"
+    }
+  ]
+}

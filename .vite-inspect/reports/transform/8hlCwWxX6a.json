@@ -1,0 +1,105 @@
+{
+  "resolvedId": "C:/Users/XFXRe/Desktop/Portfolio/node_modules/fs-extra/lib/mkdirs/index.js",
+  "transforms": [
+    {
+      "name": "vite:load-fallback",
+      "result": "'use strict'\nconst u = require('universalify').fromPromise\nconst { makeDir: _makeDir, makeDirSync } = require('./make-dir')\nconst makeDir = u(_makeDir)\n\nmodule.exports = {\n  mkdirs: makeDir,\n  mkdirsSync: makeDirSync,\n  // alias\n  mkdirp: makeDir,\n  mkdirpSync: makeDirSync,\n  ensureDir: makeDir,\n  ensureDirSync: makeDirSync\n}\n",
+      "start": 1718972211521,
+      "end": 1718972211561,
+      "sourcemaps": null
+    },
+    {
+      "name": "vite:css",
+      "start": 1718972211561,
+      "end": 1718972211561,
+      "order": "normal"
+    },
+    {
+      "name": "vite:esbuild",
+      "start": 1718972211561,
+      "end": 1718972211561,
+      "order": "normal"
+    },
+    {
+      "name": "vite:json",
+      "start": 1718972211561,
+      "end": 1718972211561,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker",
+      "start": 1718972211561,
+      "end": 1718972211561,
+      "order": "normal"
+    },
+    {
+      "name": "vite:define",
+      "start": 1718972211561,
+      "end": 1718972211561,
+      "order": "normal"
+    },
+    {
+      "name": "vite:css-post",
+      "start": 1718972211561,
+      "end": 1718972211561,
+      "order": "normal"
+    },
+    {
+      "name": "vite:build-html",
+      "start": 1718972211561,
+      "end": 1718972211561,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker-import-meta-url",
+      "start": 1718972211561,
+      "end": 1718972211561,
+      "order": "normal"
+    },
+    {
+      "name": "vite:asset-import-meta-url",
+      "start": 1718972211561,
+      "end": 1718972211561,
+      "order": "normal"
+    },
+    {
+      "name": "commonjs",
+      "result": "import * as commonjsHelpers from \"\u0000commonjsHelpers.js\";\nimport require$$0 from \"\\u0000C:/Users/XFXRe/Desktop/Portfolio/node_modules/universalify/index.js?commonjs-proxy\";\nimport require$$1 from \"\\u0000C:/Users/XFXRe/Desktop/Portfolio/node_modules/fs-extra/lib/mkdirs/make-dir.js?commonjs-proxy\";\n\n'use strict'\nconst u = require$$0.fromPromise\nconst { makeDir: _makeDir, makeDirSync } = require$$1\nconst makeDir = u(_makeDir)\n\nvar mkdirs = {\n  mkdirs: makeDir,\n  mkdirsSync: makeDirSync,\n  // alias\n  mkdirp: makeDir,\n  mkdirpSync: makeDirSync,\n  ensureDir: makeDir,\n  ensureDirSync: makeDirSync\n}\n\nexport default /*@__PURE__*/commonjsHelpers.getDefaultExportFromCjs(mkdirs);\nexport { mkdirs as __moduleExports };",
+      "start": 1718972211561,
+      "end": 1718972211816,
+      "order": "normal",
+      "sourcemaps": {
+        "version": 3,
+        "sources": [
+          ""
+        ],
+        "names": [],
+        "mappings": ";;;;AAAA,YAAY;AACZ,MAAM,CAAC,GAAG,UAAuB,CAAC,WAAW;AAC7C,MAAM,EAAE,OAAO,EAAE,QAAQ,EAAE,WAAW,EAAE,GAAG,UAAqB;AAChE,MAAM,OAAO,GAAG,CAAC,CAAC,QAAQ,CAAC;AAC3B;IACA,MAAc,GAAG;AACjB,EAAE,MAAM,EAAE,OAAO;AACjB,EAAE,UAAU,EAAE,WAAW;AACzB;AACA,EAAE,MAAM,EAAE,OAAO;AACjB,EAAE,UAAU,EAAE,WAAW;AACzB,EAAE,SAAS,EAAE,OAAO;AACpB,EAAE,aAAa,EAAE,WAAW;AAC5B"
+      }
+    },
+    {
+      "name": "vite:dynamic-import-vars",
+      "start": 1718972211816,
+      "end": 1718972211816,
+      "order": "normal"
+    },
+    {
+      "name": "vite:import-glob",
+      "start": 1718972211816,
+      "end": 1718972211816,
+      "order": "normal"
+    },
+    {
+      "name": "vite:build-import-analysis",
+      "start": 1718972211816,
+      "end": 1718972211816,
+      "order": "normal"
+    },
+    {
+      "name": "vite:reporter",
+      "start": 1718972211816,
+      "end": 1718972211816,
+      "order": "normal"
+    }
+  ]
+}

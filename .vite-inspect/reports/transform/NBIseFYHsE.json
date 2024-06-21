@@ -1,0 +1,105 @@
+{
+  "resolvedId": "C:/Users/XFXRe/Desktop/Portfolio/node_modules/fs-extra/lib/ensure/link.js",
+  "transforms": [
+    {
+      "name": "vite:load-fallback",
+      "result": "'use strict'\n\nconst u = require('universalify').fromPromise\nconst path = require('path')\nconst fs = require('../fs')\nconst mkdir = require('../mkdirs')\nconst { pathExists } = require('../path-exists')\nconst { areIdentical } = require('../util/stat')\n\nasync function createLink (srcpath, dstpath) {\n  let dstStat\n  try {\n    dstStat = await fs.lstat(dstpath)\n  } catch {\n    // ignore error\n  }\n\n  let srcStat\n  try {\n    srcStat = await fs.lstat(srcpath)\n  } catch (err) {\n    err.message = err.message.replace('lstat', 'ensureLink')\n    throw err\n  }\n\n  if (dstStat && areIdentical(srcStat, dstStat)) return\n\n  const dir = path.dirname(dstpath)\n\n  const dirExists = await pathExists(dir)\n\n  if (!dirExists) {\n    await mkdir.mkdirs(dir)\n  }\n\n  await fs.link(srcpath, dstpath)\n}\n\nfunction createLinkSync (srcpath, dstpath) {\n  let dstStat\n  try {\n    dstStat = fs.lstatSync(dstpath)\n  } catch {}\n\n  try {\n    const srcStat = fs.lstatSync(srcpath)\n    if (dstStat && areIdentical(srcStat, dstStat)) return\n  } catch (err) {\n    err.message = err.message.replace('lstat', 'ensureLink')\n    throw err\n  }\n\n  const dir = path.dirname(dstpath)\n  const dirExists = fs.existsSync(dir)\n  if (dirExists) return fs.linkSync(srcpath, dstpath)\n  mkdir.mkdirsSync(dir)\n\n  return fs.linkSync(srcpath, dstpath)\n}\n\nmodule.exports = {\n  createLink: u(createLink),\n  createLinkSync\n}\n",
+      "start": 1718972211564,
+      "end": 1718972211633,
+      "sourcemaps": null
+    },
+    {
+      "name": "vite:css",
+      "start": 1718972211633,
+      "end": 1718972211633,
+      "order": "normal"
+    },
+    {
+      "name": "vite:esbuild",
+      "start": 1718972211633,
+      "end": 1718972211633,
+      "order": "normal"
+    },
+    {
+      "name": "vite:json",
+      "start": 1718972211633,
+      "end": 1718972211633,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker",
+      "start": 1718972211633,
+      "end": 1718972211633,
+      "order": "normal"
+    },
+    {
+      "name": "vite:define",
+      "start": 1718972211633,
+      "end": 1718972211633,
+      "order": "normal"
+    },
+    {
+      "name": "vite:css-post",
+      "start": 1718972211633,
+      "end": 1718972211633,
+      "order": "normal"
+    },
+    {
+      "name": "vite:build-html",
+      "start": 1718972211633,
+      "end": 1718972211633,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker-import-meta-url",
+      "start": 1718972211633,
+      "end": 1718972211633,
+      "order": "normal"
+    },
+    {
+      "name": "vite:asset-import-meta-url",
+      "start": 1718972211633,
+      "end": 1718972211633,
+      "order": "normal"
+    },
+    {
+      "name": "commonjs",
+      "result": "import * as commonjsHelpers from \"\u0000commonjsHelpers.js\";\nimport require$$0 from \"\\u0000C:/Users/XFXRe/Desktop/Portfolio/node_modules/universalify/index.js?commonjs-proxy\";\nimport require$$1 from \"\\u0000__vite-browser-external?commonjs-proxy\";\nimport require$$2 from \"\\u0000C:/Users/XFXRe/Desktop/Portfolio/node_modules/fs-extra/lib/fs/index.js?commonjs-proxy\";\nimport require$$3 from \"\\u0000C:/Users/XFXRe/Desktop/Portfolio/node_modules/fs-extra/lib/mkdirs/index.js?commonjs-proxy\";\nimport require$$4 from \"\\u0000C:/Users/XFXRe/Desktop/Portfolio/node_modules/fs-extra/lib/path-exists/index.js?commonjs-proxy\";\nimport require$$5 from \"\\u0000C:/Users/XFXRe/Desktop/Portfolio/node_modules/fs-extra/lib/util/stat.js?commonjs-proxy\";\n\n'use strict'\n\nconst u = require$$0.fromPromise\nconst path = require$$1\nconst fs = require$$2\nconst mkdir = require$$3\nconst { pathExists } = require$$4\nconst { areIdentical } = require$$5\n\nasync function createLink (srcpath, dstpath) {\n  let dstStat\n  try {\n    dstStat = await fs.lstat(dstpath)\n  } catch {\n    // ignore error\n  }\n\n  let srcStat\n  try {\n    srcStat = await fs.lstat(srcpath)\n  } catch (err) {\n    err.message = err.message.replace('lstat', 'ensureLink')\n    throw err\n  }\n\n  if (dstStat && areIdentical(srcStat, dstStat)) return\n\n  const dir = path.dirname(dstpath)\n\n  const dirExists = await pathExists(dir)\n\n  if (!dirExists) {\n    await mkdir.mkdirs(dir)\n  }\n\n  await fs.link(srcpath, dstpath)\n}\n\nfunction createLinkSync (srcpath, dstpath) {\n  let dstStat\n  try {\n    dstStat = fs.lstatSync(dstpath)\n  } catch {}\n\n  try {\n    const srcStat = fs.lstatSync(srcpath)\n    if (dstStat && areIdentical(srcStat, dstStat)) return\n  } catch (err) {\n    err.message = err.message.replace('lstat', 'ensureLink')\n    throw err\n  }\n\n  const dir = path.dirname(dstpath)\n  const dirExists = fs.existsSync(dir)\n  if (dirExists) return fs.linkSync(srcpath, dstpath)\n  mkdir.mkdirsSync(dir)\n\n  return fs.linkSync(srcpath, dstpath)\n}\n\nvar link = {\n  createLink: u(createLink),\n  createLinkSync\n}\n\nexport default /*@__PURE__*/commonjsHelpers.getDefaultExportFromCjs(link);\nexport { link as __moduleExports };",
+      "start": 1718972211633,
+      "end": 1718972211819,
+      "order": "normal",
+      "sourcemaps": {
+        "version": 3,
+        "sources": [
+          ""
+        ],
+        "names": [],
+        "mappings": ";;;;;;;;AAAA,YAAY;AACZ;AACA,MAAM,CAAC,GAAG,UAAuB,CAAC,WAAW;AAC7C,MAAM,IAAI,GAAG,UAAe;AAC5B,MAAM,EAAE,GAAG,UAAgB;AAC3B,MAAM,KAAK,GAAG,UAAoB;AAClC,MAAM,EAAE,UAAU,EAAE,GAAG,UAAyB;AAChD,MAAM,EAAE,YAAY,EAAE,GAAG,UAAuB;AAChD;AACA,eAAe,UAAU,EAAE,OAAO,EAAE,OAAO,EAAE;AAC7C,EAAE,IAAI,OAAO;AACb,EAAE,IAAI;AACN,IAAI,OAAO,GAAG,MAAM,EAAE,CAAC,KAAK,CAAC,OAAO,CAAC;AACrC,GAAG,CAAC,MAAM;AACV;AACA,GAAG;AACH;AACA,EAAE,IAAI,OAAO;AACb,EAAE,IAAI;AACN,IAAI,OAAO,GAAG,MAAM,EAAE,CAAC,KAAK,CAAC,OAAO,CAAC;AACrC,GAAG,CAAC,OAAO,GAAG,EAAE;AAChB,IAAI,GAAG,CAAC,OAAO,GAAG,GAAG,CAAC,OAAO,CAAC,OAAO,CAAC,OAAO,EAAE,YAAY,CAAC;AAC5D,IAAI,MAAM,GAAG;AACb,GAAG;AACH;AACA,EAAE,IAAI,OAAO,IAAI,YAAY,CAAC,OAAO,EAAE,OAAO,CAAC,EAAE,MAAM;AACvD;AACA,EAAE,MAAM,GAAG,GAAG,IAAI,CAAC,OAAO,CAAC,OAAO,CAAC;AACnC;AACA,EAAE,MAAM,SAAS,GAAG,MAAM,UAAU,CAAC,GAAG,CAAC;AACzC;AACA,EAAE,IAAI,CAAC,SAAS,EAAE;AAClB,IAAI,MAAM,KAAK,CAAC,MAAM,CAAC,GAAG,CAAC;AAC3B,GAAG;AACH;AACA,EAAE,MAAM,EAAE,CAAC,IAAI,CAAC,OAAO,EAAE,OAAO,CAAC;AACjC,CAAC;AACD;AACA,SAAS,cAAc,EAAE,OAAO,EAAE,OAAO,EAAE;AAC3C,EAAE,IAAI,OAAO;AACb,EAAE,IAAI;AACN,IAAI,OAAO,GAAG,EAAE,CAAC,SAAS,CAAC,OAAO,CAAC;AACnC,GAAG,CAAC,MAAM,EAAE;AACZ;AACA,EAAE,IAAI;AACN,IAAI,MAAM,OAAO,GAAG,EAAE,CAAC,SAAS,CAAC,OAAO,CAAC;AACzC,IAAI,IAAI,OAAO,IAAI,YAAY,CAAC,OAAO,EAAE,OAAO,CAAC,EAAE,MAAM;AACzD,GAAG,CAAC,OAAO,GAAG,EAAE;AAChB,IAAI,GAAG,CAAC,OAAO,GAAG,GAAG,CAAC,OAAO,CAAC,OAAO,CAAC,OAAO,EAAE,YAAY,CAAC;AAC5D,IAAI,MAAM,GAAG;AACb,GAAG;AACH;AACA,EAAE,MAAM,GAAG,GAAG,IAAI,CAAC,OAAO,CAAC,OAAO,CAAC;AACnC,EAAE,MAAM,SAAS,GAAG,EAAE,CAAC,UAAU,CAAC,GAAG,CAAC;AACtC,EAAE,IAAI,SAAS,EAAE,OAAO,EAAE,CAAC,QAAQ,CAAC,OAAO,EAAE,OAAO,CAAC;AACrD,EAAE,KAAK,CAAC,UAAU,CAAC,GAAG,CAAC;AACvB;AACA,EAAE,OAAO,EAAE,CAAC,QAAQ,CAAC,OAAO,EAAE,OAAO,CAAC;AACtC,CAAC;AACD;IACA,IAAc,GAAG;AACjB,EAAE,UAAU,EAAE,CAAC,CAAC,UAAU,CAAC;AAC3B,EAAE,cAAc;AAChB"
+      }
+    },
+    {
+      "name": "vite:dynamic-import-vars",
+      "start": 1718972211819,
+      "end": 1718972211819,
+      "order": "normal"
+    },
+    {
+      "name": "vite:import-glob",
+      "start": 1718972211819,
+      "end": 1718972211819,
+      "order": "normal"
+    },
+    {
+      "name": "vite:build-import-analysis",
+      "start": 1718972211819,
+      "end": 1718972211819,
+      "order": "normal"
+    },
+    {
+      "name": "vite:reporter",
+      "start": 1718972211819,
+      "end": 1718972211819,
+      "order": "normal"
+    }
+  ]
+}

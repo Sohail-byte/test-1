@@ -1,0 +1,105 @@
+{
+  "resolvedId": "C:/Users/XFXRe/Desktop/Portfolio/node_modules/fs-extra/lib/mkdirs/utils.js",
+  "transforms": [
+    {
+      "name": "vite:load-fallback",
+      "result": "// Adapted from https://github.com/sindresorhus/make-dir\n// Copyright (c) Sindre Sorhus <sindresorhus@gmail.com> (sindresorhus.com)\n// Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the \"Software\"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:\n// The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.\n// THE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.\n'use strict'\nconst path = require('path')\n\n// https://github.com/nodejs/node/issues/8987\n// https://github.com/libuv/libuv/pull/1088\nmodule.exports.checkPath = function checkPath (pth) {\n  if (process.platform === 'win32') {\n    const pathHasInvalidWinCharacters = /[<>:\"|?*]/.test(pth.replace(path.parse(pth).root, ''))\n\n    if (pathHasInvalidWinCharacters) {\n      const error = new Error(`Path contains invalid characters: ${pth}`)\n      error.code = 'EINVAL'\n      throw error\n    }\n  }\n}\n",
+      "start": 1718972211638,
+      "end": 1718972211688,
+      "sourcemaps": null
+    },
+    {
+      "name": "vite:css",
+      "start": 1718972211688,
+      "end": 1718972211688,
+      "order": "normal"
+    },
+    {
+      "name": "vite:esbuild",
+      "start": 1718972211688,
+      "end": 1718972211688,
+      "order": "normal"
+    },
+    {
+      "name": "vite:json",
+      "start": 1718972211688,
+      "end": 1718972211688,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker",
+      "start": 1718972211688,
+      "end": 1718972211688,
+      "order": "normal"
+    },
+    {
+      "name": "vite:define",
+      "start": 1718972211688,
+      "end": 1718972211688,
+      "order": "normal"
+    },
+    {
+      "name": "vite:css-post",
+      "start": 1718972211688,
+      "end": 1718972211688,
+      "order": "normal"
+    },
+    {
+      "name": "vite:build-html",
+      "start": 1718972211688,
+      "end": 1718972211688,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker-import-meta-url",
+      "start": 1718972211688,
+      "end": 1718972211688,
+      "order": "normal"
+    },
+    {
+      "name": "vite:asset-import-meta-url",
+      "start": 1718972211688,
+      "end": 1718972211688,
+      "order": "normal"
+    },
+    {
+      "name": "commonjs",
+      "result": "import * as commonjsHelpers from \"\u0000commonjsHelpers.js\";\nimport { __exports as utils } from \"\\u0000C:/Users/XFXRe/Desktop/Portfolio/node_modules/fs-extra/lib/mkdirs/utils.js?commonjs-exports\";\nimport require$$0 from \"\\u0000__vite-browser-external?commonjs-proxy\";\n\n// Adapted from https://github.com/sindresorhus/make-dir\n// Copyright (c) Sindre Sorhus <sindresorhus@gmail.com> (sindresorhus.com)\n// Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the \"Software\"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:\n// The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.\n// THE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.\n'use strict'\nconst path = require$$0\n\n// https://github.com/nodejs/node/issues/8987\n// https://github.com/libuv/libuv/pull/1088\nvar checkPath = utils.checkPath = function checkPath (pth) {\n  if (process.platform === 'win32') {\n    const pathHasInvalidWinCharacters = /[<>:\"|?*]/.test(pth.replace(path.parse(pth).root, ''))\n\n    if (pathHasInvalidWinCharacters) {\n      const error = new Error(`Path contains invalid characters: ${pth}`)\n      error.code = 'EINVAL'\n      throw error\n    }\n  }\n}\n\nexport { utils as __moduleExports, checkPath, utils as default };",
+      "start": 1718972211688,
+      "end": 1718972211690,
+      "order": "normal",
+      "sourcemaps": {
+        "version": 3,
+        "sources": [
+          ""
+        ],
+        "names": [],
+        "mappings": ";;;;AAAA;AACA;AACA;AACA;AACA;AACA,YAAY;AACZ,MAAM,IAAI,GAAG,UAAe;AAC5B;AACA;AACA;AACA,+BAAwB,GAAG,SAAS,SAAS,EAAE,GAAG,EAAE;AACpD,EAAE,IAAI,OAAO,CAAC,QAAQ,KAAK,OAAO,EAAE;AACpC,IAAI,MAAM,2BAA2B,GAAG,WAAW,CAAC,IAAI,CAAC,GAAG,CAAC,OAAO,CAAC,IAAI,CAAC,KAAK,CAAC,GAAG,CAAC,CAAC,IAAI,EAAE,EAAE,CAAC,CAAC;AAC/F;AACA,IAAI,IAAI,2BAA2B,EAAE;AACrC,MAAM,MAAM,KAAK,GAAG,IAAI,KAAK,CAAC,CAAC,kCAAkC,EAAE,GAAG,CAAC,CAAC,CAAC;AACzE,MAAM,KAAK,CAAC,IAAI,GAAG,QAAQ;AAC3B,MAAM,MAAM,KAAK;AACjB,KAAK;AACL,GAAG;AACH"
+      }
+    },
+    {
+      "name": "vite:dynamic-import-vars",
+      "start": 1718972211690,
+      "end": 1718972211690,
+      "order": "normal"
+    },
+    {
+      "name": "vite:import-glob",
+      "start": 1718972211690,
+      "end": 1718972211690,
+      "order": "normal"
+    },
+    {
+      "name": "vite:build-import-analysis",
+      "start": 1718972211690,
+      "end": 1718972211690,
+      "order": "normal"
+    },
+    {
+      "name": "vite:reporter",
+      "start": 1718972211690,
+      "end": 1718972211690,
+      "order": "normal"
+    }
+  ]
+}
