@@ -50,7 +50,7 @@ img:hover{
     transform: scale(110%);
     transition: all .5s;
     transform-style: flat;
-    filter: drop-shadow(0 0 100px #313bf2);
+    filter: drop-shadow(0 0 10px #313bf2);
 
     
 }
